@@ -12,9 +12,9 @@
     "semantic_hash": ""
   },
   ".project-architecture.md": {
-    "mtime": 1793459417.1484725,
-    "seen": 1793459417.984757,
-    "ast_hash": "2c566a769736e9d1f6326bd431653e56",
+    "mtime": 1793460134.058554,
+    "seen": 1793460135.4882681,
+    "ast_hash": "0f5d95d220042aab20038934e89ce9c4",
     "semantic_hash": ""
   },
   ".prompts.md": {
@@ -30,15 +30,15 @@
     "semantic_hash": ""
   },
   "README.md": {
-    "mtime": 1793459393.1519709,
-    "seen": 1793459407.9997618,
-    "ast_hash": "b089aa6c303aee3d864e3935b613dbbc",
+    "mtime": 1793460056.6643913,
+    "seen": 1793460059.8069649,
+    "ast_hash": "af8e827c44f18fb7495b6ee4b3f99b92",
     "semantic_hash": ""
   },
   ".claude-session.json": {
-    "mtime": 1793459407.002581,
-    "seen": 1793459407.9997492,
-    "ast_hash": "e7ad5531c809f9dabf65b0c82c992485",
+    "mtime": 1793460056.6681132,
+    "seen": 1793460059.806941,
+    "ast_hash": "86a90e79a5325238b18316bf8f8364b4",
     "semantic_hash": ""
   },
   ".github/pull_request_template.md": {
@@ -48,9 +48,9 @@
     "semantic_hash": ""
   },
   ".github/workflows/ci.yml": {
-    "mtime": 1793459362.5508723,
-    "seen": 1793459407.999757,
-    "ast_hash": "03104ce1471f3aec21e48049eb17d8a9",
+    "mtime": 1793460128.7825475,
+    "seen": 1793460135.488267,
+    "ast_hash": "3575fddb399295915b19f7c47f2d8466",
     "semantic_hash": ""
   },
   "AGENTS.md": {
@@ -72,21 +72,21 @@
     "semantic_hash": ""
   },
   "WORKLOG.md": {
-    "mtime": 1793459407.0051613,
-    "seen": 1793459407.999764,
-    "ast_hash": "aa0f184b1551b4c570d85ee0c6ebcdd8",
+    "mtime": 1793460129.0682335,
+    "seen": 1793460135.4882739,
+    "ast_hash": "5466487c3d07bcb339f4ef3490c2f11c",
     "semantic_hash": ""
   },
   "docs/ARCHITECTURE.md": {
-    "mtime": 1793459376.3355985,
-    "seen": 1793459407.999764,
-    "ast_hash": "116cd899ce7812e92fb5b630fa10c936",
+    "mtime": 1793460056.666416,
+    "seen": 1793460059.806967,
+    "ast_hash": "81078dc412c3c68f83b29417c3a6d237",
     "semantic_hash": ""
   },
   "docs/CONTRACTS.md": {
-    "mtime": 1793459376.3309977,
-    "seen": 1793459407.999765,
-    "ast_hash": "70138f14c738e3c0d5da1cca313441f3",
+    "mtime": 1793460056.665383,
+    "seen": 1793460059.806968,
+    "ast_hash": "df869e5049da5f389f989fbc4d5e4249",
     "semantic_hash": ""
   },
   "docs/KICKOFF-PROMPT.md": {
@@ -99,6 +99,96 @@
     "mtime": 1793459255.3178833,
     "seen": 1793459407.999766,
     "ast_hash": "038596acc234e1be6105c1d6ef3fc4e9",
+    "semantic_hash": ""
+  },
+  ".claude/launch.json": {
+    "mtime": 1793459958.6236722,
+    "seen": 1793460059.806947,
+    "ast_hash": "0d2b1e67a18976adf5f7b8ebe3edf7a3",
+    "semantic_hash": ""
+  },
+  "astro.config.mjs": {
+    "mtime": 1793459749.2737386,
+    "seen": 1793460059.8069482,
+    "ast_hash": "0069935e068b58f1317521c132e8473e",
+    "semantic_hash": ""
+  },
+  "package.json": {
+    "mtime": 1793459944.4664114,
+    "seen": 1793460059.8069491,
+    "ast_hash": "8c22f4fcff5a4d42ca2261d00ce45d4e",
+    "semantic_hash": ""
+  },
+  "public/config.mock.json": {
+    "mtime": 1793459749.2816596,
+    "seen": 1793460059.8069491,
+    "ast_hash": "00160d76c967e5d851e260eed204dba9",
+    "semantic_hash": ""
+  },
+  "src/components/TileGrid.astro": {
+    "mtime": 1793459775.8094492,
+    "seen": 1793460059.8069499,
+    "ast_hash": "c65f94b87855f93cb3132e1387a062e6",
+    "semantic_hash": ""
+  },
+  "src/layouts/Base.astro": {
+    "mtime": 1793459775.7975876,
+    "seen": 1793460059.8069508,
+    "ast_hash": "720726c957103753885f9a6a55786ef9",
+    "semantic_hash": ""
+  },
+  "src/lib/hub-config.test.ts": {
+    "mtime": 1793459793.1206677,
+    "seen": 1793460059.806952,
+    "ast_hash": "3c3f5d885ac559edaaecdac3b65902f8",
+    "semantic_hash": ""
+  },
+  "src/lib/hub-config.ts": {
+    "mtime": 1793459749.2926524,
+    "seen": 1793460059.806953,
+    "ast_hash": "f33069e09c05560c276cb862923fb1d3",
+    "semantic_hash": ""
+  },
+  "src/lib/render-tiles.ts": {
+    "mtime": 1793459775.8254461,
+    "seen": 1793460059.806953,
+    "ast_hash": "d58ff6b008c5a553ff6cd8182a18dc06",
+    "semantic_hash": ""
+  },
+  "src/lib/tile-meta.ts": {
+    "mtime": 1793459749.3063376,
+    "seen": 1793460059.806954,
+    "ast_hash": "b010c360455dae90547a5b19005cd5b3",
+    "semantic_hash": ""
+  },
+  "src/pages/[slug].astro": {
+    "mtime": 1793459775.8421435,
+    "seen": 1793460059.806955,
+    "ast_hash": "060304cc783b707dd6fa8e2e50d6f18a",
+    "semantic_hash": ""
+  },
+  "src/pages/index.astro": {
+    "mtime": 1793459775.8312914,
+    "seen": 1793460059.806955,
+    "ast_hash": "ae633935d6b0eb43df7770ead1f70ddb",
+    "semantic_hash": ""
+  },
+  "tsconfig.json": {
+    "mtime": 1793459628.4192116,
+    "seen": 1793460059.806957,
+    "ast_hash": "1d3613ac08bdda17e2b82251613dbc21",
+    "semantic_hash": ""
+  },
+  "vercel.json": {
+    "mtime": 1793459958.6066449,
+    "seen": 1793460059.8069582,
+    "ast_hash": "1c517f2d820920deeccc192a480c16ed",
+    "semantic_hash": ""
+  },
+  "public/favicon.svg": {
+    "mtime": 1793459628.4039328,
+    "seen": 1793460059.8069701,
+    "ast_hash": "8c13f40658976ea1dfb8ba37a8be0e8d",
     "semantic_hash": ""
   }
 }

@@ -259,3 +259,10 @@ Still open: admin tile visible to everyone (behind login) or only in your APK bu
 | - | Capacitor: **8.x pinned** (Node >= 22 for its CLI; repo pins Node 24). |
 
 Still open (questions, not picks): push rights of `gokulsaraswatvc-eng`, `NODE_AUTH_TOKEN` source (local + CI), `docs/master/*` refresh or delete, LICENSE, Xcode installed.
+
+### 2026-10-31: service worker tooling changed during build (Claude, step 5)
+`@vite-pwa/astro` 1.2.0 declares peer `astro` `^1.6.0 || … || ^5.0.0` (`npm view @vite-pwa/astro peerDependencies`), so it does not install on Astro 7. Section 4 assumed it would.
+Replacement: `workbox-build` 7.4.1 `generateSW`, run over `dist/` after `astro build` (`scripts/build-sw.mjs`). That is the engine vite-plugin-pwa uses. Icons come from `@vite-pwa/assets-generator` 2.0.0.
+- No `--legacy-peer-deps`.
+- `npm audit` shows 9 low/moderate findings, all in workbox-build's build-time dependencies (dev only, run on our own files). This is accepted.
+- Revisit when `@vite-pwa/astro` supports Astro 7, or switch to Serwist.

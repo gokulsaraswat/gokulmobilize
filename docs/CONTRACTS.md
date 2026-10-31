@@ -15,7 +15,8 @@ Status (2026-10-31): web hub implemented against the mock config. Native app and
 ## Exposes
 | What | Value |
 |---|---|
-| Web path | `/apps` (served via the portfolio's rewrites; the portfolio owns `/`) |
+| Web path | `/apps/` (canonical; `/apps` redirects there). Served via the portfolio's rewrites; the portfolio owns `/` |
+| PWA | `manifest.webmanifest` (start_url and scope `/apps/`); `sw.js` scope `/apps/` precaches the shell and all pages |
 | Footer routes | `/apps/<slug>` for each `footerPages` slug: privacy, terms, cookies, data-deletion, accessibility, sitemap, faq, about, contact |
 | Env | `PUBLIC_HUB_CONFIG_URL` (see .env.example) |
 | Native app | Android APK (Capacitor 8); start screen = hub served from `localhost`; `/gspace`, `/studio` bundled |

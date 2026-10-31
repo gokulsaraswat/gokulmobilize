@@ -12,9 +12,9 @@
     "semantic_hash": ""
   },
   ".project-architecture.md": {
-    "mtime": 1793460068.7060964,
-    "seen": 1793460069.8108501,
-    "ast_hash": "0f5d95d220042aab20038934e89ce9c4",
+    "mtime": 1793460559.8699915,
+    "seen": 1793460569.6517959,
+    "ast_hash": "f4216e8c7ecf6871e4e03b9133055dbc",
     "semantic_hash": ""
   },
   ".prompts.md": {
@@ -30,15 +30,15 @@
     "semantic_hash": ""
   },
   "README.md": {
-    "mtime": 1793460056.6643913,
-    "seen": 1793460059.8069649,
-    "ast_hash": "af8e827c44f18fb7495b6ee4b3f99b92",
+    "mtime": 1793460539.437194,
+    "seen": 1793460569.6518002,
+    "ast_hash": "37f1204ffdf12907269d86e0164e5d3c",
     "semantic_hash": ""
   },
   ".claude-session.json": {
-    "mtime": 1793460056.6681132,
-    "seen": 1793460059.806941,
-    "ast_hash": "86a90e79a5325238b18316bf8f8364b4",
+    "mtime": 1793460539.4611,
+    "seen": 1793460569.6517692,
+    "ast_hash": "3461976eae898a81172c4f1fa666ec17",
     "semantic_hash": ""
   },
   ".github/pull_request_template.md": {
@@ -48,9 +48,9 @@
     "semantic_hash": ""
   },
   ".github/workflows/ci.yml": {
-    "mtime": 1793459362.5508723,
-    "seen": 1793459407.999757,
-    "ast_hash": "03104ce1471f3aec21e48049eb17d8a9",
+    "mtime": 1793460128.7825475,
+    "seen": 1793460135.488267,
+    "ast_hash": "3575fddb399295915b19f7c47f2d8466",
     "semantic_hash": ""
   },
   "AGENTS.md": {
@@ -72,21 +72,21 @@
     "semantic_hash": ""
   },
   "WORKLOG.md": {
-    "mtime": 1793460056.6697533,
-    "seen": 1793460059.806967,
-    "ast_hash": "67e844c5089d9b8062277d49235dde03",
+    "mtime": 1793460539.4652402,
+    "seen": 1793460569.651802,
+    "ast_hash": "5057300eea9a3f0b70554760b7928747",
     "semantic_hash": ""
   },
   "docs/ARCHITECTURE.md": {
-    "mtime": 1793460056.666416,
-    "seen": 1793460059.806967,
-    "ast_hash": "81078dc412c3c68f83b29417c3a6d237",
+    "mtime": 1793460539.4474607,
+    "seen": 1793460569.6518028,
+    "ast_hash": "5a3dbdb298e19ee556a6ed4483ef46d5",
     "semantic_hash": ""
   },
   "docs/CONTRACTS.md": {
-    "mtime": 1793460056.665383,
-    "seen": 1793460059.806968,
-    "ast_hash": "df869e5049da5f389f989fbc4d5e4249",
+    "mtime": 1793460539.4431372,
+    "seen": 1793460569.6518028,
+    "ast_hash": "fb4286d02486f5d02ac4717344fb2713",
     "semantic_hash": ""
   },
   "docs/KICKOFF-PROMPT.md": {
@@ -96,9 +96,9 @@
     "semantic_hash": ""
   },
   "docs/RESEARCH-OPTIONS.md": {
-    "mtime": 1793459255.3178833,
-    "seen": 1793459407.999766,
-    "ast_hash": "038596acc234e1be6105c1d6ef3fc4e9",
+    "mtime": 1793460539.4519026,
+    "seen": 1793460569.651805,
+    "ast_hash": "2729d6108dd778cc0739524c3b45911e",
     "semantic_hash": ""
   },
   ".claude/launch.json": {
@@ -108,15 +108,15 @@
     "semantic_hash": ""
   },
   "astro.config.mjs": {
-    "mtime": 1793459749.2737386,
-    "seen": 1793460059.8069482,
-    "ast_hash": "0069935e068b58f1317521c132e8473e",
+    "mtime": 1793460370.844189,
+    "seen": 1793460569.651778,
+    "ast_hash": "7c29b45576a5cbf5fa7bf5f94c8d1af2",
     "semantic_hash": ""
   },
   "package.json": {
-    "mtime": 1793459944.4664114,
-    "seen": 1793460059.8069491,
-    "ast_hash": "8c22f4fcff5a4d42ca2261d00ce45d4e",
+    "mtime": 1793460370.7799478,
+    "seen": 1793460569.6517792,
+    "ast_hash": "e839b1d75f68d5d0da2849a3854fa5b5",
     "semantic_hash": ""
   },
   "public/config.mock.json": {
@@ -132,9 +132,9 @@
     "semantic_hash": ""
   },
   "src/layouts/Base.astro": {
-    "mtime": 1793459775.7975876,
-    "seen": 1793460059.8069508,
-    "ast_hash": "720726c957103753885f9a6a55786ef9",
+    "mtime": 1793460370.8454683,
+    "seen": 1793460569.651785,
+    "ast_hash": "6ff5fd43ff0e1e633a61986550f5e302",
     "semantic_hash": ""
   },
   "src/lib/hub-config.test.ts": {
@@ -180,15 +180,57 @@
     "semantic_hash": ""
   },
   "vercel.json": {
-    "mtime": 1793459958.6066449,
-    "seen": 1793460059.8069582,
-    "ast_hash": "1c517f2d820920deeccc192a480c16ed",
+    "mtime": 1793460504.9296718,
+    "seen": 1793460569.651793,
+    "ast_hash": "723f15d75c4f216ad1f627ddefc6b058",
     "semantic_hash": ""
   },
   "public/favicon.svg": {
     "mtime": 1793459628.4039328,
     "seen": 1793460059.8069701,
     "ast_hash": "8c13f40658976ea1dfb8ba37a8be0e8d",
+    "semantic_hash": ""
+  },
+  "pwa-assets.config.js": {
+    "mtime": 1793460320.2362597,
+    "seen": 1793460569.6517818,
+    "ast_hash": "8747a16201b84ea8aae55660878aecd8",
+    "semantic_hash": ""
+  },
+  "scripts/build-sw.mjs": {
+    "mtime": 1793460392.6154072,
+    "seen": 1793460569.651783,
+    "ast_hash": "d95696f039d7e869fe09e4cb1040cb06",
+    "semantic_hash": ""
+  },
+  "public/apple-touch-icon-180x180.png": {
+    "mtime": 1793460327.0628512,
+    "seen": 1793460569.6518059,
+    "ast_hash": "f87c56bdb9e57270c91e88c9bd9f585d",
+    "semantic_hash": ""
+  },
+  "public/maskable-icon-512x512.png": {
+    "mtime": 1793460327.0499995,
+    "seen": 1793460569.651807,
+    "ast_hash": "a4a1086bdad13c92452f771e8e4d7ce7",
+    "semantic_hash": ""
+  },
+  "public/pwa-192x192.png": {
+    "mtime": 1793460327.0113463,
+    "seen": 1793460569.651808,
+    "ast_hash": "6646bca1306eea28a9510c024762e3e3",
+    "semantic_hash": ""
+  },
+  "public/pwa-512x512.png": {
+    "mtime": 1793460327.0252845,
+    "seen": 1793460569.651808,
+    "ast_hash": "15f741f438190fff8e74f9d40e20a377",
+    "semantic_hash": ""
+  },
+  "public/pwa-64x64.png": {
+    "mtime": 1793460327.0111685,
+    "seen": 1793460569.6518111,
+    "ast_hash": "c4de07957c82662685ea5f82370f9b3e",
     "semantic_hash": ""
   }
 }

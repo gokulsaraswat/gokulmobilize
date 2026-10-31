@@ -1,6 +1,6 @@
 {
-  "rewrites": [
-    { "source": "/apps", "destination": "/" },
-    { "source": "/apps/:path*", "destination": "/:path*" }
-  ]
+  "cleanUrls": true,
+  "redirects": [{ "source": "/apps", "destination": "/apps/", "permanent": true }],
+  "rewrites": [{ "source": "/apps/:path*", "destination": "/:path*" }],
+  "headers": [{ "source": "/sw.js", "headers": [{ "key": "Cache-Control", "value": "no-cache" }] }]
 }

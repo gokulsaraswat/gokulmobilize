@@ -2,7 +2,7 @@
 
 Hub for all of Gokul's apps: one PWA page of app tiles at `/apps`, plus a Capacitor Android app that bundles the static apps for offline use. iOS users install the PWA (Add to Home Screen).
 
-**Status:** web hub scaffolded (tiles from a mock config, 9 footer pages). Native app and offline service worker are next. See [WORKLOG.md](WORKLOG.md).
+**Status:** web hub works offline as an installable PWA (tiles from a mock config, 9 footer pages). Next: save for later, then the Android app. See [WORKLOG.md](WORKLOG.md).
 
 ## Decided stack (2026-10-31)
 - Hub: Astro 7 static output, a small vanilla-TS tile script, and `@gokulsaraswat/ui` components rendered at build time.
@@ -20,8 +20,9 @@ Requirements: Node 24 (`.nvmrc`), plus `NODE_AUTH_TOKEN` (a GitHub token with `r
 |---|---|
 | `NODE_AUTH_TOKEN=... npm ci` | clean install from the lockfile |
 | `npm run dev` | dev server at http://localhost:4321/apps |
-| `npm run build` | static build to `dist/` |
-| `npm run preview` | serve `dist/` at http://localhost:4321/apps |
+| `npm run build` | static build to `dist/`, then `scripts/build-sw.mjs` writes `dist/sw.js` (Workbox precache) |
+| `npm run generate-pwa-assets` | regenerate PWA icons from `public/favicon.svg` |
+| `npm run preview` | serve `dist/` at http://localhost:4321/apps/ (the service worker covers `/apps/`) |
 | `npm run lint` | `astro check` (types + Astro diagnostics) |
 | `npm test` | unit tests (Node test runner) |
 
@@ -32,7 +33,7 @@ See [.env.example](.env.example): `NODE_AUTH_TOKEN`, `PUBLIC_HUB_CONFIG_URL`.
 - Framework: Astro. Install: `npm ci`. Build: `npm run build`. Output: `dist`. Node: 24.x.
 - Env: `NODE_AUTH_TOKEN` (read:packages), and `PUBLIC_HUB_CONFIG_URL` once admin publishes config.json.
 - The project name is not created yet.
-- `vercel.json` maps `/apps/*` to the root, so the hub also works on its own `*.vercel.app` URL. The portfolio (owner of `/`) rewrites `/apps/:path*` to `<hub-project>.vercel.app/apps/:path*`.
+- `vercel.json` redirects `/apps` to `/apps/`, serves `sw.js` with `no-cache`, and maps `/apps/*` to the root, so the hub also works on its own `*.vercel.app` URL. The portfolio (owner of `/`) rewrites `/apps/:path*` to `<hub-project>.vercel.app/apps/:path*`.
 
 ## Docs
 - This repo:

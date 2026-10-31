@@ -18,8 +18,10 @@ Master status of all repos: platform/docs/WORKLOG.md. Update this file after eve
 
 - 2026-10-31: Scaffold step: Astro 7 + @astrojs/react (build-time only), plain-TS SWR config store on idb-keyval (tests), card tiles with skeletons, footer pages via @gokulsaraswat/ui, vercel.json (/apps -> root). Verified in browser. Tile script is 24 KB gzip, mostly zod from parseHubConfig (more than the ~1 KB estimate; still about half of React's runtime).
 
+- 2026-10-31: Step 5 (offline): installable PWA (manifest + generated icons from the placeholder Astro favicon), Workbox `generateSW` after build (precache shell + 10 pages, scope /apps/), `/apps` -> `/apps/` redirect. Verified offline with the server stopped. `@vite-pwa/astro` does not support Astro 7 yet, so plain workbox-build is used (see RESEARCH-OPTIONS section 6). Vercel redirect/cleanUrls behaviour is UNVERIFIED until the first deploy.
+
 ## In progress / next
-- Next: step 5, service worker + manifest + save for later (web), then step 6, Capacitor Android. Propose first, wait for OK.
+- Next: save for later (needs Gokul's design answers), then step 6, Capacitor Android.
 - Open: Xcode installed?, GitHub repo description/topics/branch protection (owner, web UI).
 
 ## Blockers / requests to other repos

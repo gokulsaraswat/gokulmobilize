@@ -61,6 +61,12 @@
         "phase": "scaffold",
         "item": "Astro 7 hub at /apps: SWR config store (3 tests), card tiles, mock config, 9 footer pages, vercel.json. npm ci + build + astro check + tests pass; verified in browser (tiles, IndexedDB cache, footer route)",
         "date": "2026-10-31"
+      },
+      {
+        "step": 5,
+        "phase": "offline",
+        "item": "PWA: manifest + icons, Workbox generateSW post-build (scope /apps/), prod-only registration, /apps -> /apps/ redirect. Verified offline in browser (server stopped: hub tiles from IDB + footer pages from precache). @vite-pwa/astro skipped (no Astro 7 support).",
+        "date": "2026-10-31"
       }
     ],
     "todo_next": [
@@ -72,9 +78,9 @@
         "model": ""
       },
       {
-        "step": 5,
+        "step": "5b",
         "phase": "offline",
-        "item": "Service worker via @vite-pwa/astro (web build only) + manifest + save for later",
+        "item": "Save for later (design questions pending with Gokul)",
         "effort": "high",
         "model": "Opus 5.5"
       },
