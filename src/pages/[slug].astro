@@ -1,0 +1,15 @@
+---
+import { LegalPage, footerPages, type FooterPageSlug } from '@gokulsaraswat/ui';
+import Base from '../layouts/Base.astro';
+
+export function getStaticPaths() {
+  return footerPages.map(({ slug, title }) => ({ params: { slug }, props: { title } }));
+}
+
+const { slug } = Astro.params as { slug: FooterPageSlug };
+const { title } = Astro.props;
+---
+
+<Base title={`${title} · Gokul’s apps`}>
+  <LegalPage slug={slug} siteName="Gokul’s apps" />
+</Base>

@@ -1,0 +1,119 @@
+---
+const configUrl = import.meta.env.PUBLIC_HUB_CONFIG_URL || `${import.meta.env.BASE_URL.replace(/\/$/, '')}/config.mock.json`;
+---
+
+<section aria-labelledby="apps-heading">
+  <h1 id="apps-heading">Apps</h1>
+  <p class="status" role="status" hidden></p>
+  <ul class="grid" data-config-url={configUrl} aria-busy="true">
+    {Array.from({ length: 5 }, () => <li class="tile skeleton" aria-hidden="true"></li>)}
+  </ul>
+  <template id="tile-template">
+    <li>
+      <a class="tile">
+        <span class="monogram" aria-hidden="true"></span>
+        <span class="name"></span>
+        <span class="description"></span>
+      </a>
+    </li>
+  </template>
+</section>
+
+<script>
+  import { createConfigStore } from '../lib/hub-config';
+  import { renderTiles } from '../lib/render-tiles';
+
+  const grid = document.querySelector<HTMLUListElement>('.grid')!;
+  const status = document.querySelector<HTMLParagraphElement>('.status')!;
+  const template = document.querySelector<HTMLTemplateElement>('#tile-template')!;
+  const store = createConfigStore(grid.dataset.configUrl!);
+
+  let painted = false;
+  store.subscribe((config) => {
+    painted = true;
+    status.hidden = true;
+    renderTiles(grid, template, config);
+  });
+  store.load().then(() => {
+    if (painted) return;
+    status.textContent = navigator.onLine ? 'Apps could not be loaded. Try again later.' : 'You are offline. Apps appear once you reconnect.';
+    status.hidden = false;
+  });
+  document.addEventListener('visibilitychange', () => document.visibilityState === 'visible' && store.refresh());
+  window.addEventListener('online', () => store.refresh());
+</script>
+
+<style>
+  h1 {
+    font-size: var(--text-2xl);
+    margin: 0 0 1rem;
+  }
+  .grid {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 15rem), 1fr));
+  }
+  .grid :global(.tile) {
+    display: grid;
+    gap: 0.25rem;
+    min-height: 6.5rem;
+    padding: 1rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    background: var(--card);
+    color: var(--card-foreground);
+    text-decoration: none;
+    box-shadow: var(--shadow-sm);
+    transition:
+      transform var(--motion-duration-micro) var(--motion-ease-enter),
+      box-shadow var(--motion-duration-micro) var(--motion-ease-enter);
+  }
+  .grid :global(a.tile:hover) {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+  }
+  .grid :global(a.tile:active) {
+    transform: scale(0.98);
+  }
+  .grid :global(a.tile:focus-visible) {
+    outline: 2px solid var(--ring);
+    outline-offset: 2px;
+  }
+  .grid :global(.monogram) {
+    display: grid;
+    place-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: var(--radius-md);
+    background: var(--tile-accent, var(--primary));
+    color: var(--primary-foreground);
+    font-weight: 600;
+  }
+  .grid :global(.name) {
+    font-weight: 600;
+  }
+  .grid :global(.description) {
+    color: var(--muted-foreground);
+    font-size: var(--text-sm);
+  }
+  .skeleton {
+    background: var(--muted);
+    animation: pulse 1.2s var(--motion-ease-enter) infinite alternate;
+  }
+  @keyframes pulse {
+    to {
+      opacity: 0.5;
+    }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .skeleton {
+      animation: none;
+    }
+  }
+  .status {
+    color: var(--muted-foreground);
+  }
+</style>

@@ -1,0 +1,33 @@
+{
+  "name": "gokulmobilize",
+  "private": true,
+  "type": "module",
+  "version": "0.0.1",
+  "engines": {
+    "node": "24.x"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "lint": "astro check",
+    "test": "node --test --disable-warning=ExperimentalWarning src/lib/*.test.ts",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/react": "^7.1.1",
+    "@gokulsaraswat/config": "^0.1.0",
+    "@gokulsaraswat/ui": "^0.1.0",
+    "astro": "^7.4.2",
+    "idb-keyval": "^6.3.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.12",
+    "@types/node": "^24.19.2",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "typescript": "^6.0.3"
+  }
+}

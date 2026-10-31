@@ -1,7 +1,7 @@
 # CONTRACTS: gokulmobilize (hub)
 
 What this repo expects from others and what it exposes. Master: platform/docs/CONTRACTS.md (github.com/gokulsaraswat/platform); if they differ, the master wins. Updated: 2026-10-31.
-Status: nothing is implemented yet; the rows below are the agreed interface the scaffold must follow.
+Status (2026-10-31): web hub implemented against the mock config. Native app and service worker not yet built.
 
 ## Consumes
 | From | What | Version | Notes |

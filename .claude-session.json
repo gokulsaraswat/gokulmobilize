@@ -23,7 +23,7 @@
     "active_component": ""
   },
   "sprint": {
-    "goal": "Bring repo to the repo kit, then scaffold the Astro hub + Capacitor",
+    "goal": "Offline PWA, then Capacitor Android APK",
     "bugs": [],
     "done": [
       {
@@ -55,6 +55,12 @@
         "phase": "repo-kit",
         "item": "Repo kit: .gitignore, .nvmrc, .npmrc, .env.example, LICENSE, SECURITY.md, PR template, CI (kit check; build steps activate once package-lock.json exists), CONTRACTS, ARCHITECTURE, README; removed stale docs/master",
         "date": "2026-10-31"
+      },
+      {
+        "step": 4,
+        "phase": "scaffold",
+        "item": "Astro 7 hub at /apps: SWR config store (3 tests), card tiles, mock config, 9 footer pages, vercel.json. npm ci + build + astro check + tests pass; verified in browser (tiles, IndexedDB cache, footer route)",
+        "date": "2026-10-31"
       }
     ],
     "todo_next": [
@@ -66,9 +72,16 @@
         "model": ""
       },
       {
-        "step": 4,
-        "phase": "scaffold",
-        "item": "Scaffold hub per chosen stack; clean-install production build on pinned Node",
+        "step": 5,
+        "phase": "offline",
+        "item": "Service worker via @vite-pwa/astro (web build only) + manifest + save for later",
+        "effort": "high",
+        "model": "Opus 5.5"
+      },
+      {
+        "step": 6,
+        "phase": "native",
+        "item": "Capacitor 8 Android: base '/' build variant, bundled gspace/studio slots, APK in GitHub Actions",
         "effort": "high",
         "model": "Opus 5.5"
       }

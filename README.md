@@ -2,7 +2,7 @@
 
 Hub for all of Gokul's apps: one PWA page of app tiles at `/apps`, plus a Capacitor Android app that bundles the static apps for offline use. iOS users install the PWA (Add to Home Screen).
 
-**Status:** planning done, no app code yet. See [WORKLOG.md](WORKLOG.md).
+**Status:** web hub scaffolded (tiles from a mock config, 9 footer pages). Native app and offline service worker are next. See [WORKLOG.md](WORKLOG.md).
 
 ## Decided stack (2026-10-31)
 - Hub: Astro 7 static output, a small vanilla-TS tile script, and `@gokulsaraswat/ui` components rendered at build time.
@@ -14,13 +14,25 @@ Hub for all of Gokul's apps: one PWA page of app tiles at `/apps`, plus a Capaci
 `/` portfolio · `/apps` hub · `/admin` admin · `/gym` gym · `/gspace` GSpace (bundled in the app) · `/studio` Markdown Studio (bundled). The portfolio owns `/` and holds the rewrites.
 
 ## Run / build
-Not yet: added with the scaffold step. Requirements: Node 24 (`.nvmrc`), and `NODE_AUTH_TOKEN` (GitHub token with `read:packages`) in your shell to install `@gokulsaraswat/*`.
+Requirements: Node 24 (`.nvmrc`), plus `NODE_AUTH_TOKEN` (a GitHub token with `read:packages`) to install `@gokulsaraswat/*`. With the gh CLI: `gh auth refresh -h github.com -s read:packages`, then prefix installs with `NODE_AUTH_TOKEN=$(gh auth token)`.
+
+| Command | What |
+|---|---|
+| `NODE_AUTH_TOKEN=... npm ci` | clean install from the lockfile |
+| `npm run dev` | dev server at http://localhost:4321/apps |
+| `npm run build` | static build to `dist/` |
+| `npm run preview` | serve `dist/` at http://localhost:4321/apps |
+| `npm run lint` | `astro check` (types + Astro diagnostics) |
+| `npm test` | unit tests (Node test runner) |
 
 ## Environment variables
 See [.env.example](.env.example): `NODE_AUTH_TOKEN`, `PUBLIC_HUB_CONFIG_URL`.
 
 ## Deploy (Vercel)
-Vercel project settings are documented here once the scaffold exists: project name, install `npm ci`, build `npm run build`, env `NODE_AUTH_TOKEN`, `PUBLIC_HUB_CONFIG_URL`.
+- Framework: Astro. Install: `npm ci`. Build: `npm run build`. Output: `dist`. Node: 24.x.
+- Env: `NODE_AUTH_TOKEN` (read:packages), and `PUBLIC_HUB_CONFIG_URL` once admin publishes config.json.
+- The project name is not created yet.
+- `vercel.json` maps `/apps/*` to the root, so the hub also works on its own `*.vercel.app` URL. The portfolio (owner of `/`) rewrites `/apps/:path*` to `<hub-project>.vercel.app/apps/:path*`.
 
 ## Docs
 - This repo:

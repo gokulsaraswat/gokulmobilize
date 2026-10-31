@@ -12,9 +12,9 @@
     "semantic_hash": ""
   },
   ".project-architecture.md": {
-    "mtime": 1793440136.86407,
-    "seen": 1793440138.44876,
-    "ast_hash": "14996835109b712a84731d596d064cad",
+    "mtime": 1793459417.1484725,
+    "seen": 1793459417.984757,
+    "ast_hash": "2c566a769736e9d1f6326bd431653e56",
     "semantic_hash": ""
   },
   ".prompts.md": {
@@ -30,9 +30,75 @@
     "semantic_hash": ""
   },
   "README.md": {
-    "mtime": 1793115012.1264296,
-    "seen": 1793115626.1029398,
-    "ast_hash": "9a1a2635c67ab073560dee1aa2712b38",
+    "mtime": 1793459393.1519709,
+    "seen": 1793459407.9997618,
+    "ast_hash": "b089aa6c303aee3d864e3935b613dbbc",
+    "semantic_hash": ""
+  },
+  ".claude-session.json": {
+    "mtime": 1793459407.002581,
+    "seen": 1793459407.9997492,
+    "ast_hash": "e7ad5531c809f9dabf65b0c82c992485",
+    "semantic_hash": ""
+  },
+  ".github/pull_request_template.md": {
+    "mtime": 1793459362.5459986,
+    "seen": 1793459407.999756,
+    "ast_hash": "262c35fb7b599f5da34e2ff6d530e873",
+    "semantic_hash": ""
+  },
+  ".github/workflows/ci.yml": {
+    "mtime": 1793459362.5508723,
+    "seen": 1793459407.999757,
+    "ast_hash": "03104ce1471f3aec21e48049eb17d8a9",
+    "semantic_hash": ""
+  },
+  "AGENTS.md": {
+    "mtime": 1793459393.1569476,
+    "seen": 1793459407.99976,
+    "ast_hash": "8a0057588a7d61b9542b5afd77a047a6",
+    "semantic_hash": ""
+  },
+  "COLLABORATORS.md": {
+    "mtime": 1793448175.146265,
+    "seen": 1793459407.9997609,
+    "ast_hash": "b5f211247c20a2a3e2851980d473d57f",
+    "semantic_hash": ""
+  },
+  "SECURITY.md": {
+    "mtime": 1793459362.522782,
+    "seen": 1793459407.999763,
+    "ast_hash": "6adad9e258a65839df46da4300a7754a",
+    "semantic_hash": ""
+  },
+  "WORKLOG.md": {
+    "mtime": 1793459407.0051613,
+    "seen": 1793459407.999764,
+    "ast_hash": "aa0f184b1551b4c570d85ee0c6ebcdd8",
+    "semantic_hash": ""
+  },
+  "docs/ARCHITECTURE.md": {
+    "mtime": 1793459376.3355985,
+    "seen": 1793459407.999764,
+    "ast_hash": "116cd899ce7812e92fb5b630fa10c936",
+    "semantic_hash": ""
+  },
+  "docs/CONTRACTS.md": {
+    "mtime": 1793459376.3309977,
+    "seen": 1793459407.999765,
+    "ast_hash": "70138f14c738e3c0d5da1cca313441f3",
+    "semantic_hash": ""
+  },
+  "docs/KICKOFF-PROMPT.md": {
+    "mtime": 1793456332.5526655,
+    "seen": 1793459407.999766,
+    "ast_hash": "2ddaa3c45500cf837003486955a0d430",
+    "semantic_hash": ""
+  },
+  "docs/RESEARCH-OPTIONS.md": {
+    "mtime": 1793459255.3178833,
+    "seen": 1793459407.999766,
+    "ast_hash": "038596acc234e1be6105c1d6ef3fc4e9",
     "semantic_hash": ""
   }
 }

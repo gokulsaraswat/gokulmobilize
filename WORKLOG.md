@@ -3,7 +3,7 @@
 Master status of all repos: platform/docs/WORKLOG.md. Update this file after every step.
 
 ## Current state (2026-10-31)
-- Repo kit in place (2026-10-31); no app code yet. CI checks that the kit files exist; build/lint steps switch on once package-lock.json exists.
+- Web hub scaffolded (2026-10-31): Astro 7.4.2 at /apps; tiles from public/config.mock.json; 9 footer pages. npm ci + build + astro check + 3 tests pass locally. CI now runs install/build/lint and needs NODE_AUTH_TOKEN (see blockers).
 - Local env: Node v24.14.1, npm 11.11.0, NODE_AUTH_TOKEN not set in this shell, gh logged in as gokulsaraswatvc-eng, no Vercel CLI.
 
 ## Done
@@ -16,11 +16,15 @@ Master status of all repos: platform/docs/WORKLOG.md. Update this file after eve
 
 - 2026-10-31: Repo kit step: .gitignore, .nvmrc (24), .npmrc, .env.example, LICENSE (all rights reserved), SECURITY.md, PR template, CI, docs/CONTRACTS.md, docs/ARCHITECTURE.md, README rewritten (replaced the Android stub), stale docs/master/ removed (moved to Trash; master lives in platform/docs).
 
+- 2026-10-31: Scaffold step: Astro 7 + @astrojs/react (build-time only), plain-TS SWR config store on idb-keyval (tests), card tiles with skeletons, footer pages via @gokulsaraswat/ui, vercel.json (/apps -> root). Verified in browser. Tile script is 24 KB gzip, mostly zod from parseHubConfig (more than the ~1 KB estimate; still about half of React's runtime).
+
 ## In progress / next
-- Next: scaffold step (Astro 7 hub + mock config + footer routes; Capacitor after the web build passes). Propose first, wait for OK.
-- Open: NODE_AUTH_TOKEN source (needed for the scaffold), Xcode installed?, GitHub repo description/topics/branch protection (owner, web UI).
+- Next: step 5, service worker + manifest + save for later (web), then step 6, Capacitor Android. Propose first, wait for OK.
+- Open: Xcode installed?, GitHub repo description/topics/branch protection (owner, web UI).
 
 ## Blockers / requests to other repos
+- BLOCKER (owner): CI needs package access. Either add repo secret NODE_AUTH_TOKEN (read:packages), or grant gokulmobilize read access in each @gokulsaraswat package's 'Manage Actions access'.
+- REQUEST bestportofolio (refined): rewrite `/apps/:path*` -> `https://<hub-project>.vercel.app/apps/:path*`.
 Requests for the planning chat to sync into platform/docs/WORKLOG.md (this chat never edits other repos):
 - REQUEST admin (URGENT, being built now): set Next.js `basePath: '/admin'`. Path layout decided 2026-10-31: portfolio `/`, hub `/apps`, `/admin`, `/gym`, `/gspace`, `/studio`.
 - REQUEST admin: config.json bucket path + CORS that allows the APK origins (`https://localhost`, `capacitor://localhost`) and the web domain.
