@@ -1,0 +1,38 @@
+{
+  ".claude-session.template.json": {
+    "mtime": 1793115605.2898278,
+    "seen": 1793115626.1029341,
+    "ast_hash": "bb132319f3169ee4e1b961b17fd9d071",
+    "semantic_hash": ""
+  },
+  "sync-architecture.sh": {
+    "mtime": 1793115605.2932,
+    "seen": 1793115626.102937,
+    "ast_hash": "ff5f06384bdc881f2fb88617b889feee",
+    "semantic_hash": ""
+  },
+  ".project-architecture.md": {
+    "mtime": 1793116977.5086827,
+    "seen": 1793116978.160744,
+    "ast_hash": "14996835109b712a84731d596d064cad",
+    "semantic_hash": ""
+  },
+  ".prompts.md": {
+    "mtime": 1793115605.2822807,
+    "seen": 1793115626.102939,
+    "ast_hash": "3d356e5edfc4f642c778a69db1a3be8e",
+    "semantic_hash": ""
+  },
+  "CLAUDE.md": {
+    "mtime": 1793116977.266963,
+    "seen": 1793116978.160746,
+    "ast_hash": "664aa4ce4b551744add7fdd22ff2e903",
+    "semantic_hash": ""
+  },
+  "README.md": {
+    "mtime": 1793115012.1264296,
+    "seen": 1793115626.1029398,
+    "ast_hash": "9a1a2635c67ab073560dee1aa2712b38",
+    "semantic_hash": ""
+  }
+}
