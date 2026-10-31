@@ -23,7 +23,7 @@
     "active_component": ""
   },
   "sprint": {
-    "goal": "Bundle real apps, release-signed APK",
+    "goal": "Bundle real apps; set the domain",
     "bugs": [],
     "done": [
       {
@@ -83,18 +83,11 @@
       {
         "step": 8,
         "phase": "native",
-        "item": "Release signing via env/secrets + tag-triggered signed APK on GitHub Releases (signed path unverified until first tag)",
+        "item": "Release signing via env/secrets + tag-triggered signed APK on GitHub Releases (verified: v0.1.0 signed APK on GitHub Releases)",
         "date": "2026-10-31"
       }
     ],
     "todo_next": [
-      {
-        "step": "8b",
-        "phase": "owner",
-        "item": "Gokul: keystore + 4 secrets, push tag v0.1.0, confirm signed APK on the Release",
-        "effort": "",
-        "model": ""
-      },
       {
         "step": "3b",
         "phase": "owner",

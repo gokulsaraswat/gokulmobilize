@@ -26,8 +26,9 @@ Master status of all repos: platform/docs/WORKLOG.md. Update this file after eve
 
 - 2026-10-31: Release signing: Gradle reads the keystore + passwords from env vars only. CI job `android-release` runs on `v*` tags: decodes the keystore secret to the runner temp dir, `assembleRelease`, attaches the APK to the GitHub Release, deletes the keystore. versionName = tag, versionCode = run number. Verified locally: unsigned `assembleRelease` + `assembleDebug` build. Signed path NOT yet verified (local throwaway-keystore test was blocked by permission settings); first real check = Gokul's first tag.
 
+- 2026-10-31: First signed release v0.1.0: https://github.com/gokulsaraswat/gokulmobilize/releases/tag/v0.1.0 (APK 3.4 MB, versionCode 8). `apksigner verify` passes. Release cert SHA-256 59e7d15360520491b365b4ef89ca02212b30d858434c045e75e9f3a8a805ca12: every future APK must carry this fingerprint. Setup hiccups (empty password secrets, emptied keystore secret, wrong alias) were fixed by Gokul in the GitHub UI.
+
 ## In progress / next
-- Gokul: create the keystore + 4 repo secrets (README > Android APK), then push tag v0.1.0 to verify the signed release.
 - Next (proposals, wait for OK): repo variable PUBLIC_SITE_ORIGIN once the domain exists; real GSpace/Studio bundles (waiting on their release zips); replace the placeholder Astro icon; iOS later.
 - Open: Xcode installed?, GitHub repo description/topics/branch protection (owner, web UI).
 
