@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "updated": "2026-10-31",
+  "sys": {
+    "mode": "Personal Project",
+    "scale": "micro (hub PWA + Capacitor wrapper)",
+    "stack": [
+      "Astro 7 (static)",
+      "@astrojs/react (build-time)",
+      "vanilla TS",
+      "@vite-pwa/astro",
+      "idb-keyval",
+      "Capacitor 8 (pinned)",
+      "@gokulsaraswat/ui",
+      "@gokulsaraswat/config",
+      "Vercel"
+    ],
+    "architectural_pattern": "static hub shell + framework-agnostic plain-TS data/cache layer (proposed)"
+  },
+  "ui_state": {
+    "design_tokens": "@gokulsaraswat/ui tokens.css (planned)",
+    "motion_library": "none (View Transitions API, planned)",
+    "active_component": ""
+  },
+  "sprint": {
+    "goal": "Bring repo to the repo kit, then scaffold the Astro hub + Capacitor",
+    "bugs": [],
+    "done": [
+      {
+        "step": 0,
+        "phase": "startup",
+        "item": "Read repo + master docs, report state and questions",
+        "date": "2026-10-31"
+      },
+      {
+        "step": 1,
+        "phase": "research",
+        "item": "docs/RESEARCH-OPTIONS.md: wrapper, PWA tooling, storage, SWR, transitions, UI frameworks (cited)",
+        "date": "2026-10-31"
+      },
+      {
+        "step": "1b",
+        "phase": "decide",
+        "item": "Domain/paths: portfolio /, hub /apps, /admin, /gym, /gspace, /studio (Gokul)",
+        "date": "2026-10-31"
+      },
+      {
+        "step": 2,
+        "phase": "decide",
+        "item": "All section-5 picks accepted (Astro 7, bundled gspace+studio, release-zip delivery, card tiles, config v1 + local map, @capacitor/browser, allowNavigation, admin tile visible)",
+        "date": "2026-10-31"
+      },
+      {
+        "step": 3,
+        "phase": "repo-kit",
+        "item": "Repo kit: .gitignore, .nvmrc, .npmrc, .env.example, LICENSE, SECURITY.md, PR template, CI (kit check; build steps activate once package-lock.json exists), CONTRACTS, ARCHITECTURE, README; removed stale docs/master",
+        "date": "2026-10-31"
+      }
+    ],
+    "todo_next": [
+      {
+        "step": "3b",
+        "phase": "owner",
+        "item": "Gokul: GitHub description/topics/branch protection; NODE_AUTH_TOKEN in shell + repo secret (or package Actions access)",
+        "effort": "",
+        "model": ""
+      },
+      {
+        "step": 4,
+        "phase": "scaffold",
+        "item": "Scaffold hub per chosen stack; clean-install production build on pinned Node",
+        "effort": "high",
+        "model": "Opus 5.5"
+      }
+    ]
+  },
+  "context_window": {
+    "files_loaded": [
+      "docs/KICKOFF-PROMPT.md",
+      "docs/RESEARCH-OPTIONS.md",
+      "platform/docs/CONTRACTS.md",
+      "platform/packages/config/src/hub.ts"
+    ],
+    "pending_lld_updates": []
+  }
+}

@@ -1,0 +1,17 @@
+node_modules/
+dist/
+.astro/
+coverage/
+*.tgz
+*.log
+.env
+.env.*
+!.env.example
+.DS_Store
+.vscode/*
+# Capacitor native build output (added when android/ and ios/ exist)
+android/app/build/
+android/.gradle/
+ios/App/build/
+*.keystore
+*.jks
