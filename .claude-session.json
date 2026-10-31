@@ -79,9 +79,22 @@
         "phase": "native",
         "item": "Capacitor 8.5 Android: app build variant, @capacitor/browser for remote tiles, native back handler, CI debug APK artifact; tested on emulator",
         "date": "2026-10-31"
+      },
+      {
+        "step": 8,
+        "phase": "native",
+        "item": "Release signing via env/secrets + tag-triggered signed APK on GitHub Releases (signed path unverified until first tag)",
+        "date": "2026-10-31"
       }
     ],
     "todo_next": [
+      {
+        "step": "8b",
+        "phase": "owner",
+        "item": "Gokul: keystore + 4 secrets, push tag v0.1.0, confirm signed APK on the Release",
+        "effort": "",
+        "model": ""
+      },
       {
         "step": "3b",
         "phase": "owner",
@@ -93,13 +106,6 @@
         "step": 7,
         "phase": "native",
         "item": "Bundle real GSpace/Studio builds from pinned release zips (blocked on those repos)",
-        "effort": "medium",
-        "model": "Opus 5.5"
-      },
-      {
-        "step": 8,
-        "phase": "native",
-        "item": "Release signing + PUBLIC_SITE_ORIGIN repo variable (needs Gokul: keystore, domain)",
         "effort": "medium",
         "model": "Opus 5.5"
       }

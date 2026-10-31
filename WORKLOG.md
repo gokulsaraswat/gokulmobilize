@@ -24,8 +24,11 @@ Master status of all repos: platform/docs/WORKLOG.md. Update this file after eve
 
 - 2026-10-31: Step 6 (Android): Capacitor 8.5 (core, android, cli pinned ~8.5.3) + @capacitor/browser. App build variant (base `/`, no SW, file links), bundled-app placeholders, native back handler, CI `android` job uploading the debug APK. Local debug APK 4.2 MB with JDK 21 (Corretto); Gradle auto-installed Android Build-Tools 35 into the SDK. Tested on the emulator (medium_phone): tiles render, GSpace placeholder opens, back returns to the hub then exits, FAQ opens, remote tile opens a Chrome Custom Tab (test origin example.com) and back returns. Changed decision 9 to B (allowNavigation is not for production). See RESEARCH-OPTIONS section 6.
 
+- 2026-10-31: Release signing: Gradle reads the keystore + passwords from env vars only. CI job `android-release` runs on `v*` tags: decodes the keystore secret to the runner temp dir, `assembleRelease`, attaches the APK to the GitHub Release, deletes the keystore. versionName = tag, versionCode = run number. Verified locally: unsigned `assembleRelease` + `assembleDebug` build. Signed path NOT yet verified (local throwaway-keystore test was blocked by permission settings); first real check = Gokul's first tag.
+
 ## In progress / next
-- Next (proposals, wait for OK): set repo variable PUBLIC_SITE_ORIGIN once the domain exists; real GSpace/Studio bundles (waiting on their release zips); release signing (needs Gokul's keystore); replace the placeholder Astro icon; iOS later.
+- Gokul: create the keystore + 4 repo secrets (README > Android APK), then push tag v0.1.0 to verify the signed release.
+- Next (proposals, wait for OK): repo variable PUBLIC_SITE_ORIGIN once the domain exists; real GSpace/Studio bundles (waiting on their release zips); replace the placeholder Astro icon; iOS later.
 - Open: Xcode installed?, GitHub repo description/topics/branch protection (owner, web UI).
 
 ## Blockers / requests to other repos

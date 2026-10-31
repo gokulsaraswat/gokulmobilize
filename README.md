@@ -35,7 +35,11 @@ See [.env.example](.env.example): `NODE_AUTH_TOKEN`, `PUBLIC_HUB_CONFIG_URL`, `P
 ## Android APK
 - CI job `android` builds a debug APK on every push and uploads it as the artifact `gokulmobilize-debug-apk` (14 days). Install it by sideloading.
 - App id is `com.gokulsaraswat.gokulmobilize`.
-- Release signing is not set up yet: it needs a keystore kept outside the repo.
+- **Release APK:** push a tag `vX.Y.Z` and the CI job `android-release` builds a signed APK and attaches it to that GitHub Release.
+  - versionName = the tag; versionCode = the workflow run number, which always increases, so sideloaded updates install over older ones.
+  - Requires 4 repo secrets: `ANDROID_KEYSTORE_BASE64`, `ANDROID_KEYSTORE_PASSWORD`, `ANDROID_KEY_ALIAS`, `ANDROID_KEY_PASSWORD`.
+  - Locally, the same values come from env vars (`ANDROID_KEYSTORE_PATH` instead of base64). Without them, `assembleRelease` gives an unsigned APK.
+- The keystore never enters the repo. Losing it means installed apps can't be updated (Android requires the same signature).
 
 ## Deploy (Vercel)
 - Framework: Astro. Install: `npm ci`. Build: `npm run build`. Output: `dist`. Node: 24.x.
