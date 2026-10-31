@@ -15,15 +15,15 @@
       "@gokulsaraswat/config",
       "Vercel"
     ],
-    "architectural_pattern": "static hub shell + framework-agnostic plain-TS data/cache layer (proposed)"
+    "architectural_pattern": "static Astro hub shell + framework-agnostic plain-TS data/cache layer; Capacitor wrapper with app build variant"
   },
   "ui_state": {
-    "design_tokens": "@gokulsaraswat/ui tokens.css (planned)",
-    "motion_library": "none (View Transitions API, planned)",
+    "design_tokens": "@gokulsaraswat/ui tokens.css + styles.css",
+    "motion_library": "none (CSS + cross-document @view-transition)",
     "active_component": ""
   },
   "sprint": {
-    "goal": "Bundle real apps; set the domain",
+    "goal": "Deploy to Vercel + real config, then bundle real GSpace/Studio",
     "bugs": [],
     "done": [
       {
@@ -47,7 +47,7 @@
       {
         "step": 2,
         "phase": "decide",
-        "item": "All section-5 picks accepted (Astro 7, bundled gspace+studio, release-zip delivery, card tiles, config v1 + local map, @capacitor/browser, allowNavigation, admin tile visible)",
+        "item": "All section-5 picks accepted (Astro 7, bundled gspace+studio, release-zip delivery, card tiles, config v1 + local map, @capacitor/browser, allowNavigation, admin tile visible) | later change: remote apps open in @capacitor/browser, not allowNavigation (step 6)",
         "date": "2026-10-31"
       },
       {
@@ -85,31 +85,72 @@
         "phase": "native",
         "item": "Release signing via env/secrets + tag-triggered signed APK on GitHub Releases (verified: v0.1.0 signed APK on GitHub Releases)",
         "date": "2026-10-31"
+      },
+      {
+        "step": 9,
+        "phase": "docs",
+        "item": "All docs refreshed for hand-off: WORKLOG resume guide, README, ARCHITECTURE, CONTRACTS, AGENTS",
+        "date": "2026-10-31"
       }
     ],
     "todo_next": [
       {
+        "step": 10,
+        "phase": "deploy",
+        "item": "Vercel project + deploy; set repo variable PUBLIC_SITE_ORIGIN; verify vercel.json redirect/cleanUrls/sw.js on host (needs Gokul: Vercel account, domain)",
+        "effort": "medium",
+        "model": "Opus 5.5"
+      },
+      {
+        "step": 11,
+        "phase": "config",
+        "item": "Point PUBLIC_HUB_CONFIG_URL at admin's published config.json; check CORS from https://localhost (blocked on admin)",
+        "effort": "low",
+        "model": "Sonnet 5.5"
+      },
+      {
+        "step": 12,
+        "phase": "native",
+        "item": "Bundle real GSpace/Studio from pinned release zips in CI (blocked on Progress, Markdown-studio)",
+        "effort": "medium",
+        "model": "Opus 5.5"
+      },
+      {
+        "step": 13,
+        "phase": "design",
+        "item": "Own app icon (favicon.svg -> generate-pwa-assets + Android launcher icons)",
+        "effort": "low",
+        "model": "Sonnet 5.5"
+      },
+      {
+        "step": 14,
+        "phase": "perf",
+        "item": "Optional: drop unused React client from precache; lighter config validator (platform request)",
+        "effort": "low",
+        "model": "Sonnet 5.5"
+      },
+      {
         "step": "3b",
         "phase": "owner",
-        "item": "Gokul: GitHub description/topics/branch protection; NODE_AUTH_TOKEN in shell + repo secret (or package Actions access)",
+        "item": "Gokul: GitHub description/topics/branch protection; keystore backup",
         "effort": "",
         "model": ""
       },
       {
-        "step": 7,
-        "phase": "native",
-        "item": "Bundle real GSpace/Studio builds from pinned release zips (blocked on those repos)",
-        "effort": "medium",
+        "step": 15,
+        "phase": "later",
+        "item": "iOS (Capacitor iOS + Xcode sideload), OTA live update, TWA lite APK, splash/themed icon",
+        "effort": "high",
         "model": "Opus 5.5"
       }
     ]
   },
   "context_window": {
     "files_loaded": [
-      "docs/KICKOFF-PROMPT.md",
-      "docs/RESEARCH-OPTIONS.md",
-      "platform/docs/CONTRACTS.md",
-      "platform/packages/config/src/hub.ts"
+      "WORKLOG.md",
+      "docs/CONTRACTS.md",
+      "docs/ARCHITECTURE.md",
+      "docs/RESEARCH-OPTIONS.md"
     ],
     "pending_lld_updates": []
   }

@@ -2,16 +2,21 @@
 
 Hub for all of Gokul's apps: one PWA page of app tiles at `/apps`, plus a Capacitor Android app that bundles the static apps for offline use. iOS users install the PWA (Add to Home Screen).
 
-**Status:** web hub works offline as an installable PWA, with a "Saved for later" list. Android debug APK builds locally and in CI (tested on an emulator). GSpace/Studio are placeholders until their builds are bundled. See [WORKLOG.md](WORKLOG.md).
+**Status (2026-10-31):**
+- The web hub works offline as an installable PWA, with a "Saved for later" list. It is not deployed yet.
+- The signed Android APK **v0.1.0** is on [Releases](https://github.com/gokulsaraswat/gokulmobilize/releases).
+- GSpace/Studio are placeholders until their builds are bundled.
+
+What's next and how to resume: [WORKLOG.md](WORKLOG.md).
 
 ## Decided stack (2026-10-31)
 - Hub: Astro 7 static output, a small vanilla-TS tile script, and `@gokulsaraswat/ui` components rendered at build time.
-- Offline (web): `@vite-pwa/astro` service worker, plus an `idb-keyval` stale-while-revalidate store for `config.json`.
-- Native: Capacitor 8 (pinned major). Android APK via GitHub Actions. iOS via PWA only; a free Xcode sideload is possible for the owner.
+- Offline (web): Workbox service worker generated after the build (`scripts/build-sw.mjs`), plus an `idb-keyval` stale-while-revalidate store for `config.json`.
+- Native: Capacitor 8.5 (pinned) + `@capacitor/browser` for remote apps. Android APK via GitHub Actions. iOS via PWA only; a free Xcode sideload is possible for the owner.
 - Details and sources: [docs/RESEARCH-OPTIONS.md](docs/RESEARCH-OPTIONS.md).
 
 ## Path layout (one domain)
-`/` portfolio · `/apps` hub · `/admin` admin · `/gym` gym · `/gspace` GSpace (bundled in the app) · `/studio` Markdown Studio (bundled). The portfolio owns `/` and holds the rewrites.
+`/` portfolio · `/apps/` hub · `/admin` admin · `/gym` gym · `/gspace` GSpace (bundled in the app) · `/studio` Markdown Studio (bundled). The portfolio owns `/` and holds the rewrites.
 
 ## Run / build
 Requirements: Node 24 (`.nvmrc`), plus `NODE_AUTH_TOKEN` (a GitHub token with `read:packages`) to install `@gokulsaraswat/*`. With the gh CLI: `gh auth refresh -h github.com -s read:packages`, then prefix installs with `NODE_AUTH_TOKEN=$(gh auth token)`.
@@ -25,7 +30,7 @@ Requirements: Node 24 (`.nvmrc`), plus `NODE_AUTH_TOKEN` (a GitHub token with `r
 | `npm run preview` | serve `dist/` at http://localhost:4321/apps/ (the service worker covers `/apps/`) |
 | `npm run build:native` | app build to `dist-native/` (base `/`, no service worker, file links), then `scripts/bundle-apps.mjs` copies `bundled/gspace`, `bundled/studio` or writes placeholders |
 | `npm run android:sync` | `build:native` + `cap sync android` |
-| `cd android && ./gradlew assembleDebug` | debug APK at `android/app/build/outputs/apk/debug/app-debug.apk` (needs JDK 21 and `ANDROID_HOME`) |
+| `cd android && ./gradlew assembleDebug` | debug APK at `android/app/build/outputs/apk/debug/app-debug.apk` (needs JDK 21 as `JAVA_HOME` and `ANDROID_HOME=~/Library/Android/sdk`) |
 | `npm run lint` | `astro check` (types + Astro diagnostics) |
 | `npm test` | unit tests (Node test runner) |
 
@@ -50,7 +55,7 @@ See [.env.example](.env.example): `NODE_AUTH_TOKEN`, `PUBLIC_HUB_CONFIG_URL`, `P
 ## Docs
 - This repo:
   - [AGENTS.md](AGENTS.md), [CLAUDE.md](CLAUDE.md), [WORKLOG.md](WORKLOG.md)
-  - [docs/CONTRACTS.md](docs/CONTRACTS.md), [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md), [docs/KICKOFF-PROMPT.md](docs/KICKOFF-PROMPT.md)
+  - [docs/CONTRACTS.md](docs/CONTRACTS.md), [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md), [docs/RESEARCH-OPTIONS.md](docs/RESEARCH-OPTIONS.md) (decisions), [docs/KICKOFF-PROMPT.md](docs/KICKOFF-PROMPT.md)
 - Master docs (all repos): [platform/docs](https://github.com/gokulsaraswat/platform/tree/main/docs): WORKLOG, CONTRACTS, REPO-KIT, PROMPTS.
 
 ## License

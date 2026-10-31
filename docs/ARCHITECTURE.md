@@ -19,7 +19,7 @@ config URL = `PUBLIC_HUB_CONFIG_URL`, or `/apps/config.mock.json` when unset.
 | File | Responsibility |
 |---|---|
 | `src/lib/hub-config.ts` | `createConfigStore(url, storage?, fetcher?)` -> `{ subscribe, load, refresh }`. Storage (`KeyValueStorage`, default idb-keyval) and fetch are injected for tests. Invalid or unreachable config never replaces a valid cached copy. |
-| `src/lib/render-tiles.ts` | `renderTiles(grid, template, config)`: enabled tiles only; textContent only; external links open in a new tab. |
+| `src/lib/render-tiles.ts` | `renderTiles(grid, template, config, target?)`: enabled, reachable tiles only (via `resolveTileLink`); textContent only; browser-bound links get `data-open-in-browser` + new tab. |
 | `src/lib/saved-items.ts` | `listSaved()` / `removeSaved(url)` over IndexedDB `gk-saved`/`items`, written by the portfolio. `toSavedList` validates (same-origin paths only) and sorts. |
 | `src/components/SavedList.astro` | "Saved for later" section, hidden when empty; re-reads on visibilitychange. |
 | `src/lib/tile-meta.ts` | Hub-only description and accent token per `AppId`. |
@@ -49,4 +49,7 @@ MainActivity: back = WebView history back on every page, else exit
 | `capacitor.config.json` | appId, appName, `webDir: dist-native`. No `server.allowNavigation` (the docs mark it not for production). |
 | `android/.../MainActivity.java` | Back-button handling through WebView history. |
 
-Not built yet: iOS project, release signing, real GSpace/Studio bundles; the portfolio side of save for later (button + offline copies).
+## Release pipeline
+`git tag vX.Y.Z && git push origin vX.Y.Z` -> CI `android-release`: decode `ANDROID_KEYSTORE_BASE64` to the runner temp dir -> `assembleRelease` (signing from env in `android/app/build.gradle`; versionName = tag, versionCode = run number) -> APK attached to the GitHub Release -> keystore deleted.
+
+Not built yet: iOS project, real GSpace/Studio bundles, Vercel deploy, the portfolio side of save for later (button + offline copies).

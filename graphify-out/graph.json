@@ -233,6 +233,30 @@
       "source_location": "L8"
     },
     {
+      "id": "src_components_savedlist_render",
+      "label": "render()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 4,
+      "community_name": "hub-config.test.ts",
+      "file_type": "code",
+      "norm_label": "render()",
+      "source_file": "src/components/SavedList.astro",
+      "source_location": "L38"
+    },
+    {
+      "id": "src_components_savedlist_torow",
+      "label": "toRow()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 4,
+      "community_name": "hub-config.test.ts",
+      "file_type": "code",
+      "norm_label": "torow()",
+      "source_file": "src/components/SavedList.astro",
+      "source_location": "L22"
+    },
+    {
       "id": "src_lib_hub_config_configstore_load",
       "label": ".load()",
       "_callable": true,
@@ -329,36 +353,12 @@
       "source_location": "L19"
     },
     {
-      "id": "src_components_savedlist_render",
-      "label": "render()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "saved-items.ts",
-      "file_type": "code",
-      "norm_label": "render()",
-      "source_file": "src/components/SavedList.astro",
-      "source_location": "L38"
-    },
-    {
-      "id": "src_components_savedlist_torow",
-      "label": "toRow()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "saved-items.ts",
-      "file_type": "code",
-      "norm_label": "torow()",
-      "source_file": "src/components/SavedList.astro",
-      "source_location": "L22"
-    },
-    {
       "id": "src_lib_saved_items_issaveditem",
       "label": "isSavedItem()",
       "_callable": true,
       "_origin": "ast",
-      "community": 7,
-      "community_name": "saved-items.ts",
+      "community": 4,
+      "community_name": "hub-config.test.ts",
       "file_type": "code",
       "norm_label": "issaveditem()",
       "source_file": "src/lib/saved-items.ts",
@@ -369,8 +369,8 @@
       "label": "listSaved()",
       "_callable": true,
       "_origin": "ast",
-      "community": 7,
-      "community_name": "saved-items.ts",
+      "community": 4,
+      "community_name": "hub-config.test.ts",
       "file_type": "code",
       "norm_label": "listsaved()",
       "source_file": "src/lib/saved-items.ts",
@@ -381,8 +381,8 @@
       "label": "removeSaved()",
       "_callable": true,
       "_origin": "ast",
-      "community": 7,
-      "community_name": "saved-items.ts",
+      "community": 4,
+      "community_name": "hub-config.test.ts",
       "file_type": "code",
       "norm_label": "removesaved()",
       "source_file": "src/lib/saved-items.ts",
@@ -393,8 +393,8 @@
       "label": "toSavedList()",
       "_callable": true,
       "_origin": "ast",
-      "community": 7,
-      "community_name": "saved-items.ts",
+      "community": 4,
+      "community_name": "hub-config.test.ts",
       "file_type": "code",
       "norm_label": "tosavedlist()",
       "source_file": "src/lib/saved-items.ts",
@@ -445,17 +445,6 @@
       "file_type": "code",
       "norm_label": "render-tiles.ts",
       "source_file": "src/lib/render-tiles.ts",
-      "source_location": "L1"
-    },
-    {
-      "id": "src_lib_saved_items_test",
-      "label": "saved-items.test.ts",
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "render-tiles.ts",
-      "file_type": "code",
-      "norm_label": "saved-items.test.ts",
-      "source_file": "src/lib/saved-items.test.ts",
       "source_location": "L1"
     },
     {
@@ -693,76 +682,100 @@
       "source_location": "L24"
     },
     {
-      "id": "worklog",
-      "label": "WORKLOG.md",
-      "_origin": "ast",
-      "community": 10,
-      "community_name": "WORKLOG: gokulmobilize",
-      "file_type": "document",
-      "node_kind": "page",
-      "norm_label": "worklog.md",
-      "source_file": "WORKLOG.md",
-      "source_location": "L1"
-    },
-    {
-      "id": "worklog_blockers_requests_to_other_repos",
-      "label": "Blockers / requests to other repos",
+      "id": "worklog_blockers_requests_to_other_repos_planning_chat_syncs_these_into_platform_docs_worklog_md_this_repo_never_edits_others",
+      "label": "Blockers / requests to other repos (planning chat syncs these into platform/docs/WORKLOG.md; this repo never edits others)",
       "_origin": "ast",
       "community": 10,
       "community_name": "WORKLOG: gokulmobilize",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "blockers / requests to other repos",
+      "norm_label": "blockers / requests to other repos (planning chat syncs these into platform/docs/worklog.md; this repo never edits others)",
       "source_file": "WORKLOG.md",
-      "source_location": "L34"
+      "source_location": "L56"
     },
     {
-      "id": "worklog_current_state_2026_10_31",
-      "label": "Current state (2026-10-31)",
+      "id": "worklog_current_state",
+      "label": "Current state",
       "_origin": "ast",
       "community": 10,
       "community_name": "WORKLOG: gokulmobilize",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "current state (2026-10-31)",
+      "norm_label": "current state",
+      "source_file": "WORKLOG.md",
+      "source_location": "L11"
+    },
+    {
+      "id": "worklog_decisions_details_sources_docs_research_options_md_section_6",
+      "label": "Decisions (details + sources: docs/RESEARCH-OPTIONS.md section 6)",
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "WORKLOG: gokulmobilize",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "decisions (details + sources: docs/research-options.md section 6)",
+      "source_file": "WORKLOG.md",
+      "source_location": "L21"
+    },
+    {
+      "id": "worklog_done_2026_10_31_newest_last_commits_on_main",
+      "label": "Done (2026-10-31, newest last; commits on main)",
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "WORKLOG: gokulmobilize",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "done (2026-10-31, newest last; commits on main)",
+      "source_file": "WORKLOG.md",
+      "source_location": "L33"
+    },
+    {
+      "id": "worklog_gotchas_learned_the_hard_way",
+      "label": "Gotchas (learned the hard way)",
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "WORKLOG: gokulmobilize",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "gotchas (learned the hard way)",
+      "source_file": "WORKLOG.md",
+      "source_location": "L72"
+    },
+    {
+      "id": "worklog_how_to_resume_new_chat_or_new_person",
+      "label": "How to resume (new chat or new person)",
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "WORKLOG: gokulmobilize",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "how to resume (new chat or new person)",
       "source_file": "WORKLOG.md",
       "source_location": "L5"
     },
     {
-      "id": "worklog_done",
-      "label": "Done",
+      "id": "worklog_next_propose_each_wait_for_ok",
+      "label": "Next (propose each, wait for OK)",
       "_origin": "ast",
       "community": 10,
       "community_name": "WORKLOG: gokulmobilize",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "done",
+      "norm_label": "next (propose each, wait for ok)",
       "source_file": "WORKLOG.md",
-      "source_location": "L9"
+      "source_location": "L42"
     },
     {
-      "id": "worklog_in_progress_next",
-      "label": "In progress / next",
+      "id": "worklog_owner_to_dos_gokul",
+      "label": "Owner to-dos (Gokul)",
       "_origin": "ast",
       "community": 10,
       "community_name": "WORKLOG: gokulmobilize",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "in progress / next",
+      "norm_label": "owner to-dos (gokul)",
       "source_file": "WORKLOG.md",
-      "source_location": "L29"
-    },
-    {
-      "id": "worklog_reminders",
-      "label": "Reminders",
-      "_origin": "ast",
-      "community": 10,
-      "community_name": "WORKLOG: gokulmobilize",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "reminders",
-      "source_file": "WORKLOG.md",
-      "source_location": "L46"
+      "source_location": "L50"
     },
     {
       "id": "worklog_worklog_gokulmobilize",
@@ -1301,6 +1314,50 @@
       "source_location": "L4"
     },
     {
+      "id": "browser",
+      "label": "@capacitor/browser",
+      "_origin": "ast",
+      "community": 19,
+      "community_name": "Base.astro",
+      "confidence": "EXTRACTED",
+      "file_type": "code",
+      "norm_label": "@capacitor/browser",
+      "source_file": "@capacitor/browser"
+    },
+    {
+      "id": "styles_css",
+      "label": "@gokulsaraswat/ui/styles.css",
+      "_origin": "ast",
+      "community": 19,
+      "community_name": "Base.astro",
+      "confidence": "EXTRACTED",
+      "file_type": "code",
+      "norm_label": "@gokulsaraswat/ui/styles.css",
+      "source_file": "@gokulsaraswat/ui/styles.css"
+    },
+    {
+      "id": "tokens_css",
+      "label": "@gokulsaraswat/ui/tokens.css",
+      "_origin": "ast",
+      "community": 19,
+      "community_name": "Base.astro",
+      "confidence": "EXTRACTED",
+      "file_type": "code",
+      "norm_label": "@gokulsaraswat/ui/tokens.css",
+      "source_file": "@gokulsaraswat/ui/tokens.css"
+    },
+    {
+      "id": "ui",
+      "label": "@gokulsaraswat/ui",
+      "_origin": "ast",
+      "community": 19,
+      "community_name": "Base.astro",
+      "confidence": "EXTRACTED",
+      "file_type": "code",
+      "norm_label": "@gokulsaraswat/ui",
+      "source_file": "@gokulsaraswat/ui"
+    },
+    {
       "id": "src_components_filelink",
       "label": "FileLink.tsx",
       "_origin": "ast",
@@ -1661,7 +1718,7 @@
       "node_kind": "heading",
       "norm_label": "android apk",
       "source_file": "README.md",
-      "source_location": "L35"
+      "source_location": "L40"
     },
     {
       "id": "readme_decided_stack_2026_10_31",
@@ -1673,7 +1730,7 @@
       "node_kind": "heading",
       "norm_label": "decided stack (2026-10-31)",
       "source_file": "README.md",
-      "source_location": "L7"
+      "source_location": "L12"
     },
     {
       "id": "readme_deploy_vercel",
@@ -1685,7 +1742,7 @@
       "node_kind": "heading",
       "norm_label": "deploy (vercel)",
       "source_file": "README.md",
-      "source_location": "L44"
+      "source_location": "L49"
     },
     {
       "id": "readme_docs",
@@ -1697,7 +1754,7 @@
       "node_kind": "heading",
       "norm_label": "docs",
       "source_file": "README.md",
-      "source_location": "L50"
+      "source_location": "L55"
     },
     {
       "id": "readme_environment_variables",
@@ -1709,7 +1766,7 @@
       "node_kind": "heading",
       "norm_label": "environment variables",
       "source_file": "README.md",
-      "source_location": "L32"
+      "source_location": "L37"
     },
     {
       "id": "readme_gokulmobilize",
@@ -1733,7 +1790,7 @@
       "node_kind": "heading",
       "norm_label": "license",
       "source_file": "README.md",
-      "source_location": "L56"
+      "source_location": "L61"
     },
     {
       "id": "readme_path_layout_one_domain",
@@ -1745,7 +1802,7 @@
       "node_kind": "heading",
       "norm_label": "path layout (one domain)",
       "source_file": "README.md",
-      "source_location": "L13"
+      "source_location": "L18"
     },
     {
       "id": "readme_run_build",
@@ -1757,7 +1814,7 @@
       "node_kind": "heading",
       "norm_label": "run / build",
       "source_file": "README.md",
-      "source_location": "L16"
+      "source_location": "L21"
     },
     {
       "id": "sync_architecture",
@@ -1835,6 +1892,17 @@
       "source_location": "L1"
     },
     {
+      "id": "src_components_savedlist",
+      "label": "SavedList.astro",
+      "_origin": "ast",
+      "community": 4,
+      "community_name": "hub-config.test.ts",
+      "file_type": "code",
+      "norm_label": "savedlist.astro",
+      "source_file": "src/components/SavedList.astro",
+      "source_location": "L1"
+    },
+    {
       "id": "src_lib_hub_config",
       "label": "hub-config.ts",
       "_origin": "ast",
@@ -1890,6 +1958,39 @@
       "source_location": "L6"
     },
     {
+      "id": "src_lib_saved_items",
+      "label": "saved-items.ts",
+      "_origin": "ast",
+      "community": 4,
+      "community_name": "hub-config.test.ts",
+      "file_type": "code",
+      "norm_label": "saved-items.ts",
+      "source_file": "src/lib/saved-items.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_lib_saved_items_savedstore",
+      "label": "savedStore",
+      "_origin": "ast",
+      "community": 4,
+      "community_name": "hub-config.test.ts",
+      "file_type": "code",
+      "norm_label": "savedstore",
+      "source_file": "src/lib/saved-items.ts",
+      "source_location": "L11"
+    },
+    {
+      "id": "src_lib_saved_items_test",
+      "label": "saved-items.test.ts",
+      "_origin": "ast",
+      "community": 4,
+      "community_name": "hub-config.test.ts",
+      "file_type": "code",
+      "norm_label": "saved-items.test.ts",
+      "source_file": "src/lib/saved-items.test.ts",
+      "source_location": "L1"
+    },
+    {
       "id": "ref_idb_keyval",
       "label": "idb-keyval",
       "_origin": "ast",
@@ -1899,6 +2000,18 @@
       "norm_label": "idb-keyval",
       "source_file": "package.json",
       "source_location": "L28"
+    },
+    {
+      "id": "docs_architecture_lld",
+      "label": "LLD",
+      "_origin": "ast",
+      "community": 4,
+      "community_name": "hub-config.test.ts",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "lld",
+      "source_file": "docs/ARCHITECTURE.md",
+      "source_location": "L18"
     },
     {
       "id": "docs_research_options",
@@ -2297,6 +2410,18 @@
       "source_location": "L37"
     },
     {
+      "id": "docs_architecture_release_pipeline",
+      "label": "Release pipeline",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "\ud83e\udd16 System Architecture & Co-Worker Protocol",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "release pipeline",
+      "source_file": "docs/ARCHITECTURE.md",
+      "source_location": "L52"
+    },
+    {
       "id": "docs_architecture_size_production_build_gzip",
       "label": "Size (production build, gzip)",
       "_origin": "ast",
@@ -2393,49 +2518,16 @@
       "source_location": "L1"
     },
     {
-      "id": "src_components_savedlist",
-      "label": "SavedList.astro",
+      "id": "worklog",
+      "label": "WORKLOG.md",
       "_origin": "ast",
-      "community": 7,
-      "community_name": "saved-items.ts",
-      "file_type": "code",
-      "norm_label": "savedlist.astro",
-      "source_file": "src/components/SavedList.astro",
-      "source_location": "L1"
-    },
-    {
-      "id": "src_lib_saved_items",
-      "label": "saved-items.ts",
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "saved-items.ts",
-      "file_type": "code",
-      "norm_label": "saved-items.ts",
-      "source_file": "src/lib/saved-items.ts",
-      "source_location": "L1"
-    },
-    {
-      "id": "src_lib_saved_items_savedstore",
-      "label": "savedStore",
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "saved-items.ts",
-      "file_type": "code",
-      "norm_label": "savedstore",
-      "source_file": "src/lib/saved-items.ts",
-      "source_location": "L11"
-    },
-    {
-      "id": "docs_architecture_lld",
-      "label": "LLD",
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "saved-items.ts",
+      "community": 6,
+      "community_name": "\ud83e\udd16 System Architecture & Co-Worker Protocol",
       "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "lld",
-      "source_file": "docs/ARCHITECTURE.md",
-      "source_location": "L18"
+      "node_kind": "page",
+      "norm_label": "worklog.md",
+      "source_file": "WORKLOG.md",
+      "source_location": "L1"
     },
     {
       "id": "astro_config",
@@ -2829,30 +2921,6 @@
       "source_location": "L222"
     },
     {
-      "id": "ref_node_assert",
-      "label": "ref_node_assert",
-      "_origin": "semantic",
-      "community": 0,
-      "community_name": "render-tiles.ts",
-      "external": true,
-      "file_type": "concept",
-      "norm_label": "ref_node_assert",
-      "source_file": "",
-      "type": "external"
-    },
-    {
-      "id": "ref_node_test",
-      "label": "ref_node_test",
-      "_origin": "semantic",
-      "community": 0,
-      "community_name": "render-tiles.ts",
-      "external": true,
-      "file_type": "concept",
-      "norm_label": "ref_node_test",
-      "source_file": "",
-      "type": "external"
-    },
-    {
       "id": "assert",
       "label": "assert",
       "_origin": "semantic",
@@ -2897,6 +2965,30 @@
       "external": true,
       "file_type": "concept",
       "norm_label": "ref_node_fs",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "ref_node_assert",
+      "label": "ref_node_assert",
+      "_origin": "semantic",
+      "community": 4,
+      "community_name": "hub-config.test.ts",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "ref_node_assert",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "ref_node_test",
+      "label": "ref_node_test",
+      "_origin": "semantic",
+      "community": 4,
+      "community_name": "hub-config.test.ts",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "ref_node_test",
       "source_file": "",
       "type": "external"
     },
@@ -4208,6 +4300,17 @@
       "weight": 1.0
     },
     {
+      "source": "docs_architecture_architecture_gokulmobilize",
+      "target": "docs_architecture_release_pipeline",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/ARCHITECTURE.md",
+      "source_location": "L52",
+      "weight": 1.0
+    },
+    {
       "source": "docs_contracts",
       "target": "docs_contracts_contracts_gokulmobilize_hub",
       "relation": "contains",
@@ -5122,13 +5225,24 @@
     },
     {
       "source": "readme_gokulmobilize",
+      "target": "readme_decided_stack_2026_10_31",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_gokulmobilize",
       "target": "readme_path_layout_one_domain",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "README.md",
-      "source_location": "L13",
+      "source_location": "L18",
       "weight": 1.0
     },
     {
@@ -5139,7 +5253,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "README.md",
-      "source_location": "L16",
+      "source_location": "L21",
       "weight": 1.0
     },
     {
@@ -5150,7 +5264,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "README.md",
-      "source_location": "L32",
+      "source_location": "L37",
       "weight": 1.0
     },
     {
@@ -5161,7 +5275,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "README.md",
-      "source_location": "L35",
+      "source_location": "L40",
       "weight": 1.0
     },
     {
@@ -5172,7 +5286,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "README.md",
-      "source_location": "L44",
+      "source_location": "L49",
       "weight": 1.0
     },
     {
@@ -5183,7 +5297,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "README.md",
-      "source_location": "L50",
+      "source_location": "L55",
       "weight": 1.0
     },
     {
@@ -5194,18 +5308,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "README.md",
-      "source_location": "L56",
-      "weight": 1.0
-    },
-    {
-      "source": "readme_gokulmobilize",
-      "target": "readme_decided_stack_2026_10_31",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "README.md",
-      "source_location": "L7",
+      "source_location": "L61",
       "weight": 1.0
     },
     {
@@ -5628,40 +5731,51 @@
     },
     {
       "source": "worklog_worklog_gokulmobilize",
-      "target": "worklog_in_progress_next",
+      "target": "worklog_current_state",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "WORKLOG.md",
-      "source_location": "L29",
+      "source_location": "L11",
       "weight": 1.0
     },
     {
       "source": "worklog_worklog_gokulmobilize",
-      "target": "worklog_blockers_requests_to_other_repos",
+      "target": "worklog_decisions_details_sources_docs_research_options_md_section_6",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "WORKLOG.md",
-      "source_location": "L34",
+      "source_location": "L21",
       "weight": 1.0
     },
     {
       "source": "worklog_worklog_gokulmobilize",
-      "target": "worklog_reminders",
+      "target": "worklog_done_2026_10_31_newest_last_commits_on_main",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "WORKLOG.md",
-      "source_location": "L46",
+      "source_location": "L33",
       "weight": 1.0
     },
     {
       "source": "worklog_worklog_gokulmobilize",
-      "target": "worklog_current_state_2026_10_31",
+      "target": "worklog_next_propose_each_wait_for_ok",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "WORKLOG.md",
+      "source_location": "L42",
+      "weight": 1.0
+    },
+    {
+      "source": "worklog_worklog_gokulmobilize",
+      "target": "worklog_how_to_resume_new_chat_or_new_person",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -5672,13 +5786,35 @@
     },
     {
       "source": "worklog_worklog_gokulmobilize",
-      "target": "worklog_done",
+      "target": "worklog_owner_to_dos_gokul",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "WORKLOG.md",
-      "source_location": "L9",
+      "source_location": "L50",
+      "weight": 1.0
+    },
+    {
+      "source": "worklog_worklog_gokulmobilize",
+      "target": "worklog_blockers_requests_to_other_repos_planning_chat_syncs_these_into_platform_docs_worklog_md_this_repo_never_edits_others",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "WORKLOG.md",
+      "source_location": "L56",
+      "weight": 1.0
+    },
+    {
+      "source": "worklog_worklog_gokulmobilize",
+      "target": "worklog_gotchas_learned_the_hard_way",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "WORKLOG.md",
+      "source_location": "L72",
       "weight": 1.0
     },
     {
@@ -5737,6 +5873,15 @@
       "weight": 1.0
     },
     {
+      "source": "src_components_tilegrid",
+      "target": "browser",
+      "relation": "dynamic_import",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/TileGrid.astro"
+    },
+    {
       "source": "src_components_savedlist",
       "target": "src_lib_saved_items",
       "relation": "imports_from",
@@ -5764,6 +5909,33 @@
       "source_file": "src/components/TileGrid.astro"
     },
     {
+      "source": "src_layouts_base",
+      "target": "styles_css",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/layouts/Base.astro"
+    },
+    {
+      "source": "src_layouts_base",
+      "target": "tokens_css",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/layouts/Base.astro"
+    },
+    {
+      "source": "src_layouts_base",
+      "target": "ui",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/layouts/Base.astro"
+    },
+    {
       "source": "src_pages_index",
       "target": "src_layouts_base",
       "relation": "imports_from",
@@ -5771,6 +5943,15 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/pages/index.astro"
+    },
+    {
+      "source": "src_pages_slug",
+      "target": "ui",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/pages/[slug].astro"
     },
     {
       "source": "android_app_src_main_java_com_gokulsaraswat_gokulmobilize_mainactivity_mainactivity",
@@ -5873,24 +6054,24 @@
     },
     {
       "source": "readme",
-      "target": "docs_research_options",
-      "relation": "references",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "README.md",
-      "source_location": "L11",
-      "weight": 1.0
-    },
-    {
-      "source": "readme",
       "target": "worklog",
       "relation": "references",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "README.md",
-      "source_location": "L5",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "readme",
+      "target": "docs_research_options",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "L16",
       "weight": 1.0
     },
     {
@@ -5901,7 +6082,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "README.md",
-      "source_location": "L52",
+      "source_location": "L57",
       "weight": 1.0
     },
     {
@@ -5912,7 +6093,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "README.md",
-      "source_location": "L52",
+      "source_location": "L57",
       "weight": 1.0
     },
     {
@@ -5923,7 +6104,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "README.md",
-      "source_location": "L53",
+      "source_location": "L58",
       "weight": 1.0
     },
     {
@@ -5934,7 +6115,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "README.md",
-      "source_location": "L53",
+      "source_location": "L58",
       "weight": 1.0
     },
     {
@@ -5945,7 +6126,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "README.md",
-      "source_location": "L53",
+      "source_location": "L58",
       "weight": 1.0
     },
     {
@@ -6021,7 +6202,7 @@
       "weight": 1.0
     },
     {
-      "source": "worklog_blockers_requests_to_other_repos",
+      "source": "worklog_blockers_requests_to_other_repos_planning_chat_syncs_these_into_platform_docs_worklog_md_this_repo_never_edits_others",
       "target": "src_lib_saved_items_saveditem",
       "relation": "references",
       "_origin": "ast",
@@ -6029,7 +6210,7 @@
       "confidence_score": 0.95,
       "context": "SavedItem",
       "source_file": "WORKLOG.md",
-      "source_location": "L43",
+      "source_location": "L61",
       "weight": 1.0
     },
     {
@@ -6046,6 +6227,18 @@
     },
     {
       "source": "docs_architecture_lld",
+      "target": "src_lib_tile_target_resolvetilelink",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "context": "resolveTileLink",
+      "source_file": "docs/ARCHITECTURE.md",
+      "source_location": "L22",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_architecture_lld",
       "target": "src_lib_saved_items_tosavedlist",
       "relation": "references",
       "_origin": "ast",
@@ -6058,5 +6251,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "9d810e9f9c19cc234044772e2b65c2fb4bbf5b51"
+  "built_at_commit": "9fa8df2731f8353ce4bb087fa6a7ed9912b2259d"
 }
