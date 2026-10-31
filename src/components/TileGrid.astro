@@ -27,12 +27,24 @@ const configUrl = import.meta.env.PUBLIC_HUB_CONFIG_URL || `${import.meta.env.BA
   const status = document.querySelector<HTMLParagraphElement>('.status')!;
   const template = document.querySelector<HTMLTemplateElement>('#tile-template')!;
   const store = createConfigStore(grid.dataset.configUrl!);
+  const native = import.meta.env.PUBLIC_HUB_NATIVE === 'true';
+  const target = { native, siteOrigin: import.meta.env.PUBLIC_SITE_ORIGIN || undefined };
+
+  if (native) {
+    grid.addEventListener('click', async (event) => {
+      const link = (event.target as Element).closest<HTMLAnchorElement>('a[data-open-in-browser]');
+      if (!link) return;
+      event.preventDefault();
+      const { Browser } = await import('@capacitor/browser');
+      await Browser.open({ url: link.href });
+    });
+  }
 
   let painted = false;
   store.subscribe((config) => {
     painted = true;
     status.hidden = true;
-    renderTiles(grid, template, config);
+    renderTiles(grid, template, config, target);
   });
   store.load().then(() => {
     if (painted) return;

@@ -8,9 +8,9 @@
       "Astro 7 (static)",
       "@astrojs/react (build-time)",
       "vanilla TS",
-      "@vite-pwa/astro",
+      "workbox-build (generateSW)",
       "idb-keyval",
-      "Capacitor 8 (pinned)",
+      "Capacitor 8.5 (pinned) + @capacitor/browser",
       "@gokulsaraswat/ui",
       "@gokulsaraswat/config",
       "Vercel"
@@ -23,7 +23,7 @@
     "active_component": ""
   },
   "sprint": {
-    "goal": "Capacitor Android APK",
+    "goal": "Bundle real apps, release-signed APK",
     "bugs": [],
     "done": [
       {
@@ -73,6 +73,12 @@
         "phase": "save-for-later",
         "item": "Hub 'Saved for later' list over shared IndexedDB gk-saved/items (contract B); portfolio button requested",
         "date": "2026-10-31"
+      },
+      {
+        "step": 6,
+        "phase": "native",
+        "item": "Capacitor 8.5 Android: app build variant, @capacitor/browser for remote tiles, native back handler, CI debug APK artifact; tested on emulator",
+        "date": "2026-10-31"
       }
     ],
     "todo_next": [
@@ -84,10 +90,17 @@
         "model": ""
       },
       {
-        "step": 6,
+        "step": 7,
         "phase": "native",
-        "item": "Capacitor 8 Android: base '/' build variant, bundled gspace/studio slots, APK in GitHub Actions",
-        "effort": "high",
+        "item": "Bundle real GSpace/Studio builds from pinned release zips (blocked on those repos)",
+        "effort": "medium",
+        "model": "Opus 5.5"
+      },
+      {
+        "step": 8,
+        "phase": "native",
+        "item": "Release signing + PUBLIC_SITE_ORIGIN repo variable (needs Gokul: keystore, domain)",
+        "effort": "medium",
         "model": "Opus 5.5"
       }
     ]

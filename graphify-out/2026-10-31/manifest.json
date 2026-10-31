@@ -12,9 +12,9 @@
     "semantic_hash": ""
   },
   ".project-architecture.md": {
-    "mtime": 1793460595.334848,
-    "seen": 1793460597.298489,
-    "ast_hash": "f4216e8c7ecf6871e4e03b9133055dbc",
+    "mtime": 1793460883.8718953,
+    "seen": 1793460885.513602,
+    "ast_hash": "51dbb089f5eb29f6c5c834460b60606c",
     "semantic_hash": ""
   },
   ".prompts.md": {
@@ -36,9 +36,9 @@
     "semantic_hash": ""
   },
   ".claude-session.json": {
-    "mtime": 1793460539.4611,
-    "seen": 1793460569.6517692,
-    "ast_hash": "3461976eae898a81172c4f1fa666ec17",
+    "mtime": 1793460875.7775538,
+    "seen": 1793460880.4731698,
+    "ast_hash": "e2e446607ab3fb969c9944ffa0b94193",
     "semantic_hash": ""
   },
   ".github/pull_request_template.md": {
@@ -72,21 +72,21 @@
     "semantic_hash": ""
   },
   "WORKLOG.md": {
-    "mtime": 1793460539.4652402,
-    "seen": 1793460569.651802,
-    "ast_hash": "5057300eea9a3f0b70554760b7928747",
+    "mtime": 1793460875.7739046,
+    "seen": 1793460880.473202,
+    "ast_hash": "7f620ce8b2ca35b4ca372a095e3bf24c",
     "semantic_hash": ""
   },
   "docs/ARCHITECTURE.md": {
-    "mtime": 1793460539.4474607,
-    "seen": 1793460569.6518028,
-    "ast_hash": "5a3dbdb298e19ee556a6ed4483ef46d5",
+    "mtime": 1793460875.772757,
+    "seen": 1793460880.473203,
+    "ast_hash": "fbcb9aedbfbc090597bfde10ac90a62b",
     "semantic_hash": ""
   },
   "docs/CONTRACTS.md": {
-    "mtime": 1793460539.4431372,
-    "seen": 1793460569.6518028,
-    "ast_hash": "fb4286d02486f5d02ac4717344fb2713",
+    "mtime": 1793460875.772302,
+    "seen": 1793460880.473204,
+    "ast_hash": "2705b78daa72c1b719e7c307cb8baec2",
     "semantic_hash": ""
   },
   "docs/KICKOFF-PROMPT.md": {
@@ -96,9 +96,9 @@
     "semantic_hash": ""
   },
   "docs/RESEARCH-OPTIONS.md": {
-    "mtime": 1793460539.4519026,
-    "seen": 1793460569.651805,
-    "ast_hash": "2729d6108dd778cc0739524c3b45911e",
+    "mtime": 1793460875.773157,
+    "seen": 1793460880.473205,
+    "ast_hash": "f493adbaa64e938cfd309051d6ecdc23",
     "semantic_hash": ""
   },
   ".claude/launch.json": {
@@ -168,9 +168,9 @@
     "semantic_hash": ""
   },
   "src/pages/index.astro": {
-    "mtime": 1793459775.8312914,
-    "seen": 1793460059.806955,
-    "ast_hash": "ae633935d6b0eb43df7770ead1f70ddb",
+    "mtime": 1793460812.0126474,
+    "seen": 1793460880.473191,
+    "ast_hash": "402db959a11c61e01d589e3c09cf9fe4",
     "semantic_hash": ""
   },
   "tsconfig.json": {
@@ -231,6 +231,24 @@
     "mtime": 1793460327.0111685,
     "seen": 1793460569.6518111,
     "ast_hash": "c4de07957c82662685ea5f82370f9b3e",
+    "semantic_hash": ""
+  },
+  "src/components/SavedList.astro": {
+    "mtime": 1793460811.9647512,
+    "seen": 1793460880.473183,
+    "ast_hash": "fe60d2d3a0fe8d93b49a3d9848bfa97f",
+    "semantic_hash": ""
+  },
+  "src/lib/saved-items.test.ts": {
+    "mtime": 1793460811.9545872,
+    "seen": 1793460880.4731882,
+    "ast_hash": "df16b1366b4493bb27d2f3f3b9d3542e",
+    "semantic_hash": ""
+  },
+  "src/lib/saved-items.ts": {
+    "mtime": 1793460811.9456842,
+    "seen": 1793460880.473189,
+    "ast_hash": "a4d2de266d8c6b81f7bdeccc53a9e93d",
     "semantic_hash": ""
   }
 }

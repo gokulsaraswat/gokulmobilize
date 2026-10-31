@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Gokul’s apps</string>
+    <string name="title_activity_main">Gokul’s apps</string>
+    <string name="package_name">com.gokulsaraswat.gokulmobilize</string>
+    <string name="custom_url_scheme">com.gokulsaraswat.gokulmobilize</string>
+</resources>

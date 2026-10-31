@@ -34,4 +34,19 @@ config URL = `PUBLIC_HUB_CONFIG_URL`, or `/apps/config.mock.json` when unset.
 
 Astro `build.format: 'file'` (page.html) so the SW and Vercel `cleanUrls` serve `/apps/page`.
 
-Not built yet: Capacitor `android/`/`ios/`; the portfolio side of save for later (button + offline copies).
+## Native app (Android, Capacitor 8.5)
+```text
+npm run build:native (PUBLIC_HUB_NATIVE=true): base '/', outDir dist-native, no SW, footer links via FileLink (/faq.html)
+  + scripts/bundle-apps.mjs: dist-native/gspace|studio <- bundled/<id>/ or a placeholder page
+cap sync android -> android/app/src/main/assets/public (gitignored) -> gradlew assembleDebug
+WebView https://localhost/ : hub; bundled tiles -> /<id>/index.html; remote/external tiles -> Browser.open (Custom Tabs)
+MainActivity: back = WebView history back on every page, else exit
+```
+| File | Responsibility |
+|---|---|
+| `src/lib/tile-target.ts` | `resolveTileLink(tile, { native, siteOrigin })`: link + whether to open in the browser; null hides the tile. |
+| `src/components/FileLink.tsx` | Footer `linkComponent` for the app build: appends `.html`. |
+| `capacitor.config.json` | appId, appName, `webDir: dist-native`. No `server.allowNavigation` (the docs mark it not for production). |
+| `android/.../MainActivity.java` | Back-button handling through WebView history. |
+
+Not built yet: iOS project, release signing, real GSpace/Studio bundles; the portfolio side of save for later (button + offline copies).

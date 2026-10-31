@@ -9,8 +9,8 @@ Status (2026-10-31): web hub implemented against the mock config. Native app and
 | platform | `@gokulsaraswat/config`: `parseHubConfig`, `HubConfig`, `HubTile`, `appIds` | 0.1.0 | config.json v1 = `{ version: 1, apps: [{ id, name, href, mode: bundled \| remote \| external, enabled }] }`. Invalid input throws `ZodError`; the hub then keeps its last valid cached copy. |
 | platform | `@gokulsaraswat/ui`: `tokens.css`, `styles.css`, `Footer`, `LegalPage`, `footerPages` | 0.1.0 | Rendered at build time (no client React). Registry: GitHub Packages, needs `NODE_AUTH_TOKEN`. |
 | admin | Published `config.json` in a Supabase Storage public bucket | v1 | Bucket/path: TO BE UPDATED (admin). CORS must allow the web domain plus `https://localhost` and `capacitor://localhost` (APK). Until then: `public/config.mock.json`. |
-| Progress (GSpace) | `dist` zip built with base `/gspace`, attached to a GitHub Release | pinned per hub release | Bundled into the native app (requested, not yet available). |
-| Markdown-studio | `dist` zip with base `/studio`, attached to a GitHub Release | pinned | Same (requested). |
+| Progress (GSpace) | `dist` zip built with base `/gspace`, attached to a GitHub Release | pinned per hub release | Bundled into the native app (requested, not yet available). **App-build rule:** Capacitor's Android server answers any path whose last segment has no `.` with the root `index.html` (`WebViewLocalServer.java`), so every internal link must name a file, e.g. `/gspace/notes.html` or `/gspace/notes/index.html`. |
+| Markdown-studio | `dist` zip with base `/studio`, attached to a GitHub Release | pinned | Same, including the app-build link rule (requested). |
 
 ## Exposes
 | What | Value |
@@ -19,7 +19,7 @@ Status (2026-10-31): web hub implemented against the mock config. Native app and
 | PWA | `manifest.webmanifest` (start_url and scope `/apps/`); `sw.js` scope `/apps/` precaches the shell and all pages |
 | Footer routes | `/apps/<slug>` for each `footerPages` slug: privacy, terms, cookies, data-deletion, accessibility, sitemap, faq, about, contact |
 | Env | `PUBLIC_HUB_CONFIG_URL` (see .env.example) |
-| Native app | Android APK (Capacitor 8); start screen = hub served from `localhost`; `/gspace`, `/studio` bundled |
+| Native app | Android APK (Capacitor 8.5, app id `com.gokulsaraswat.gokulmobilize`). Start screen = hub at `https://localhost/`. Bundled apps are opened at `/gspace/index.html` and `/studio/index.html`. Remote and external tiles open in `@capacitor/browser` (Custom Tabs) at `PUBLIC_SITE_ORIGIN` + path; with no origin set, remote tiles are hidden |
 
 ## Saved for later (shared with the portfolio; decided 2026-10-31, option B)
 The portfolio writes, and the hub reads and deletes. This works because both are on the same origin on the web (`/` and `/apps/`).

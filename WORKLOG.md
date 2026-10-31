@@ -22,8 +22,10 @@ Master status of all repos: platform/docs/WORKLOG.md. Update this file after eve
 
 - 2026-10-31: Save for later, hub side (option B): "Saved for later" list reading IndexedDB `gk-saved`/`items` (contract in docs/CONTRACTS.md), remove button, validation (skips malformed/off-site items), 2 tests. Verified in browser by writing items as the portfolio would; the bad item was skipped and Remove worked; test data deleted.
 
+- 2026-10-31: Step 6 (Android): Capacitor 8.5 (core, android, cli pinned ~8.5.3) + @capacitor/browser. App build variant (base `/`, no SW, file links), bundled-app placeholders, native back handler, CI `android` job uploading the debug APK. Local debug APK 4.2 MB with JDK 21 (Corretto); Gradle auto-installed Android Build-Tools 35 into the SDK. Tested on the emulator (medium_phone): tiles render, GSpace placeholder opens, back returns to the hub then exits, FAQ opens, remote tile opens a Chrome Custom Tab (test origin example.com) and back returns. Changed decision 9 to B (allowNavigation is not for production). See RESEARCH-OPTIONS section 6.
+
 ## In progress / next
-- Next: step 6, Capacitor Android (propose first, wait for OK).
+- Next (proposals, wait for OK): set repo variable PUBLIC_SITE_ORIGIN once the domain exists; real GSpace/Studio bundles (waiting on their release zips); release signing (needs Gokul's keystore); replace the placeholder Astro icon; iOS later.
 - Open: Xcode installed?, GitHub repo description/topics/branch protection (owner, web UI).
 
 ## Blockers / requests to other repos
@@ -33,7 +35,7 @@ Requests for the planning chat to sync into platform/docs/WORKLOG.md (this chat 
 - REQUEST admin: config.json bucket path + CORS that allows the APK origins (`https://localhost`, `capacitor://localhost`) and the web domain.
 - REQUEST bestportofolio: stays at `/` (no basePath change). Later: add `next.config` rewrites for `/apps`, `/admin`, `/gym`, `/gspace`, `/studio` to their Vercel projects. Later: CORS on blog/course routes for APK "save for later".
 - REQUEST checkers-gym-management (its own chat, later): serve under `/gym`; CRA is deprecated, consider moving to Vite; decide the Supabase project (the same one = shared login).
-- REQUEST Progress (GSpace): build with base `/gspace` and publish the `dist` as a zip on each GitHub Release; the hub CI downloads a pinned version.
+- REQUEST Progress (GSpace): build with base `/gspace` and publish the `dist` as a zip on each GitHub Release; the hub CI downloads a pinned version. APP-BUILD RULE: every internal link must name a file (`/gspace/x.html` or `/gspace/x/index.html`), because Capacitor serves extension-less paths as the hub's index.html.
 - REQUEST Markdown-studio: same, with base `/studio` (relative or `/studio`-prefixed asset paths).
 - REQUEST bestportofolio: "Save for later" button on `/blog/[slug]` and `/courses/[slug]` writing `SavedItem` v1 to IndexedDB `gk-saved`/`items` (key = url), per gokulmobilize docs/CONTRACTS.md. For offline reading, add a portfolio service worker (scope `/`) that caches saved pages and their assets.
 - REQUEST platform (optional, later): move the `SavedItem` type and validator into `@gokulsaraswat/config`, so the hub and portfolio share one definition. config.json stays v1.

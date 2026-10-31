@@ -2,6 +2,7 @@
 import '@gokulsaraswat/ui/tokens.css';
 import '@gokulsaraswat/ui/styles.css';
 import { Footer } from '@gokulsaraswat/ui';
+import { FileLink } from '../components/FileLink';
 
 interface Props {
   title: string;
@@ -10,6 +11,7 @@ interface Props {
 
 const { title, description = 'All of Gokul Saraswat’s apps in one place.' } = Astro.props;
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const native = import.meta.env.PUBLIC_HUB_NATIVE === 'true';
 ---
 
 <html lang="en">
@@ -24,12 +26,12 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
   </head>
   <body>
     <main><slot /></main>
-    <Footer siteName="Gokul’s apps" basePath={base} />
+    <Footer siteName="Gokul’s apps" basePath={base} linkComponent={native ? FileLink : undefined} />
   </body>
 </html>
 
 <script>
-  if (import.meta.env.PROD && 'serviceWorker' in navigator) {
+  if (import.meta.env.PROD && import.meta.env.PUBLIC_HUB_NATIVE !== 'true' && 'serviceWorker' in navigator) {
     const base = import.meta.env.BASE_URL.replace(/\/$/, '');
     navigator.serviceWorker.register(`${base}/sw.js`, { scope: `${base}/` });
   }

@@ -269,3 +269,10 @@ Replacement: `workbox-build` 7.4.1 `generateSW`, run over `dist/` after `astro b
 
 ### 2026-10-31: save for later = option B (Gokul)
 A "Save for later" button on portfolio blog/course pages writes to shared IndexedDB, and the hub shows a "Saved for later" list. Contract: docs/CONTRACTS.md. Offline reading of saved pages = the portfolio's own service worker. In the APK, sharing across origins is deferred to the Android step.
+
+### 2026-10-31: native app findings (Claude, step 6)
+- **Decision 9 changed from A to B:** the Capacitor docs mark `server.allowNavigation` "not intended for use in production" ([config](https://capacitorjs.com/docs/config)). Remote apps open in `@capacitor/browser` (Chrome Custom Tabs) instead. Side benefit: Google sign-in is allowed there.
+- **Capacitor Android serves extension-less paths as the root `index.html`** when `html5mode` is on (`WebViewLocalServer.java`, `node_modules/@capacitor/android`). App-build links must name files (`/faq.html`, `/gspace/index.html`). This is a requirement for the bundled GSpace/Studio builds too.
+- **Back button:** with no handler, Android exited the app from a bundled page (seen on the emulator). Fixed natively in `MainActivity`.
+- **Not added:** `@capacitor/app` and `@capacitor/network`; the native back handler and the `online` event cover them.
+- **Debug APK:** 4.2 MB.

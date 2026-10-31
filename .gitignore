@@ -1,5 +1,7 @@
 node_modules/
 dist/
+dist-native/
+bundled/
 .astro/
 coverage/
 *.tgz

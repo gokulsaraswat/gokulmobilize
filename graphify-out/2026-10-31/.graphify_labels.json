@@ -1,14 +1,13 @@
 {
-  "0": "gokulmobilize",
+  "0": "🤖 System Architecture & Co-Worker Protocol",
   "1": "Prompt Playbook — CLAUDE.md Workflow",
   "2": "Codebase Blueprint & Structural Graph",
   "3": "sync-architecture.sh",
   "4": "hub-config.test.ts",
   "5": "RESEARCH-OPTIONS: gokulmobilize hub",
-  "6": "🤖 System Architecture & Co-Worker Protocol",
-  "7": "Kickoff prompt: gokulmobilize",
+  "6": "README.md",
+  "7": "saved-items.ts",
   "8": "package.json",
-  "9": "render-tiles.ts",
   "10": "WORKLOG: gokulmobilize",
   "11": "pull_request_template.md",
   "12": "COLLABORATORS.md",
@@ -18,6 +17,5 @@
   "16": "devDependencies",
   "17": "tsconfig.json",
   "18": "vercel.json",
-  "19": "Base.astro",
-  "20": "build-sw.mjs"
+  "19": "render-tiles.ts"
 }

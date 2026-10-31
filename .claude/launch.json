@@ -1,6 +1,29 @@
 {
   "version": "0.0.1",
   "configurations": [
-    { "name": "hub-preview", "runtimeExecutable": "npm", "runtimeArgs": ["run", "preview", "--", "--port", "4321"], "port": 4321 }
+    {
+      "name": "hub-preview",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "run",
+        "preview",
+        "--",
+        "--port",
+        "4321"
+      ],
+      "port": 4321
+    },
+    {
+      "name": "native-preview",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": [
+        "-m",
+        "http.server",
+        "4322",
+        "--directory",
+        "dist-native"
+      ],
+      "port": 4322
+    }
   ]
 }

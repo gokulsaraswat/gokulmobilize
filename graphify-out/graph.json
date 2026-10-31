@@ -4,6 +4,45 @@
   "graph": {},
   "nodes": [
     {
+      "id": "src_lib_tile_meta_tilemeta",
+      "label": "tileMeta",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "render-tiles.ts",
+      "file_type": "code",
+      "norm_label": "tilemeta",
+      "source_file": "src/lib/tile-meta.ts",
+      "source_location": "L9"
+    },
+    {
+      "id": "src_lib_tile_target_buildtarget",
+      "label": "BuildTarget",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "render-tiles.ts",
+      "file_type": "code",
+      "norm_label": "buildtarget",
+      "source_file": "src/lib/tile-target.ts",
+      "source_location": "L3"
+    },
+    {
+      "id": "src_lib_tile_target_tilelink",
+      "label": "TileLink",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "render-tiles.ts",
+      "file_type": "code",
+      "norm_label": "tilelink",
+      "source_file": "src/lib/tile-target.ts",
+      "source_location": "L8"
+    },
+    {
       "id": "src_lib_saved_items_saveditem",
       "label": "SavedItem",
       "_callable": true,
@@ -17,17 +56,30 @@
       "source_location": "L4"
     },
     {
-      "id": "src_lib_tile_meta_tilemeta",
-      "label": "tileMeta",
+      "id": "android_app_src_androidtest_java_com_getcapacitor_myapp_exampleinstrumentedtest_exampleinstrumentedtest",
+      "label": "ExampleInstrumentedTest",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
-      "community": 19,
-      "community_name": "Base.astro",
+      "community": 20,
+      "community_name": "ExampleInstrumentedTest.java",
       "file_type": "code",
-      "norm_label": "tilemeta",
-      "source_file": "src/lib/tile-meta.ts",
-      "source_location": "L9"
+      "norm_label": "exampleinstrumentedtest",
+      "source_file": "android/app/src/androidTest/java/com/getcapacitor/myapp/ExampleInstrumentedTest.java",
+      "source_location": "L16"
+    },
+    {
+      "id": "android_app_src_test_java_com_getcapacitor_myapp_exampleunittest_exampleunittest",
+      "label": "ExampleUnitTest",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 20,
+      "community_name": "ExampleInstrumentedTest.java",
+      "file_type": "code",
+      "norm_label": "exampleunittest",
+      "source_file": "android/app/src/test/java/com/getcapacitor/myapp/ExampleUnitTest.java",
+      "source_location": "L12"
     },
     {
       "id": "src_lib_hub_config_configstore",
@@ -56,16 +108,53 @@
       "source_location": "L4"
     },
     {
+      "id": "android_app_src_main_java_com_gokulsaraswat_gokulmobilize_mainactivity_mainactivity",
+      "label": "MainActivity",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "6. Decisions log",
+      "file_type": "code",
+      "norm_label": "mainactivity",
+      "source_file": "android/app/src/main/java/com/gokulsaraswat/gokulmobilize/MainActivity.java",
+      "source_location": "L8"
+    },
+    {
       "id": "src_lib_render_tiles_rendertiles",
       "label": "renderTiles()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "render-tiles.ts",
+      "file_type": "code",
+      "norm_label": "rendertiles()",
+      "source_file": "src/lib/render-tiles.ts",
+      "source_location": "L6"
+    },
+    {
+      "id": "src_lib_tile_target_resolvetilelink",
+      "label": "resolveTileLink()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "render-tiles.ts",
+      "file_type": "code",
+      "norm_label": "resolvetilelink()",
+      "source_file": "src/lib/tile-target.ts",
+      "source_location": "L17"
+    },
+    {
+      "id": "src_components_filelink_filelink",
+      "label": "FileLink()",
       "_callable": true,
       "_origin": "ast",
       "community": 19,
       "community_name": "Base.astro",
       "file_type": "code",
-      "norm_label": "rendertiles()",
-      "source_file": "src/lib/render-tiles.ts",
-      "source_location": "L5"
+      "norm_label": "filelink()",
+      "source_file": "src/components/FileLink.tsx",
+      "source_location": "L4"
     },
     {
       "id": "src_pages_slug_getstaticpaths",
@@ -78,6 +167,70 @@
       "norm_label": "getstaticpaths()",
       "source_file": "src/pages/[slug].astro",
       "source_location": "L5"
+    },
+    {
+      "id": "android_app_src_androidtest_java_com_getcapacitor_myapp_exampleinstrumentedtest_exampleinstrumentedtest_useappcontext",
+      "label": ".useAppContext()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 20,
+      "community_name": "ExampleInstrumentedTest.java",
+      "file_type": "code",
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "getInstrumentation",
+            "receiver_type": "InstrumentationRegistry",
+            "lang": "java",
+            "line": "L22"
+          },
+          {
+            "callee": "getPackageName",
+            "receiver_type": "Context",
+            "lang": "java",
+            "line": "L24"
+          }
+        ]
+      },
+      "norm_label": ".useappcontext()",
+      "source_file": "android/app/src/androidTest/java/com/getcapacitor/myapp/ExampleInstrumentedTest.java",
+      "source_location": "L19"
+    },
+    {
+      "id": "android_app_src_test_java_com_getcapacitor_myapp_exampleunittest_exampleunittest_addition_iscorrect",
+      "label": ".addition_isCorrect()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 20,
+      "community_name": "ExampleInstrumentedTest.java",
+      "file_type": "code",
+      "norm_label": ".addition_iscorrect()",
+      "source_file": "android/app/src/test/java/com/getcapacitor/myapp/ExampleUnitTest.java",
+      "source_location": "L14"
+    },
+    {
+      "id": "scripts_bundle_apps_exists",
+      "label": "exists()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 21,
+      "community_name": "bundle-apps.mjs",
+      "file_type": "code",
+      "norm_label": "exists()",
+      "source_file": "scripts/bundle-apps.mjs",
+      "source_location": "L6"
+    },
+    {
+      "id": "scripts_bundle_apps_placeholder",
+      "label": "placeholder()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 21,
+      "community_name": "bundle-apps.mjs",
+      "file_type": "code",
+      "norm_label": "placeholder()",
+      "source_file": "scripts/bundle-apps.mjs",
+      "source_location": "L8"
     },
     {
       "id": "src_lib_hub_config_configstore_load",
@@ -272,100 +425,104 @@
       "source_location": "L5"
     },
     {
-      "id": "readme_decided_stack_2026_10_31",
-      "label": "Decided stack (2026-10-31)",
+      "id": "android_app_src_main_java_com_gokulsaraswat_gokulmobilize_mainactivity_mainactivity_oncreate",
+      "label": ".onCreate()",
+      "_callable": true,
       "_origin": "ast",
-      "community": 0,
-      "community_name": "gokulmobilize",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "decided stack (2026-10-31)",
-      "source_file": "README.md",
-      "source_location": "L7"
+      "community": 9,
+      "community_name": "6. Decisions log",
+      "file_type": "code",
+      "norm_label": ".oncreate()",
+      "source_file": "android/app/src/main/java/com/gokulsaraswat/gokulmobilize/MainActivity.java",
+      "source_location": "L11"
     },
     {
-      "id": "readme_deploy_vercel",
-      "label": "Deploy (Vercel)",
+      "id": "src_lib_render_tiles",
+      "label": "render-tiles.ts",
       "_origin": "ast",
       "community": 0,
-      "community_name": "gokulmobilize",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "deploy (vercel)",
-      "source_file": "README.md",
-      "source_location": "L32"
-    },
-    {
-      "id": "readme_docs",
-      "label": "Docs",
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "gokulmobilize",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "docs",
-      "source_file": "README.md",
-      "source_location": "L38"
-    },
-    {
-      "id": "readme_environment_variables",
-      "label": "Environment variables",
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "gokulmobilize",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "environment variables",
-      "source_file": "README.md",
-      "source_location": "L29"
-    },
-    {
-      "id": "readme_gokulmobilize",
-      "label": "gokulmobilize",
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "gokulmobilize",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "gokulmobilize",
-      "source_file": "README.md",
+      "community_name": "render-tiles.ts",
+      "file_type": "code",
+      "norm_label": "render-tiles.ts",
+      "source_file": "src/lib/render-tiles.ts",
       "source_location": "L1"
     },
     {
-      "id": "readme_license",
-      "label": "License",
+      "id": "src_lib_saved_items_test",
+      "label": "saved-items.test.ts",
       "_origin": "ast",
       "community": 0,
-      "community_name": "gokulmobilize",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "license",
-      "source_file": "README.md",
-      "source_location": "L44"
+      "community_name": "render-tiles.ts",
+      "file_type": "code",
+      "norm_label": "saved-items.test.ts",
+      "source_file": "src/lib/saved-items.test.ts",
+      "source_location": "L1"
     },
     {
-      "id": "readme_path_layout_one_domain",
-      "label": "Path layout (one domain)",
+      "id": "src_lib_tile_meta",
+      "label": "tile-meta.ts",
       "_origin": "ast",
       "community": 0,
-      "community_name": "gokulmobilize",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "path layout (one domain)",
-      "source_file": "README.md",
-      "source_location": "L13"
+      "community_name": "render-tiles.ts",
+      "file_type": "code",
+      "norm_label": "tile-meta.ts",
+      "source_file": "src/lib/tile-meta.ts",
+      "source_location": "L1"
     },
     {
-      "id": "readme_run_build",
-      "label": "Run / build",
+      "id": "src_lib_tile_target",
+      "label": "tile-target.ts",
       "_origin": "ast",
       "community": 0,
-      "community_name": "gokulmobilize",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "run / build",
-      "source_file": "README.md",
-      "source_location": "L16"
+      "community_name": "render-tiles.ts",
+      "file_type": "code",
+      "norm_label": "tile-target.ts",
+      "source_file": "src/lib/tile-target.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_lib_tile_target_test",
+      "label": "tile-target.test.ts",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "render-tiles.ts",
+      "file_type": "code",
+      "norm_label": "tile-target.test.ts",
+      "source_file": "src/lib/tile-target.test.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_lib_tile_target_test_app",
+      "label": "app",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "render-tiles.ts",
+      "file_type": "code",
+      "norm_label": "app",
+      "source_file": "src/lib/tile-target.test.ts",
+      "source_location": "L6"
+    },
+    {
+      "id": "src_lib_tile_target_test_web",
+      "label": "web",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "render-tiles.ts",
+      "file_type": "code",
+      "norm_label": "web",
+      "source_file": "src/lib/tile-target.test.ts",
+      "source_location": "L5"
+    },
+    {
+      "id": "ref_gokulsaraswat_config",
+      "label": "@gokulsaraswat/config",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "render-tiles.ts",
+      "file_type": "concept",
+      "norm_label": "@gokulsaraswat/config",
+      "source_file": "package.json",
+      "source_location": "L25"
     },
     {
       "id": "prompts",
@@ -545,7 +702,7 @@
       "node_kind": "heading",
       "norm_label": "blockers / requests to other repos",
       "source_file": "WORKLOG.md",
-      "source_location": "L29"
+      "source_location": "L31"
     },
     {
       "id": "worklog_current_state_2026_10_31",
@@ -581,7 +738,7 @@
       "node_kind": "heading",
       "norm_label": "in progress / next",
       "source_file": "WORKLOG.md",
-      "source_location": "L25"
+      "source_location": "L27"
     },
     {
       "id": "worklog_reminders",
@@ -593,7 +750,7 @@
       "node_kind": "heading",
       "norm_label": "reminders",
       "source_file": "WORKLOG.md",
-      "source_location": "L41"
+      "source_location": "L43"
     },
     {
       "id": "worklog_worklog_gokulmobilize",
@@ -700,7 +857,7 @@
       "file_type": "code",
       "norm_label": "dependencies",
       "source_file": "package.json",
-      "source_location": "L18"
+      "source_location": "L20"
     },
     {
       "id": "package_dependencies_astro",
@@ -711,7 +868,7 @@
       "file_type": "code",
       "norm_label": "astro",
       "source_file": "package.json",
-      "source_location": "L22"
+      "source_location": "L27"
     },
     {
       "id": "package_dependencies_astrojs_react",
@@ -722,7 +879,40 @@
       "file_type": "code",
       "norm_label": "@astrojs/react",
       "source_file": "package.json",
-      "source_location": "L19"
+      "source_location": "L21"
+    },
+    {
+      "id": "package_dependencies_capacitor_android",
+      "label": "@capacitor/android",
+      "_origin": "ast",
+      "community": 14,
+      "community_name": "dependencies",
+      "file_type": "code",
+      "norm_label": "@capacitor/android",
+      "source_file": "package.json",
+      "source_location": "L22"
+    },
+    {
+      "id": "package_dependencies_capacitor_browser",
+      "label": "@capacitor/browser",
+      "_origin": "ast",
+      "community": 14,
+      "community_name": "dependencies",
+      "file_type": "code",
+      "norm_label": "@capacitor/browser",
+      "source_file": "package.json",
+      "source_location": "L23"
+    },
+    {
+      "id": "package_dependencies_capacitor_core",
+      "label": "@capacitor/core",
+      "_origin": "ast",
+      "community": 14,
+      "community_name": "dependencies",
+      "file_type": "code",
+      "norm_label": "@capacitor/core",
+      "source_file": "package.json",
+      "source_location": "L24"
     },
     {
       "id": "package_dependencies_gokulsaraswat_config",
@@ -733,7 +923,7 @@
       "file_type": "code",
       "norm_label": "@gokulsaraswat/config",
       "source_file": "package.json",
-      "source_location": "L20"
+      "source_location": "L25"
     },
     {
       "id": "package_dependencies_gokulsaraswat_ui",
@@ -744,7 +934,7 @@
       "file_type": "code",
       "norm_label": "@gokulsaraswat/ui",
       "source_file": "package.json",
-      "source_location": "L21"
+      "source_location": "L26"
     },
     {
       "id": "package_dependencies_idb_keyval",
@@ -755,7 +945,7 @@
       "file_type": "code",
       "norm_label": "idb-keyval",
       "source_file": "package.json",
-      "source_location": "L23"
+      "source_location": "L28"
     },
     {
       "id": "package_dependencies_react",
@@ -766,7 +956,7 @@
       "file_type": "code",
       "norm_label": "react",
       "source_file": "package.json",
-      "source_location": "L24"
+      "source_location": "L29"
     },
     {
       "id": "package_dependencies_react_dom",
@@ -777,7 +967,7 @@
       "file_type": "code",
       "norm_label": "react-dom",
       "source_file": "package.json",
-      "source_location": "L25"
+      "source_location": "L30"
     },
     {
       "id": "package_scripts",
@@ -789,6 +979,17 @@
       "norm_label": "scripts",
       "source_file": "package.json",
       "source_location": "L9"
+    },
+    {
+      "id": "package_scripts_android_sync",
+      "label": "android:sync",
+      "_origin": "ast",
+      "community": 15,
+      "community_name": "scripts",
+      "file_type": "code",
+      "norm_label": "android:sync",
+      "source_file": "package.json",
+      "source_location": "L18"
     },
     {
       "id": "package_scripts_astro",
@@ -811,6 +1012,17 @@
       "norm_label": "build",
       "source_file": "package.json",
       "source_location": "L11"
+    },
+    {
+      "id": "package_scripts_build_native",
+      "label": "build:native",
+      "_origin": "ast",
+      "community": 15,
+      "community_name": "scripts",
+      "file_type": "code",
+      "norm_label": "build:native",
+      "source_file": "package.json",
+      "source_location": "L17"
     },
     {
       "id": "package_scripts_dev",
@@ -876,7 +1088,7 @@
       "file_type": "code",
       "norm_label": "devdependencies",
       "source_file": "package.json",
-      "source_location": "L27"
+      "source_location": "L32"
     },
     {
       "id": "package_devdependencies_astrojs_check",
@@ -887,7 +1099,18 @@
       "file_type": "code",
       "norm_label": "@astrojs/check",
       "source_file": "package.json",
-      "source_location": "L28"
+      "source_location": "L33"
+    },
+    {
+      "id": "package_devdependencies_capacitor_cli",
+      "label": "@capacitor/cli",
+      "_origin": "ast",
+      "community": 16,
+      "community_name": "devDependencies",
+      "file_type": "code",
+      "norm_label": "@capacitor/cli",
+      "source_file": "package.json",
+      "source_location": "L34"
     },
     {
       "id": "package_devdependencies_types_node",
@@ -898,7 +1121,7 @@
       "file_type": "code",
       "norm_label": "@types/node",
       "source_file": "package.json",
-      "source_location": "L29"
+      "source_location": "L35"
     },
     {
       "id": "package_devdependencies_types_react",
@@ -909,7 +1132,7 @@
       "file_type": "code",
       "norm_label": "@types/react",
       "source_file": "package.json",
-      "source_location": "L30"
+      "source_location": "L36"
     },
     {
       "id": "package_devdependencies_types_react_dom",
@@ -920,7 +1143,7 @@
       "file_type": "code",
       "norm_label": "@types/react-dom",
       "source_file": "package.json",
-      "source_location": "L31"
+      "source_location": "L37"
     },
     {
       "id": "package_devdependencies_typescript",
@@ -931,7 +1154,7 @@
       "file_type": "code",
       "norm_label": "typescript",
       "source_file": "package.json",
-      "source_location": "L33"
+      "source_location": "L39"
     },
     {
       "id": "package_devdependencies_vite_pwa_assets_generator",
@@ -942,7 +1165,7 @@
       "file_type": "code",
       "norm_label": "@vite-pwa/assets-generator",
       "source_file": "package.json",
-      "source_location": "L32"
+      "source_location": "L38"
     },
     {
       "id": "package_devdependencies_workbox_build",
@@ -953,7 +1176,7 @@
       "file_type": "code",
       "norm_label": "workbox-build",
       "source_file": "package.json",
-      "source_location": "L34"
+      "source_location": "L40"
     },
     {
       "id": "tsconfig",
@@ -975,7 +1198,7 @@
       "file_type": "code",
       "norm_label": "exclude",
       "source_file": "tsconfig.json",
-      "source_location": "L4"
+      "source_location": "L7"
     },
     {
       "id": "tsconfig_extends",
@@ -1066,6 +1289,17 @@
       "source_location": "L4"
     },
     {
+      "id": "browser",
+      "label": "@capacitor/browser",
+      "_origin": "ast",
+      "community": 19,
+      "community_name": "Base.astro",
+      "confidence": "EXTRACTED",
+      "file_type": "code",
+      "norm_label": "@capacitor/browser",
+      "source_file": "@capacitor/browser"
+    },
+    {
       "id": "styles_css",
       "label": "@gokulsaraswat/ui/styles.css",
       "_origin": "ast",
@@ -1099,6 +1333,17 @@
       "source_file": "@gokulsaraswat/ui"
     },
     {
+      "id": "src_components_filelink",
+      "label": "FileLink.tsx",
+      "_origin": "ast",
+      "community": 19,
+      "community_name": "Base.astro",
+      "file_type": "code",
+      "norm_label": "filelink.tsx",
+      "source_file": "src/components/FileLink.tsx",
+      "source_location": "L1"
+    },
+    {
       "id": "src_components_tilegrid",
       "label": "TileGrid.astro",
       "_origin": "ast",
@@ -1129,29 +1374,7 @@
       "file_type": "code",
       "norm_label": "base",
       "source_file": "src/layouts/Base.astro",
-      "source_location": "L12"
-    },
-    {
-      "id": "src_lib_render_tiles",
-      "label": "render-tiles.ts",
-      "_origin": "ast",
-      "community": 19,
-      "community_name": "Base.astro",
-      "file_type": "code",
-      "norm_label": "render-tiles.ts",
-      "source_file": "src/lib/render-tiles.ts",
-      "source_location": "L1"
-    },
-    {
-      "id": "src_lib_tile_meta",
-      "label": "tile-meta.ts",
-      "_origin": "ast",
-      "community": 19,
-      "community_name": "Base.astro",
-      "file_type": "code",
-      "norm_label": "tile-meta.ts",
-      "source_file": "src/lib/tile-meta.ts",
-      "source_location": "L1"
+      "source_location": "L13"
     },
     {
       "id": "src_pages_index",
@@ -1187,17 +1410,6 @@
       "source_location": "L9"
     },
     {
-      "id": "ref_gokulsaraswat_config",
-      "label": "@gokulsaraswat/config",
-      "_origin": "ast",
-      "community": 19,
-      "community_name": "Base.astro",
-      "file_type": "concept",
-      "norm_label": "@gokulsaraswat/config",
-      "source_file": "package.json",
-      "source_location": "L20"
-    },
-    {
       "id": "ref_gokulsaraswat_ui",
       "label": "@gokulsaraswat/ui",
       "_origin": "ast",
@@ -1206,7 +1418,7 @@
       "file_type": "concept",
       "norm_label": "@gokulsaraswat/ui",
       "source_file": "package.json",
-      "source_location": "L21"
+      "source_location": "L26"
     },
     {
       "id": "project_architecture",
@@ -1242,7 +1454,7 @@
       "node_kind": "heading",
       "norm_label": "2. current target directory tree",
       "source_file": ".project-architecture.md",
-      "source_location": "L23"
+      "source_location": "L26"
     },
     {
       "id": "project_architecture_3_low_level_design_lld_solid_class_schemas",
@@ -1254,7 +1466,7 @@
       "node_kind": "heading",
       "norm_label": "3. low-level design (lld) & solid class schemas",
       "source_file": ".project-architecture.md",
-      "source_location": "L36"
+      "source_location": "L44"
     },
     {
       "id": "project_architecture_codebase_blueprint_structural_graph",
@@ -1266,6 +1478,209 @@
       "node_kind": "heading",
       "norm_label": "codebase blueprint & structural graph",
       "source_file": ".project-architecture.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "android_app_src_androidtest_java_com_getcapacitor_myapp_exampleinstrumentedtest",
+      "label": "ExampleInstrumentedTest.java",
+      "_origin": "ast",
+      "community": 20,
+      "community_name": "ExampleInstrumentedTest.java",
+      "file_type": "code",
+      "norm_label": "exampleinstrumentedtest.java",
+      "source_file": "android/app/src/androidTest/java/com/getcapacitor/myapp/ExampleInstrumentedTest.java",
+      "source_location": "L1"
+    },
+    {
+      "id": "android_app_src_test_java_com_getcapacitor_myapp_exampleunittest",
+      "label": "ExampleUnitTest.java",
+      "_origin": "ast",
+      "community": 20,
+      "community_name": "ExampleInstrumentedTest.java",
+      "file_type": "code",
+      "norm_label": "exampleunittest.java",
+      "source_file": "android/app/src/test/java/com/getcapacitor/myapp/ExampleUnitTest.java",
+      "source_location": "L1"
+    },
+    {
+      "id": "androidx_test_ext_junit_runners_androidjunit4",
+      "label": "androidx.test.ext.junit.runners.AndroidJUnit4",
+      "_origin": "ast",
+      "community": 20,
+      "community_name": "ExampleInstrumentedTest.java",
+      "file_type": "code",
+      "norm_label": "androidx.test.ext.junit.runners.androidjunit4",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "org_junit_runner_runwith",
+      "label": "org.junit.runner.RunWith",
+      "_origin": "ast",
+      "community": 20,
+      "community_name": "ExampleInstrumentedTest.java",
+      "file_type": "code",
+      "norm_label": "org.junit.runner.runwith",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "org_junit_test",
+      "label": "org.junit.Test",
+      "_origin": "ast",
+      "community": 20,
+      "community_name": "ExampleInstrumentedTest.java",
+      "file_type": "code",
+      "norm_label": "org.junit.test",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "scripts_bundle_apps",
+      "label": "bundle-apps.mjs",
+      "_origin": "ast",
+      "community": 21,
+      "community_name": "bundle-apps.mjs",
+      "file_type": "code",
+      "norm_label": "bundle-apps.mjs",
+      "source_file": "scripts/bundle-apps.mjs",
+      "source_location": "L1"
+    },
+    {
+      "id": "scripts_bundle_apps_bundledapps",
+      "label": "bundledApps",
+      "_origin": "ast",
+      "community": 21,
+      "community_name": "bundle-apps.mjs",
+      "file_type": "code",
+      "norm_label": "bundledapps",
+      "source_file": "scripts/bundle-apps.mjs",
+      "source_location": "L3"
+    },
+    {
+      "id": "android_gradlew",
+      "label": "gradlew",
+      "_origin": "ast",
+      "community": 22,
+      "community_name": "gradlew",
+      "file_type": "code",
+      "metadata": {
+        "language": "bash",
+        "kind": "file"
+      },
+      "norm_label": "gradlew",
+      "source_file": "android/gradlew",
+      "source_location": "L1"
+    },
+    {
+      "id": "android_gradlew__entry",
+      "label": "gradlew script",
+      "_origin": "ast",
+      "community": 22,
+      "community_name": "gradlew",
+      "file_type": "code",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_entrypoint"
+      },
+      "norm_label": "gradlew script",
+      "source_file": "android/gradlew",
+      "source_location": "L1"
+    },
+    {
+      "id": "android_gradlew_die",
+      "label": "die()",
+      "_origin": "ast",
+      "community": 22,
+      "community_name": "gradlew",
+      "file_type": "code",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_function"
+      },
+      "norm_label": "die()",
+      "source_file": "android/gradlew",
+      "source_location": "L98"
+    },
+    {
+      "id": "android_gradlew_warn",
+      "label": "warn()",
+      "_origin": "ast",
+      "community": 22,
+      "community_name": "gradlew",
+      "file_type": "code",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_function"
+      },
+      "norm_label": "warn()",
+      "source_file": "android/gradlew",
+      "source_location": "L94"
+    },
+    {
+      "id": "android_app_build",
+      "label": "app/build.gradle",
+      "_origin": "ast",
+      "community": 23,
+      "community_name": "app/build.gradle",
+      "file_type": "code",
+      "norm_label": "app/build.gradle",
+      "source_file": "android/app/build.gradle",
+      "source_location": "L1"
+    },
+    {
+      "id": "android_app_capacitor_build",
+      "label": "capacitor.build.gradle",
+      "_origin": "ast",
+      "community": 24,
+      "community_name": "capacitor.build.gradle",
+      "file_type": "code",
+      "norm_label": "capacitor.build.gradle",
+      "source_file": "android/app/capacitor.build.gradle",
+      "source_location": "L1"
+    },
+    {
+      "id": "android_build",
+      "label": "android/build.gradle",
+      "_origin": "ast",
+      "community": 25,
+      "community_name": "android/build.gradle",
+      "file_type": "code",
+      "norm_label": "android/build.gradle",
+      "source_file": "android/build.gradle",
+      "source_location": "L1"
+    },
+    {
+      "id": "android_capacitor_settings",
+      "label": "capacitor.settings.gradle",
+      "_origin": "ast",
+      "community": 26,
+      "community_name": "capacitor.settings.gradle",
+      "file_type": "code",
+      "norm_label": "capacitor.settings.gradle",
+      "source_file": "android/capacitor.settings.gradle",
+      "source_location": "L1"
+    },
+    {
+      "id": "android_settings",
+      "label": "settings.gradle",
+      "_origin": "ast",
+      "community": 27,
+      "community_name": "settings.gradle",
+      "file_type": "code",
+      "norm_label": "settings.gradle",
+      "source_file": "android/settings.gradle",
+      "source_location": "L1"
+    },
+    {
+      "id": "android_variables",
+      "label": "variables.gradle",
+      "_origin": "ast",
+      "community": 28,
+      "community_name": "variables.gradle",
+      "file_type": "code",
+      "norm_label": "variables.gradle",
+      "source_file": "android/variables.gradle",
       "source_location": "L1"
     },
     {
@@ -1407,7 +1822,7 @@
       "file_type": "concept",
       "norm_label": "idb-keyval",
       "source_file": "package.json",
-      "source_location": "L23"
+      "source_location": "L28"
     },
     {
       "id": "docs_research_options",
@@ -1480,54 +1895,6 @@
       "norm_label": "1. native wrapper: capacitor and alternatives",
       "source_file": "docs/RESEARCH-OPTIONS.md",
       "source_location": "L10"
-    },
-    {
-      "id": "docs_research_options_2026_10_31_one_domain_portfolio_at_the_root_gokul",
-      "label": "2026-10-31: one domain, portfolio at the root (Gokul)",
-      "_origin": "ast",
-      "community": 5,
-      "community_name": "RESEARCH-OPTIONS: gokulmobilize hub",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "2026-10-31: one domain, portfolio at the root (gokul)",
-      "source_file": "docs/RESEARCH-OPTIONS.md",
-      "source_location": "L224"
-    },
-    {
-      "id": "docs_research_options_2026_10_31_remaining_picks_accepted_gokul_use_your_picks",
-      "label": "2026-10-31: remaining picks accepted (Gokul: \"use your picks\")",
-      "_origin": "ast",
-      "community": 5,
-      "community_name": "RESEARCH-OPTIONS: gokulmobilize hub",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "2026-10-31: remaining picks accepted (gokul: \"use your picks\")",
-      "source_file": "docs/RESEARCH-OPTIONS.md",
-      "source_location": "L246"
-    },
-    {
-      "id": "docs_research_options_2026_10_31_save_for_later_option_b_gokul",
-      "label": "2026-10-31: save for later = option B (Gokul)",
-      "_origin": "ast",
-      "community": 5,
-      "community_name": "RESEARCH-OPTIONS: gokulmobilize hub",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "2026-10-31: save for later = option b (gokul)",
-      "source_file": "docs/RESEARCH-OPTIONS.md",
-      "source_location": "L270"
-    },
-    {
-      "id": "docs_research_options_2026_10_31_service_worker_tooling_changed_during_build_claude_step_5",
-      "label": "2026-10-31: service worker tooling changed during build (Claude, step 5)",
-      "_origin": "ast",
-      "community": 5,
-      "community_name": "RESEARCH-OPTIONS: gokulmobilize hub",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "2026-10-31: service worker tooling changed during build (claude, step 5)",
-      "source_file": "docs/RESEARCH-OPTIONS.md",
-      "source_location": "L263"
     },
     {
       "id": "docs_research_options_2_1_service_worker",
@@ -1638,18 +2005,6 @@
       "source_location": "L178"
     },
     {
-      "id": "docs_research_options_6_decisions_log",
-      "label": "6. Decisions log",
-      "_origin": "ast",
-      "community": 5,
-      "community_name": "RESEARCH-OPTIONS: gokulmobilize hub",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "6. decisions log",
-      "source_file": "docs/RESEARCH-OPTIONS.md",
-      "source_location": "L222"
-    },
-    {
       "id": "docs_research_options_borrow_vs_build",
       "label": "Borrow vs build",
       "_origin": "ast",
@@ -1690,7 +2045,7 @@
       "label": "AGENTS.md",
       "_origin": "ast",
       "community": 6,
-      "community_name": "\ud83e\udd16 System Architecture & Co-Worker Protocol",
+      "community_name": "gokulmobilize",
       "file_type": "document",
       "node_kind": "page",
       "norm_label": "agents.md",
@@ -1702,7 +2057,7 @@
       "label": "AGENTS.md: gokulmobilize",
       "_origin": "ast",
       "community": 6,
-      "community_name": "\ud83e\udd16 System Architecture & Co-Worker Protocol",
+      "community_name": "gokulmobilize",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "agents.md: gokulmobilize",
@@ -1714,7 +2069,7 @@
       "label": "CLAUDE.md",
       "_origin": "ast",
       "community": 6,
-      "community_name": "\ud83e\udd16 System Architecture & Co-Worker Protocol",
+      "community_name": "gokulmobilize",
       "file_type": "document",
       "node_kind": "page",
       "norm_label": "claude.md",
@@ -1726,7 +2081,7 @@
       "label": "\ud83d\udd04 Auto-Sync: System Architecture & Graphify",
       "_origin": "ast",
       "community": 6,
-      "community_name": "\ud83e\udd16 System Architecture & Co-Worker Protocol",
+      "community_name": "gokulmobilize",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "\ud83d\udd04 auto-sync: system architecture & graphify",
@@ -1738,7 +2093,7 @@
       "label": "\u23f1\ufe0f Communication Constraints (Zero Waste Mode)",
       "_origin": "ast",
       "community": 6,
-      "community_name": "\ud83e\udd16 System Architecture & Co-Worker Protocol",
+      "community_name": "gokulmobilize",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "\u23f1\ufe0f communication constraints (zero waste mode)",
@@ -1750,7 +2105,7 @@
       "label": "\ud83d\udcd0 Engineering Guardrails",
       "_origin": "ast",
       "community": 6,
-      "community_name": "\ud83e\udd16 System Architecture & Co-Worker Protocol",
+      "community_name": "gokulmobilize",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "\ud83d\udcd0 engineering guardrails",
@@ -1762,7 +2117,7 @@
       "label": "\ud83c\udfa8 Frontend Architecture, UI/UX & Motion Standard",
       "_origin": "ast",
       "community": 6,
-      "community_name": "\ud83e\udd16 System Architecture & Co-Worker Protocol",
+      "community_name": "gokulmobilize",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "\ud83c\udfa8 frontend architecture, ui/ux & motion standard",
@@ -1774,7 +2129,7 @@
       "label": "\ud83d\udee0\ufe0f Project Execution Modes (Personal vs. Organization)",
       "_origin": "ast",
       "community": 6,
-      "community_name": "\ud83e\udd16 System Architecture & Co-Worker Protocol",
+      "community_name": "gokulmobilize",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "\ud83d\udee0\ufe0f project execution modes (personal vs. organization)",
@@ -1786,7 +2141,7 @@
       "label": "\ud83e\udd16 System Architecture & Co-Worker Protocol",
       "_origin": "ast",
       "community": 6,
-      "community_name": "\ud83e\udd16 System Architecture & Co-Worker Protocol",
+      "community_name": "gokulmobilize",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "\ud83e\udd16 system architecture & co-worker protocol",
@@ -1798,7 +2153,7 @@
       "label": "\ud83d\udcc9 Token-Optimized Communication Mode",
       "_origin": "ast",
       "community": 6,
-      "community_name": "\ud83e\udd16 System Architecture & Co-Worker Protocol",
+      "community_name": "gokulmobilize",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "\ud83d\udcc9 token-optimized communication mode",
@@ -1810,7 +2165,7 @@
       "label": "\ud83e\uddea Verification Scope (Token-Efficient Testing)",
       "_origin": "ast",
       "community": 6,
-      "community_name": "\ud83e\udd16 System Architecture & Co-Worker Protocol",
+      "community_name": "gokulmobilize",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "\ud83e\uddea verification scope (token-efficient testing)",
@@ -1818,59 +2173,11 @@
       "source_location": "L95"
     },
     {
-      "id": "docs_architecture",
-      "label": "ARCHITECTURE.md",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "\ud83e\udd16 System Architecture & Co-Worker Protocol",
-      "file_type": "document",
-      "node_kind": "page",
-      "norm_label": "architecture.md",
-      "source_file": "docs/ARCHITECTURE.md",
-      "source_location": "L1"
-    },
-    {
-      "id": "docs_architecture_architecture_gokulmobilize",
-      "label": "ARCHITECTURE: gokulmobilize",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "\ud83e\udd16 System Architecture & Co-Worker Protocol",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "architecture: gokulmobilize",
-      "source_file": "docs/ARCHITECTURE.md",
-      "source_location": "L1"
-    },
-    {
-      "id": "docs_architecture_hld",
-      "label": "HLD",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "\ud83e\udd16 System Architecture & Co-Worker Protocol",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "hld",
-      "source_file": "docs/ARCHITECTURE.md",
-      "source_location": "L5"
-    },
-    {
-      "id": "docs_architecture_size_production_build_gzip",
-      "label": "Size (production build, gzip)",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "\ud83e\udd16 System Architecture & Co-Worker Protocol",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "size (production build, gzip)",
-      "source_file": "docs/ARCHITECTURE.md",
-      "source_location": "L31"
-    },
-    {
       "id": "docs_kickoff_prompt",
       "label": "KICKOFF-PROMPT.md",
       "_origin": "ast",
       "community": 6,
-      "community_name": "\ud83e\udd16 System Architecture & Co-Worker Protocol",
+      "community_name": "gokulmobilize",
       "file_type": "document",
       "node_kind": "page",
       "norm_label": "kickoff-prompt.md",
@@ -1882,7 +2189,7 @@
       "label": "3. gokulmobilize",
       "_origin": "ast",
       "community": 6,
-      "community_name": "\ud83e\udd16 System Architecture & Co-Worker Protocol",
+      "community_name": "gokulmobilize",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "3. gokulmobilize",
@@ -1894,7 +2201,7 @@
       "label": "COLLABORATOR ADD-ON",
       "_origin": "ast",
       "community": 6,
-      "community_name": "\ud83e\udd16 System Architecture & Co-Worker Protocol",
+      "community_name": "gokulmobilize",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "collaborator add-on",
@@ -1906,7 +2213,7 @@
       "label": "Kickoff prompt: gokulmobilize",
       "_origin": "ast",
       "community": 6,
-      "community_name": "\ud83e\udd16 System Architecture & Co-Worker Protocol",
+      "community_name": "gokulmobilize",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "kickoff prompt: gokulmobilize",
@@ -1918,7 +2225,7 @@
       "label": "REPO SECTION",
       "_origin": "ast",
       "community": 6,
-      "community_name": "\ud83e\udd16 System Architecture & Co-Worker Protocol",
+      "community_name": "gokulmobilize",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "repo section",
@@ -1930,7 +2237,7 @@
       "label": "SHARED BLOCK",
       "_origin": "ast",
       "community": 6,
-      "community_name": "\ud83e\udd16 System Architecture & Co-Worker Protocol",
+      "community_name": "gokulmobilize",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "shared block",
@@ -1942,7 +2249,7 @@
       "label": "README.md",
       "_origin": "ast",
       "community": 6,
-      "community_name": "\ud83e\udd16 System Architecture & Co-Worker Protocol",
+      "community_name": "gokulmobilize",
       "file_type": "document",
       "node_kind": "page",
       "norm_label": "readme.md",
@@ -1950,11 +2257,119 @@
       "source_location": "L1"
     },
     {
+      "id": "readme_android_apk",
+      "label": "Android APK",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "gokulmobilize",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "android apk",
+      "source_file": "README.md",
+      "source_location": "L35"
+    },
+    {
+      "id": "readme_decided_stack_2026_10_31",
+      "label": "Decided stack (2026-10-31)",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "gokulmobilize",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "decided stack (2026-10-31)",
+      "source_file": "README.md",
+      "source_location": "L7"
+    },
+    {
+      "id": "readme_deploy_vercel",
+      "label": "Deploy (Vercel)",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "gokulmobilize",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "deploy (vercel)",
+      "source_file": "README.md",
+      "source_location": "L40"
+    },
+    {
+      "id": "readme_docs",
+      "label": "Docs",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "gokulmobilize",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "docs",
+      "source_file": "README.md",
+      "source_location": "L46"
+    },
+    {
+      "id": "readme_environment_variables",
+      "label": "Environment variables",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "gokulmobilize",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "environment variables",
+      "source_file": "README.md",
+      "source_location": "L32"
+    },
+    {
+      "id": "readme_gokulmobilize",
+      "label": "gokulmobilize",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "gokulmobilize",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "gokulmobilize",
+      "source_file": "README.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "readme_license",
+      "label": "License",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "gokulmobilize",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "license",
+      "source_file": "README.md",
+      "source_location": "L52"
+    },
+    {
+      "id": "readme_path_layout_one_domain",
+      "label": "Path layout (one domain)",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "gokulmobilize",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "path layout (one domain)",
+      "source_file": "README.md",
+      "source_location": "L13"
+    },
+    {
+      "id": "readme_run_build",
+      "label": "Run / build",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "gokulmobilize",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "run / build",
+      "source_file": "README.md",
+      "source_location": "L16"
+    },
+    {
       "id": "worklog",
       "label": "WORKLOG.md",
       "_origin": "ast",
       "community": 6,
-      "community_name": "\ud83e\udd16 System Architecture & Co-Worker Protocol",
+      "community_name": "gokulmobilize",
       "file_type": "document",
       "node_kind": "page",
       "norm_label": "worklog.md",
@@ -1995,15 +2410,40 @@
       "source_location": "L11"
     },
     {
-      "id": "src_lib_saved_items_test",
-      "label": "saved-items.test.ts",
+      "id": "docs_architecture",
+      "label": "ARCHITECTURE.md",
       "_origin": "ast",
       "community": 7,
       "community_name": "saved-items.ts",
-      "file_type": "code",
-      "norm_label": "saved-items.test.ts",
-      "source_file": "src/lib/saved-items.test.ts",
+      "file_type": "document",
+      "node_kind": "page",
+      "norm_label": "architecture.md",
+      "source_file": "docs/ARCHITECTURE.md",
       "source_location": "L1"
+    },
+    {
+      "id": "docs_architecture_architecture_gokulmobilize",
+      "label": "ARCHITECTURE: gokulmobilize",
+      "_origin": "ast",
+      "community": 7,
+      "community_name": "saved-items.ts",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "architecture: gokulmobilize",
+      "source_file": "docs/ARCHITECTURE.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "docs_architecture_hld",
+      "label": "HLD",
+      "_origin": "ast",
+      "community": 7,
+      "community_name": "saved-items.ts",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "hld",
+      "source_file": "docs/ARCHITECTURE.md",
+      "source_location": "L5"
     },
     {
       "id": "docs_architecture_lld",
@@ -2016,6 +2456,30 @@
       "norm_label": "lld",
       "source_file": "docs/ARCHITECTURE.md",
       "source_location": "L18"
+    },
+    {
+      "id": "docs_architecture_native_app_android_capacitor_8_5",
+      "label": "Native app (Android, Capacitor 8.5)",
+      "_origin": "ast",
+      "community": 7,
+      "community_name": "saved-items.ts",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "native app (android, capacitor 8.5)",
+      "source_file": "docs/ARCHITECTURE.md",
+      "source_location": "L37"
+    },
+    {
+      "id": "docs_architecture_size_production_build_gzip",
+      "label": "Size (production build, gzip)",
+      "_origin": "ast",
+      "community": 7,
+      "community_name": "saved-items.ts",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "size (production build, gzip)",
+      "source_file": "docs/ARCHITECTURE.md",
+      "source_location": "L31"
     },
     {
       "id": "astro_config",
@@ -2136,7 +2600,7 @@
       "file_type": "concept",
       "norm_label": "astro",
       "source_file": "package.json",
-      "source_location": "L22"
+      "source_location": "L27"
     },
     {
       "id": "ref_astrojs_check",
@@ -2147,7 +2611,7 @@
       "file_type": "concept",
       "norm_label": "@astrojs/check",
       "source_file": "package.json",
-      "source_location": "L28"
+      "source_location": "L33"
     },
     {
       "id": "ref_astrojs_react",
@@ -2158,7 +2622,51 @@
       "file_type": "concept",
       "norm_label": "@astrojs/react",
       "source_file": "package.json",
-      "source_location": "L19"
+      "source_location": "L21"
+    },
+    {
+      "id": "ref_capacitor_android",
+      "label": "@capacitor/android",
+      "_origin": "ast",
+      "community": 8,
+      "community_name": "package.json",
+      "file_type": "concept",
+      "norm_label": "@capacitor/android",
+      "source_file": "package.json",
+      "source_location": "L22"
+    },
+    {
+      "id": "ref_capacitor_browser",
+      "label": "@capacitor/browser",
+      "_origin": "ast",
+      "community": 8,
+      "community_name": "package.json",
+      "file_type": "concept",
+      "norm_label": "@capacitor/browser",
+      "source_file": "package.json",
+      "source_location": "L23"
+    },
+    {
+      "id": "ref_capacitor_cli",
+      "label": "@capacitor/cli",
+      "_origin": "ast",
+      "community": 8,
+      "community_name": "package.json",
+      "file_type": "concept",
+      "norm_label": "@capacitor/cli",
+      "source_file": "package.json",
+      "source_location": "L34"
+    },
+    {
+      "id": "ref_capacitor_core",
+      "label": "@capacitor/core",
+      "_origin": "ast",
+      "community": 8,
+      "community_name": "package.json",
+      "file_type": "concept",
+      "norm_label": "@capacitor/core",
+      "source_file": "package.json",
+      "source_location": "L24"
     },
     {
       "id": "ref_react",
@@ -2169,7 +2677,7 @@
       "file_type": "concept",
       "norm_label": "react",
       "source_file": "package.json",
-      "source_location": "L24"
+      "source_location": "L29"
     },
     {
       "id": "ref_react_dom",
@@ -2180,7 +2688,7 @@
       "file_type": "concept",
       "norm_label": "react-dom",
       "source_file": "package.json",
-      "source_location": "L25"
+      "source_location": "L30"
     },
     {
       "id": "ref_types_node",
@@ -2191,7 +2699,7 @@
       "file_type": "concept",
       "norm_label": "@types/node",
       "source_file": "package.json",
-      "source_location": "L29"
+      "source_location": "L35"
     },
     {
       "id": "ref_types_react",
@@ -2202,7 +2710,7 @@
       "file_type": "concept",
       "norm_label": "@types/react",
       "source_file": "package.json",
-      "source_location": "L30"
+      "source_location": "L36"
     },
     {
       "id": "ref_types_react_dom",
@@ -2213,7 +2721,7 @@
       "file_type": "concept",
       "norm_label": "@types/react-dom",
       "source_file": "package.json",
-      "source_location": "L31"
+      "source_location": "L37"
     },
     {
       "id": "ref_typescript",
@@ -2224,7 +2732,7 @@
       "file_type": "concept",
       "norm_label": "typescript",
       "source_file": "package.json",
-      "source_location": "L33"
+      "source_location": "L39"
     },
     {
       "id": "ref_vite_pwa_assets_generator",
@@ -2235,7 +2743,7 @@
       "file_type": "concept",
       "norm_label": "@vite-pwa/assets-generator",
       "source_file": "package.json",
-      "source_location": "L32"
+      "source_location": "L38"
     },
     {
       "id": "ref_workbox_build",
@@ -2246,14 +2754,130 @@
       "file_type": "concept",
       "norm_label": "workbox-build",
       "source_file": "package.json",
-      "source_location": "L34"
+      "source_location": "L40"
+    },
+    {
+      "id": "android_app_src_main_java_com_gokulsaraswat_gokulmobilize_mainactivity",
+      "label": "MainActivity.java",
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "6. Decisions log",
+      "file_type": "code",
+      "norm_label": "mainactivity.java",
+      "source_file": "android/app/src/main/java/com/gokulsaraswat/gokulmobilize/MainActivity.java",
+      "source_location": "L1"
+    },
+    {
+      "id": "android_os_bundle",
+      "label": "android.os.Bundle",
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "6. Decisions log",
+      "file_type": "code",
+      "norm_label": "android.os.bundle",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "com_getcapacitor_bridgeactivity",
+      "label": "com.getcapacitor.BridgeActivity",
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "6. Decisions log",
+      "file_type": "code",
+      "norm_label": "com.getcapacitor.bridgeactivity",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "override",
+      "label": "Override",
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "6. Decisions log",
+      "file_type": "code",
+      "norm_label": "override",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "docs_research_options_2026_10_31_native_app_findings_claude_step_6",
+      "label": "2026-10-31: native app findings (Claude, step 6)",
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "6. Decisions log",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "2026-10-31: native app findings (claude, step 6)",
+      "source_file": "docs/RESEARCH-OPTIONS.md",
+      "source_location": "L273"
+    },
+    {
+      "id": "docs_research_options_2026_10_31_one_domain_portfolio_at_the_root_gokul",
+      "label": "2026-10-31: one domain, portfolio at the root (Gokul)",
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "6. Decisions log",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "2026-10-31: one domain, portfolio at the root (gokul)",
+      "source_file": "docs/RESEARCH-OPTIONS.md",
+      "source_location": "L224"
+    },
+    {
+      "id": "docs_research_options_2026_10_31_remaining_picks_accepted_gokul_use_your_picks",
+      "label": "2026-10-31: remaining picks accepted (Gokul: \"use your picks\")",
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "6. Decisions log",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "2026-10-31: remaining picks accepted (gokul: \"use your picks\")",
+      "source_file": "docs/RESEARCH-OPTIONS.md",
+      "source_location": "L246"
+    },
+    {
+      "id": "docs_research_options_2026_10_31_save_for_later_option_b_gokul",
+      "label": "2026-10-31: save for later = option B (Gokul)",
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "6. Decisions log",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "2026-10-31: save for later = option b (gokul)",
+      "source_file": "docs/RESEARCH-OPTIONS.md",
+      "source_location": "L270"
+    },
+    {
+      "id": "docs_research_options_2026_10_31_service_worker_tooling_changed_during_build_claude_step_5",
+      "label": "2026-10-31: service worker tooling changed during build (Claude, step 5)",
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "6. Decisions log",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "2026-10-31: service worker tooling changed during build (claude, step 5)",
+      "source_file": "docs/RESEARCH-OPTIONS.md",
+      "source_location": "L263"
+    },
+    {
+      "id": "docs_research_options_6_decisions_log",
+      "label": "6. Decisions log",
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "6. Decisions log",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "6. decisions log",
+      "source_file": "docs/RESEARCH-OPTIONS.md",
+      "source_location": "L222"
     },
     {
       "id": "ref_node_assert",
       "label": "ref_node_assert",
       "_origin": "semantic",
-      "community": 7,
-      "community_name": "saved-items.ts",
+      "community": 0,
+      "community_name": "render-tiles.ts",
       "external": true,
       "file_type": "concept",
       "norm_label": "ref_node_assert",
@@ -2264,11 +2888,77 @@
       "id": "ref_node_test",
       "label": "ref_node_test",
       "_origin": "semantic",
-      "community": 7,
-      "community_name": "saved-items.ts",
+      "community": 0,
+      "community_name": "render-tiles.ts",
       "external": true,
       "file_type": "concept",
       "norm_label": "ref_node_test",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "assert",
+      "label": "assert",
+      "community": 20,
+      "community_name": "ExampleInstrumentedTest.java",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "assert",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "context",
+      "label": "context",
+      "community": 20,
+      "community_name": "ExampleInstrumentedTest.java",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "context",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "instrumentationregistry",
+      "label": "instrumentationregistry",
+      "community": 20,
+      "community_name": "ExampleInstrumentedTest.java",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "instrumentationregistry",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "ref_node_fs",
+      "label": "ref_node_fs",
+      "community": 21,
+      "community_name": "bundle-apps.mjs",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "ref_node_fs",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "onbackpressedcallback",
+      "label": "onbackpressedcallback",
+      "community": 9,
+      "community_name": "6. Decisions log",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "onbackpressedcallback",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "webview",
+      "label": "webview",
+      "community": 9,
+      "community_name": "6. Decisions log",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "webview",
       "source_file": "",
       "type": "external"
     }
@@ -2284,6 +2974,90 @@
       "context": "call",
       "source_file": "src/components/SavedList.astro",
       "source_location": "L33",
+      "weight": 1.0
+    },
+    {
+      "source": "android_app_src_androidtest_java_com_getcapacitor_myapp_exampleinstrumentedtest_exampleinstrumentedtest",
+      "target": "androidx_test_ext_junit_runners_androidjunit4",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "attribute",
+      "source_file": "android/app/src/androidTest/java/com/getcapacitor/myapp/ExampleInstrumentedTest.java",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "android_app_src_androidtest_java_com_getcapacitor_myapp_exampleinstrumentedtest_exampleinstrumentedtest",
+      "target": "org_junit_runner_runwith",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "attribute",
+      "source_file": "android/app/src/androidTest/java/com/getcapacitor/myapp/ExampleInstrumentedTest.java",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "android_app_src_androidtest_java_com_getcapacitor_myapp_exampleinstrumentedtest_exampleinstrumentedtest_useappcontext",
+      "target": "org_junit_test",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "attribute",
+      "source_file": "android/app/src/androidTest/java/com/getcapacitor/myapp/ExampleInstrumentedTest.java",
+      "source_location": "L19",
+      "weight": 1.0
+    },
+    {
+      "source": "android_app_src_main_java_com_gokulsaraswat_gokulmobilize_mainactivity_mainactivity_oncreate",
+      "target": "override",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "attribute",
+      "source_file": "android/app/src/main/java/com/gokulsaraswat/gokulmobilize/MainActivity.java",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "android_app_src_test_java_com_getcapacitor_myapp_exampleunittest_exampleunittest_addition_iscorrect",
+      "target": "org_junit_test",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "attribute",
+      "source_file": "android/app/src/test/java/com/getcapacitor/myapp/ExampleUnitTest.java",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "android_gradlew__entry",
+      "target": "android_gradlew_die",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "android/gradlew",
+      "source_location": "L129",
+      "weight": 1.0
+    },
+    {
+      "source": "android_gradlew__entry",
+      "target": "android_gradlew_warn",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "android/gradlew",
+      "source_location": "L152",
       "weight": 1.0
     },
     {
@@ -2344,6 +3118,18 @@
       "context": "call",
       "source_file": "src/lib/hub-config.ts",
       "source_location": "L51",
+      "weight": 1.0
+    },
+    {
+      "source": "src_lib_render_tiles_rendertiles",
+      "target": "src_lib_tile_target_resolvetilelink",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/lib/render-tiles.ts",
+      "source_location": "L13",
       "weight": 1.0
     },
     {
@@ -2443,32 +3229,152 @@
       "weight": 1.0
     },
     {
+      "source": "android_app_src_androidtest_java_com_getcapacitor_myapp_exampleinstrumentedtest",
+      "target": "assert",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "android/app/src/androidTest/java/com/getcapacitor/myapp/ExampleInstrumentedTest.java",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "android_app_src_androidtest_java_com_getcapacitor_myapp_exampleinstrumentedtest",
+      "target": "context",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "android/app/src/androidTest/java/com/getcapacitor/myapp/ExampleInstrumentedTest.java",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "android_app_src_androidtest_java_com_getcapacitor_myapp_exampleinstrumentedtest",
+      "target": "androidx_test_ext_junit_runners_androidjunit4",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "android/app/src/androidTest/java/com/getcapacitor/myapp/ExampleInstrumentedTest.java",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "android_app_src_androidtest_java_com_getcapacitor_myapp_exampleinstrumentedtest",
+      "target": "instrumentationregistry",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "android/app/src/androidTest/java/com/getcapacitor/myapp/ExampleInstrumentedTest.java",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "android_app_src_androidtest_java_com_getcapacitor_myapp_exampleinstrumentedtest",
+      "target": "org_junit_test",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "android/app/src/androidTest/java/com/getcapacitor/myapp/ExampleInstrumentedTest.java",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "android_app_src_androidtest_java_com_getcapacitor_myapp_exampleinstrumentedtest",
+      "target": "org_junit_runner_runwith",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "android/app/src/androidTest/java/com/getcapacitor/myapp/ExampleInstrumentedTest.java",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "android_app_src_main_java_com_gokulsaraswat_gokulmobilize_mainactivity",
+      "target": "android_os_bundle",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "android/app/src/main/java/com/gokulsaraswat/gokulmobilize/MainActivity.java",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "android_app_src_main_java_com_gokulsaraswat_gokulmobilize_mainactivity",
+      "target": "webview",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "android/app/src/main/java/com/gokulsaraswat/gokulmobilize/MainActivity.java",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "android_app_src_main_java_com_gokulsaraswat_gokulmobilize_mainactivity",
+      "target": "onbackpressedcallback",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "android/app/src/main/java/com/gokulsaraswat/gokulmobilize/MainActivity.java",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "android_app_src_main_java_com_gokulsaraswat_gokulmobilize_mainactivity",
+      "target": "com_getcapacitor_bridgeactivity",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "android/app/src/main/java/com/gokulsaraswat/gokulmobilize/MainActivity.java",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "android_app_src_test_java_com_getcapacitor_myapp_exampleunittest",
+      "target": "assert",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "android/app/src/test/java/com/getcapacitor/myapp/ExampleUnitTest.java",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "android_app_src_test_java_com_getcapacitor_myapp_exampleunittest",
+      "target": "org_junit_test",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "android/app/src/test/java/com/getcapacitor/myapp/ExampleUnitTest.java",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
       "source": "package",
       "target": "ref_astrojs_react",
-      "relation": "imports",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "package.json",
-      "source_location": "L19",
-      "weight": 1.0
-    },
-    {
-      "source": "package",
-      "target": "ref_gokulsaraswat_config",
-      "relation": "imports",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "package.json",
-      "source_location": "L20",
-      "weight": 1.0
-    },
-    {
-      "source": "package",
-      "target": "ref_gokulsaraswat_ui",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -2480,7 +3386,7 @@
     },
     {
       "source": "package",
-      "target": "ref_astro",
+      "target": "ref_capacitor_android",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -2492,7 +3398,7 @@
     },
     {
       "source": "package",
-      "target": "ref_idb_keyval",
+      "target": "ref_capacitor_browser",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -2504,7 +3410,7 @@
     },
     {
       "source": "package",
-      "target": "ref_react",
+      "target": "ref_capacitor_core",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -2516,7 +3422,7 @@
     },
     {
       "source": "package",
-      "target": "ref_react_dom",
+      "target": "ref_gokulsaraswat_config",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -2528,7 +3434,31 @@
     },
     {
       "source": "package",
-      "target": "ref_astrojs_check",
+      "target": "ref_gokulsaraswat_ui",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "package.json",
+      "source_location": "L26",
+      "weight": 1.0
+    },
+    {
+      "source": "package",
+      "target": "ref_astro",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "package.json",
+      "source_location": "L27",
+      "weight": 1.0
+    },
+    {
+      "source": "package",
+      "target": "ref_idb_keyval",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -2540,7 +3470,7 @@
     },
     {
       "source": "package",
-      "target": "ref_types_node",
+      "target": "ref_react",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -2552,7 +3482,7 @@
     },
     {
       "source": "package",
-      "target": "ref_types_react",
+      "target": "ref_react_dom",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -2564,31 +3494,7 @@
     },
     {
       "source": "package",
-      "target": "ref_types_react_dom",
-      "relation": "imports",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "package.json",
-      "source_location": "L31",
-      "weight": 1.0
-    },
-    {
-      "source": "package",
-      "target": "ref_vite_pwa_assets_generator",
-      "relation": "imports",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "package.json",
-      "source_location": "L32",
-      "weight": 1.0
-    },
-    {
-      "source": "package",
-      "target": "ref_typescript",
+      "target": "ref_astrojs_check",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -2600,7 +3506,7 @@
     },
     {
       "source": "package",
-      "target": "ref_workbox_build",
+      "target": "ref_capacitor_cli",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -2608,6 +3514,90 @@
       "context": "import",
       "source_file": "package.json",
       "source_location": "L34",
+      "weight": 1.0
+    },
+    {
+      "source": "package",
+      "target": "ref_types_node",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "package.json",
+      "source_location": "L35",
+      "weight": 1.0
+    },
+    {
+      "source": "package",
+      "target": "ref_types_react",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "package.json",
+      "source_location": "L36",
+      "weight": 1.0
+    },
+    {
+      "source": "package",
+      "target": "ref_types_react_dom",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "package.json",
+      "source_location": "L37",
+      "weight": 1.0
+    },
+    {
+      "source": "package",
+      "target": "ref_vite_pwa_assets_generator",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "package.json",
+      "source_location": "L38",
+      "weight": 1.0
+    },
+    {
+      "source": "package",
+      "target": "ref_typescript",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "package.json",
+      "source_location": "L39",
+      "weight": 1.0
+    },
+    {
+      "source": "package",
+      "target": "ref_workbox_build",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "package.json",
+      "source_location": "L40",
+      "weight": 1.0
+    },
+    {
+      "source": "src_layouts_base",
+      "target": "src_components_filelink_filelink",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/layouts/Base.astro",
+      "source_location": "L5",
       "weight": 1.0
     },
     {
@@ -2647,6 +3637,30 @@
       "weight": 1.0
     },
     {
+      "source": "src_lib_render_tiles",
+      "target": "src_lib_tile_target_buildtarget",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/lib/render-tiles.ts",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_lib_render_tiles",
+      "target": "src_lib_tile_target_resolvetilelink",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/lib/render-tiles.ts",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
       "source": "src_lib_saved_items_test",
       "target": "src_lib_saved_items_tosavedlist",
       "relation": "imports",
@@ -2655,6 +3669,18 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/lib/saved-items.test.ts",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_lib_tile_target_test",
+      "target": "src_lib_tile_target_resolvetilelink",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/lib/tile-target.test.ts",
       "source_location": "L3",
       "weight": 1.0
     },
@@ -2707,6 +3733,31 @@
       "weight": 1.0
     },
     {
+      "source": "scripts_bundle_apps",
+      "target": "ref_node_fs",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "scripts/bundle-apps.mjs",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_filelink",
+      "target": "ref_gokulsaraswat_ui",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/components/FileLink.tsx",
+      "source_location": "L1",
+      "type_only": true,
+      "weight": 1.0
+    },
+    {
       "source": "src_layouts_base",
       "target": "ref_gokulsaraswat_ui",
       "relation": "imports_from",
@@ -2716,6 +3767,18 @@
       "context": "import",
       "source_file": "src/layouts/Base.astro",
       "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "src_layouts_base",
+      "target": "src_components_filelink",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/layouts/Base.astro",
+      "source_location": "L5",
       "weight": 1.0
     },
     {
@@ -2804,6 +3867,18 @@
       "weight": 1.0
     },
     {
+      "source": "src_lib_render_tiles",
+      "target": "src_lib_tile_target",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/lib/render-tiles.ts",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
       "source": "src_lib_saved_items",
       "target": "ref_idb_keyval",
       "relation": "imports_from",
@@ -2865,6 +3940,55 @@
       "weight": 1.0
     },
     {
+      "source": "src_lib_tile_target",
+      "target": "ref_gokulsaraswat_config",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/lib/tile-target.ts",
+      "source_location": "L1",
+      "type_only": true,
+      "weight": 1.0
+    },
+    {
+      "source": "src_lib_tile_target_test",
+      "target": "ref_node_test",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/lib/tile-target.test.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_lib_tile_target_test",
+      "target": "ref_node_assert",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/lib/tile-target.test.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "src_lib_tile_target_test",
+      "target": "src_lib_tile_target",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/lib/tile-target.test.ts",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
       "source": "src_pages_index",
       "target": "src_components_tilegrid",
       "relation": "imports_from",
@@ -2901,6 +4025,18 @@
       "weight": 1.0
     },
     {
+      "source": "android_app_src_main_java_com_gokulsaraswat_gokulmobilize_mainactivity_mainactivity_oncreate",
+      "target": "android_os_bundle",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "parameter_type",
+      "source_file": "android/app/src/main/java/com/gokulsaraswat/gokulmobilize/MainActivity.java",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
       "source": "agents",
       "target": "agents_agents_md_gokulmobilize",
       "relation": "contains",
@@ -2908,6 +4044,50 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "AGENTS.md",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "android_app_src_androidtest_java_com_getcapacitor_myapp_exampleinstrumentedtest",
+      "target": "android_app_src_androidtest_java_com_getcapacitor_myapp_exampleinstrumentedtest_exampleinstrumentedtest",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "android/app/src/androidTest/java/com/getcapacitor/myapp/ExampleInstrumentedTest.java",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "android_app_src_main_java_com_gokulsaraswat_gokulmobilize_mainactivity",
+      "target": "android_app_src_main_java_com_gokulsaraswat_gokulmobilize_mainactivity_mainactivity",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "android/app/src/main/java/com/gokulsaraswat/gokulmobilize/MainActivity.java",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "android_app_src_test_java_com_getcapacitor_myapp_exampleunittest",
+      "target": "android_app_src_test_java_com_getcapacitor_myapp_exampleunittest_exampleunittest",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "android/app/src/test/java/com/getcapacitor/myapp/ExampleUnitTest.java",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "android_gradlew",
+      "target": "android_gradlew__entry",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "android/gradlew",
       "source_location": "L1",
       "weight": 1.0
     },
@@ -3041,6 +4221,17 @@
       "confidence_score": 1.0,
       "source_file": "docs/ARCHITECTURE.md",
       "source_location": "L31",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_architecture_architecture_gokulmobilize",
+      "target": "docs_architecture_native_app_android_capacitor_8_5",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/ARCHITECTURE.md",
+      "source_location": "L37",
       "weight": 1.0
     },
     {
@@ -3341,6 +4532,17 @@
       "weight": 1.0
     },
     {
+      "source": "docs_research_options_6_decisions_log",
+      "target": "docs_research_options_2026_10_31_native_app_findings_claude_step_6",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/RESEARCH-OPTIONS.md",
+      "source_location": "L273",
+      "weight": 1.0
+    },
+    {
       "source": "docs_research_options_research_options_gokulmobilize_hub",
       "target": "docs_research_options_1_native_wrapper_capacitor_and_alternatives",
       "relation": "contains",
@@ -3430,17 +4632,6 @@
     },
     {
       "source": "package",
-      "target": "package_dependencies",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "package.json",
-      "source_location": "L18",
-      "weight": 1.0
-    },
-    {
-      "source": "package",
       "target": "package_name",
       "relation": "contains",
       "_origin": "ast",
@@ -3452,13 +4643,13 @@
     },
     {
       "source": "package",
-      "target": "package_devdependencies",
+      "target": "package_dependencies",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "package.json",
-      "source_location": "L27",
+      "source_location": "L20",
       "weight": 1.0
     },
     {
@@ -3470,6 +4661,17 @@
       "confidence_score": 1.0,
       "source_file": "package.json",
       "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "package",
+      "target": "package_devdependencies",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "package.json",
+      "source_location": "L32",
       "weight": 1.0
     },
     {
@@ -3524,34 +4726,12 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "package.json",
-      "source_location": "L19",
-      "weight": 1.0
-    },
-    {
-      "source": "package_dependencies",
-      "target": "package_dependencies_gokulsaraswat_config",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "package.json",
-      "source_location": "L20",
-      "weight": 1.0
-    },
-    {
-      "source": "package_dependencies",
-      "target": "package_dependencies_gokulsaraswat_ui",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "package.json",
       "source_location": "L21",
       "weight": 1.0
     },
     {
       "source": "package_dependencies",
-      "target": "package_dependencies_astro",
+      "target": "package_dependencies_capacitor_android",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -3562,7 +4742,7 @@
     },
     {
       "source": "package_dependencies",
-      "target": "package_dependencies_idb_keyval",
+      "target": "package_dependencies_capacitor_browser",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -3573,7 +4753,7 @@
     },
     {
       "source": "package_dependencies",
-      "target": "package_dependencies_react",
+      "target": "package_dependencies_capacitor_core",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -3584,7 +4764,7 @@
     },
     {
       "source": "package_dependencies",
-      "target": "package_dependencies_react_dom",
+      "target": "package_dependencies_gokulsaraswat_config",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -3594,8 +4774,30 @@
       "weight": 1.0
     },
     {
-      "source": "package_devdependencies",
-      "target": "package_devdependencies_astrojs_check",
+      "source": "package_dependencies",
+      "target": "package_dependencies_gokulsaraswat_ui",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "package.json",
+      "source_location": "L26",
+      "weight": 1.0
+    },
+    {
+      "source": "package_dependencies",
+      "target": "package_dependencies_astro",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "package.json",
+      "source_location": "L27",
+      "weight": 1.0
+    },
+    {
+      "source": "package_dependencies",
+      "target": "package_dependencies_idb_keyval",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -3605,8 +4807,8 @@
       "weight": 1.0
     },
     {
-      "source": "package_devdependencies",
-      "target": "package_devdependencies_types_node",
+      "source": "package_dependencies",
+      "target": "package_dependencies_react",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -3616,8 +4818,8 @@
       "weight": 1.0
     },
     {
-      "source": "package_devdependencies",
-      "target": "package_devdependencies_types_react",
+      "source": "package_dependencies",
+      "target": "package_dependencies_react_dom",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -3628,29 +4830,7 @@
     },
     {
       "source": "package_devdependencies",
-      "target": "package_devdependencies_types_react_dom",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "package.json",
-      "source_location": "L31",
-      "weight": 1.0
-    },
-    {
-      "source": "package_devdependencies",
-      "target": "package_devdependencies_vite_pwa_assets_generator",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "package.json",
-      "source_location": "L32",
-      "weight": 1.0
-    },
-    {
-      "source": "package_devdependencies",
-      "target": "package_devdependencies_typescript",
+      "target": "package_devdependencies_astrojs_check",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -3661,13 +4841,79 @@
     },
     {
       "source": "package_devdependencies",
-      "target": "package_devdependencies_workbox_build",
+      "target": "package_devdependencies_capacitor_cli",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "package.json",
       "source_location": "L34",
+      "weight": 1.0
+    },
+    {
+      "source": "package_devdependencies",
+      "target": "package_devdependencies_types_node",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "package.json",
+      "source_location": "L35",
+      "weight": 1.0
+    },
+    {
+      "source": "package_devdependencies",
+      "target": "package_devdependencies_types_react",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "package.json",
+      "source_location": "L36",
+      "weight": 1.0
+    },
+    {
+      "source": "package_devdependencies",
+      "target": "package_devdependencies_types_react_dom",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "package.json",
+      "source_location": "L37",
+      "weight": 1.0
+    },
+    {
+      "source": "package_devdependencies",
+      "target": "package_devdependencies_vite_pwa_assets_generator",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "package.json",
+      "source_location": "L38",
+      "weight": 1.0
+    },
+    {
+      "source": "package_devdependencies",
+      "target": "package_devdependencies_typescript",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "package.json",
+      "source_location": "L39",
+      "weight": 1.0
+    },
+    {
+      "source": "package_devdependencies",
+      "target": "package_devdependencies_workbox_build",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "package.json",
+      "source_location": "L40",
       "weight": 1.0
     },
     {
@@ -3759,6 +5005,28 @@
       "weight": 1.0
     },
     {
+      "source": "package_scripts",
+      "target": "package_scripts_build_native",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "package.json",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "package_scripts",
+      "target": "package_scripts_android_sync",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "package.json",
+      "source_location": "L18",
+      "weight": 1.0
+    },
+    {
       "source": "project_architecture",
       "target": "project_architecture_codebase_blueprint_structural_graph",
       "relation": "contains",
@@ -3777,18 +5045,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".project-architecture.md",
-      "source_location": "L23",
-      "weight": 1.0
-    },
-    {
-      "source": "project_architecture_codebase_blueprint_structural_graph",
-      "target": "project_architecture_3_low_level_design_lld_solid_class_schemas",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": ".project-architecture.md",
-      "source_location": "L36",
+      "source_location": "L26",
       "weight": 1.0
     },
     {
@@ -3800,6 +5057,17 @@
       "confidence_score": 1.0,
       "source_file": ".project-architecture.md",
       "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "project_architecture_codebase_blueprint_structural_graph",
+      "target": "project_architecture_3_low_level_design_lld_solid_class_schemas",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".project-architecture.md",
+      "source_location": "L44",
       "weight": 1.0
     },
     {
@@ -3920,7 +5188,18 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "README.md",
-      "source_location": "L29",
+      "source_location": "L32",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_gokulmobilize",
+      "target": "readme_android_apk",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "L35",
       "weight": 1.0
     },
     {
@@ -3931,7 +5210,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "README.md",
-      "source_location": "L32",
+      "source_location": "L40",
       "weight": 1.0
     },
     {
@@ -3942,7 +5221,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "README.md",
-      "source_location": "L38",
+      "source_location": "L46",
       "weight": 1.0
     },
     {
@@ -3953,7 +5232,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "README.md",
-      "source_location": "L44",
+      "source_location": "L52",
       "weight": 1.0
     },
     {
@@ -3979,6 +5258,39 @@
       "weight": 1.0
     },
     {
+      "source": "scripts_bundle_apps",
+      "target": "scripts_bundle_apps_bundledapps",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/bundle-apps.mjs",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "scripts_bundle_apps",
+      "target": "scripts_bundle_apps_exists",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/bundle-apps.mjs",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "scripts_bundle_apps",
+      "target": "scripts_bundle_apps_placeholder",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/bundle-apps.mjs",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
       "source": "security",
       "target": "security_security_policy",
       "relation": "contains",
@@ -3987,6 +5299,17 @@
       "confidence_score": 1.0,
       "source_file": "SECURITY.md",
       "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_filelink",
+      "target": "src_components_filelink_filelink",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/FileLink.tsx",
+      "source_location": "L4",
       "weight": 1.0
     },
     {
@@ -4008,7 +5331,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/layouts/Base.astro",
-      "source_location": "L12",
+      "source_location": "L13",
       "weight": 1.0
     },
     {
@@ -4085,7 +5408,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/lib/render-tiles.ts",
-      "source_location": "L5",
+      "source_location": "L6",
       "weight": 1.0
     },
     {
@@ -4166,6 +5489,61 @@
       "weight": 1.0
     },
     {
+      "source": "src_lib_tile_target",
+      "target": "src_lib_tile_target_resolvetilelink",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/lib/tile-target.ts",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "src_lib_tile_target",
+      "target": "src_lib_tile_target_buildtarget",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/lib/tile-target.ts",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_lib_tile_target",
+      "target": "src_lib_tile_target_tilelink",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/lib/tile-target.ts",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "src_lib_tile_target_test",
+      "target": "src_lib_tile_target_test_web",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/lib/tile-target.test.ts",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "src_lib_tile_target_test",
+      "target": "src_lib_tile_target_test_app",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/lib/tile-target.test.ts",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
       "source": "src_pages_slug",
       "target": "src_pages_slug_getstaticpaths",
       "relation": "contains",
@@ -4228,7 +5606,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "tsconfig.json",
-      "source_location": "L4",
+      "source_location": "L7",
       "weight": 1.0
     },
     {
@@ -4294,7 +5672,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "WORKLOG.md",
-      "source_location": "L25",
+      "source_location": "L27",
       "weight": 1.0
     },
     {
@@ -4305,7 +5683,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "WORKLOG.md",
-      "source_location": "L29",
+      "source_location": "L31",
       "weight": 1.0
     },
     {
@@ -4316,7 +5694,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "WORKLOG.md",
-      "source_location": "L41",
+      "source_location": "L43",
       "weight": 1.0
     },
     {
@@ -4339,6 +5717,28 @@
       "confidence_score": 1.0,
       "source_file": "WORKLOG.md",
       "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "android_gradlew",
+      "target": "android_gradlew_warn",
+      "relation": "defines",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "android/gradlew",
+      "source_location": "L94",
+      "weight": 1.0
+    },
+    {
+      "source": "android_gradlew",
+      "target": "android_gradlew_die",
+      "relation": "defines",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "android/gradlew",
+      "source_location": "L98",
       "weight": 1.0
     },
     {
@@ -4373,6 +5773,15 @@
       "source_file": "sync-architecture.sh",
       "source_location": "L14",
       "weight": 1.0
+    },
+    {
+      "source": "src_components_tilegrid",
+      "target": "browser",
+      "relation": "dynamic_import",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/TileGrid.astro"
     },
     {
       "source": "src_components_savedlist",
@@ -4445,6 +5854,50 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/pages/[slug].astro"
+    },
+    {
+      "source": "android_app_src_main_java_com_gokulsaraswat_gokulmobilize_mainactivity_mainactivity",
+      "target": "com_getcapacitor_bridgeactivity",
+      "relation": "inherits",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "android/app/src/main/java/com/gokulsaraswat/gokulmobilize/MainActivity.java",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "android_app_src_androidtest_java_com_getcapacitor_myapp_exampleinstrumentedtest_exampleinstrumentedtest",
+      "target": "android_app_src_androidtest_java_com_getcapacitor_myapp_exampleinstrumentedtest_exampleinstrumentedtest_useappcontext",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "android/app/src/androidTest/java/com/getcapacitor/myapp/ExampleInstrumentedTest.java",
+      "source_location": "L19",
+      "weight": 1.0
+    },
+    {
+      "source": "android_app_src_main_java_com_gokulsaraswat_gokulmobilize_mainactivity_mainactivity",
+      "target": "android_app_src_main_java_com_gokulsaraswat_gokulmobilize_mainactivity_mainactivity_oncreate",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "android/app/src/main/java/com/gokulsaraswat/gokulmobilize/MainActivity.java",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "android_app_src_test_java_com_getcapacitor_myapp_exampleunittest_exampleunittest",
+      "target": "android_app_src_test_java_com_getcapacitor_myapp_exampleunittest_exampleunittest_addition_iscorrect",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "android/app/src/test/java/com/getcapacitor/myapp/ExampleUnitTest.java",
+      "source_location": "L14",
+      "weight": 1.0
     },
     {
       "source": "src_lib_hub_config_configstore",
@@ -4520,7 +5973,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "README.md",
-      "source_location": "L40",
+      "source_location": "L48",
       "weight": 1.0
     },
     {
@@ -4531,7 +5984,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "README.md",
-      "source_location": "L40",
+      "source_location": "L48",
       "weight": 1.0
     },
     {
@@ -4542,7 +5995,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "README.md",
-      "source_location": "L41",
+      "source_location": "L49",
       "weight": 1.0
     },
     {
@@ -4553,7 +6006,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "README.md",
-      "source_location": "L41",
+      "source_location": "L49",
       "weight": 1.0
     },
     {
@@ -4564,7 +6017,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "README.md",
-      "source_location": "L41",
+      "source_location": "L49",
       "weight": 1.0
     },
     {
@@ -4627,6 +6080,18 @@
       "weight": 1.0
     },
     {
+      "source": "docs_research_options_2026_10_31_native_app_findings_claude_step_6",
+      "target": "android_app_src_main_java_com_gokulsaraswat_gokulmobilize_mainactivity_mainactivity",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "context": "MainActivity",
+      "source_file": "docs/RESEARCH-OPTIONS.md",
+      "source_location": "L276",
+      "weight": 1.0
+    },
+    {
       "source": "docs_contracts_saved_for_later_shared_with_the_portfolio_decided_2026_10_31_option_b",
       "target": "src_lib_saved_items_saveditem",
       "relation": "references",
@@ -4647,7 +6112,7 @@
       "confidence_score": 0.95,
       "context": "SavedItem",
       "source_file": "WORKLOG.md",
-      "source_location": "L38",
+      "source_location": "L40",
       "weight": 1.0
     },
     {
@@ -4676,5 +6141,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "0e72a7520b185defd433c85c0f71da390e47491c"
+  "built_at_commit": "b41e9bf3b454a68e19aa3c1bcba65fb4d94ef58b"
 }
