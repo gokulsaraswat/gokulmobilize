@@ -48,9 +48,9 @@ See [.env.example](.env.example): `NODE_AUTH_TOKEN`, `PUBLIC_HUB_CONFIG_URL`, `P
 
 ## Deploy (Vercel)
 - Framework: Astro. Install: `npm ci`. Build: `npm run build`. Output: `dist`. Node: 24.x.
-- Env: `NODE_AUTH_TOKEN` (read:packages), and `PUBLIC_HUB_CONFIG_URL` once admin publishes config.json.
+- Env: `NODE_AUTH_TOKEN` = a GitHub classic token with only `read:packages` (all environments; without it `npm install` fails with 401), and `PUBLIC_HUB_CONFIG_URL` once admin publishes config.json.
 - The project name is not created yet.
-- `vercel.json` redirects `/apps` to `/apps/`, serves `sw.js` with `no-cache`, and maps `/apps/*` to the root, so the hub also works on its own `*.vercel.app` URL. The portfolio (owner of `/`) rewrites `/apps/:path*` to `<hub-project>.vercel.app/apps/:path*`.
+- `vercel.json` redirects `/` and `/apps` to `/apps/`, serves `sw.js` with `no-cache`, and maps `/apps/*` to the root, so the hub also works on its own `*.vercel.app` URL. The portfolio (owner of `/`) rewrites `/apps/:path*` to `<hub-project>.vercel.app/apps/:path*`.
 
 ## Docs
 - This repo:

@@ -14,11 +14,12 @@ Master status of all repos: platform/docs/WORKLOG.md (github.com/gokulsaraswat/p
 | Web hub | Done. Astro 7.4 static at `/apps/`; card tiles from `public/config.mock.json` (stale-while-revalidate via IndexedDB); 9 footer pages from `@gokulsaraswat/ui`; installable offline PWA (Workbox service worker); "Saved for later" list. Verified in a browser, including offline. |
 | Android app | Done. Capacitor 8.5. Signed release **v0.1.0** on [GitHub Releases](https://github.com/gokulsaraswat/gokulmobilize/releases/tag/v0.1.0) (3.4 MB, signature verified). Tested on an emulator: tiles, bundled placeholder, back button, FAQ, in-app browser. |
 | CI | Green. Jobs: `verify` (kit check, npm ci, build, lint, test), `android` (debug APK artifact on every push), `android-release` (signed APK on `v*` tags). |
-| Not deployed | No Vercel project yet. No domain yet. |
+| Vercel | First deploy failed: 401 on `npm install` of `@gokulsaraswat/*`, because the Vercel project has no valid `NODE_AUTH_TOKEN`. Fix = Gokul adds the env var (README > Deploy). The hub's own URL `/` redirects to `/apps/`. |
 | Placeholders | `config.mock.json` (no real config.json from admin yet); GSpace/Studio pages in the app say "not bundled yet"; app icon = Astro rocket; legal page text = placeholder from `@gokulsaraswat/ui`. |
 | Hidden in the app | Portfolio, gym and admin tiles. They appear once the repo variable `PUBLIC_SITE_ORIGIN` is set. |
 
 ## Decisions (details + sources: docs/RESEARCH-OPTIONS.md section 6)
+- **FOR NOW (Gokul, 2026-10-31): each app stays on its own URL** (GitHub/Vercel), like the portfolio today. The hub's mock config links them as `external` tiles: portfolio https://bestportofolio.vercel.app/, GSpace https://g-space-mauve.vercel.app/ (from the GSpace repo homepage; did not answer from here), Studio https://gokulsaraswat.github.io/Markdown-studio/. Gym and admin are left out until their URLs exist. In the app, external tiles open in the in-app browser. The one-domain layout below is the LATER target.
 - Paths (one domain): portfolio `/`, hub `/apps/`, `/admin`, `/gym`, `/gspace`, `/studio`. The portfolio owns `/` and holds the Vercel rewrites. Free Vercel domain until a `.com` is bought.
 - Hub: Astro 7 static + vanilla-TS tiles; React only at build time (shared Footer/LegalPage).
 - `config.json` stays v1 (`@gokulsaraswat/config`); icon/description/accent come from a local map in `src/lib/tile-meta.ts`.

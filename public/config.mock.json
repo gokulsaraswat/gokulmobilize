@@ -1,10 +1,8 @@
 {
   "version": 1,
   "apps": [
-    { "id": "portfolio", "name": "Portfolio", "href": "/", "mode": "remote", "enabled": true },
-    { "id": "gspace", "name": "GSpace", "href": "/gspace", "mode": "bundled", "enabled": true },
-    { "id": "studio", "name": "Markdown Studio", "href": "/studio", "mode": "bundled", "enabled": true },
-    { "id": "gym", "name": "Gym", "href": "/gym", "mode": "remote", "enabled": true },
-    { "id": "admin", "name": "Admin", "href": "/admin", "mode": "remote", "enabled": true }
+    { "id": "portfolio", "name": "Portfolio", "href": "https://bestportofolio.vercel.app/", "mode": "external", "enabled": true },
+    { "id": "gspace", "name": "GSpace", "href": "https://g-space-mauve.vercel.app/", "mode": "external", "enabled": true },
+    { "id": "studio", "name": "Markdown Studio", "href": "https://gokulsaraswat.github.io/Markdown-studio/", "mode": "external", "enabled": true }
   ]
 }
