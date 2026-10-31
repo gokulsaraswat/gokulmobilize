@@ -33,3 +33,5 @@ jobs:
         run: npm run build
       - if: hashFiles('package-lock.json') != ''
         run: npm run lint
+      - if: hashFiles('package-lock.json') != ''
+        run: npm test

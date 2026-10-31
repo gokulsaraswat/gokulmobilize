@@ -3,7 +3,7 @@
 Master status of all repos: platform/docs/WORKLOG.md. Update this file after every step.
 
 ## Current state (2026-10-31)
-- Web hub scaffolded (2026-10-31): Astro 7.4.2 at /apps; tiles from public/config.mock.json; 9 footer pages. npm ci + build + astro check + 3 tests pass locally. CI now runs install/build/lint and needs NODE_AUTH_TOKEN (see blockers).
+- Web hub scaffolded (2026-10-31): Astro 7.4.2 at /apps; tiles from public/config.mock.json; 9 footer pages. npm ci + build + astro check + 3 tests pass locally. CI green on GitHub (npm ci with the built-in GITHUB_TOKEN works for @gokulsaraswat/*, then build, lint, test).
 - Local env: Node v24.14.1, npm 11.11.0, NODE_AUTH_TOKEN not set in this shell, gh logged in as gokulsaraswatvc-eng, no Vercel CLI.
 
 ## Done
@@ -23,7 +23,6 @@ Master status of all repos: platform/docs/WORKLOG.md. Update this file after eve
 - Open: Xcode installed?, GitHub repo description/topics/branch protection (owner, web UI).
 
 ## Blockers / requests to other repos
-- BLOCKER (owner): CI needs package access. Either add repo secret NODE_AUTH_TOKEN (read:packages), or grant gokulmobilize read access in each @gokulsaraswat package's 'Manage Actions access'.
 - REQUEST bestportofolio (refined): rewrite `/apps/:path*` -> `https://<hub-project>.vercel.app/apps/:path*`.
 Requests for the planning chat to sync into platform/docs/WORKLOG.md (this chat never edits other repos):
 - REQUEST admin (URGENT, being built now): set Next.js `basePath: '/admin'`. Path layout decided 2026-10-31: portfolio `/`, hub `/apps`, `/admin`, `/gym`, `/gspace`, `/studio`.
