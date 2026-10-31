@@ -20,6 +20,8 @@ config URL = `PUBLIC_HUB_CONFIG_URL`, or `/apps/config.mock.json` when unset.
 |---|---|
 | `src/lib/hub-config.ts` | `createConfigStore(url, storage?, fetcher?)` -> `{ subscribe, load, refresh }`. Storage (`KeyValueStorage`, default idb-keyval) and fetch are injected for tests. Invalid or unreachable config never replaces a valid cached copy. |
 | `src/lib/render-tiles.ts` | `renderTiles(grid, template, config)`: enabled tiles only; textContent only; external links open in a new tab. |
+| `src/lib/saved-items.ts` | `listSaved()` / `removeSaved(url)` over IndexedDB `gk-saved`/`items`, written by the portfolio. `toSavedList` validates (same-origin paths only) and sorts. |
+| `src/components/SavedList.astro` | "Saved for later" section, hidden when empty; re-reads on visibilitychange. |
 | `src/lib/tile-meta.ts` | Hub-only description and accent token per `AppId`. |
 | `src/components/TileGrid.astro` | Markup, skeletons, status line, store wiring, scoped styles. |
 | `src/layouts/Base.astro` | Head, global tokens, cross-document `@view-transition`, Footer, manifest, SW registration. |
@@ -32,4 +34,4 @@ config URL = `PUBLIC_HUB_CONFIG_URL`, or `/apps/config.mock.json` when unset.
 
 Astro `build.format: 'file'` (page.html) so the SW and Vercel `cleanUrls` serve `/apps/page`.
 
-Not built yet: Capacitor `android/`/`ios/`, save for later.
+Not built yet: Capacitor `android/`/`ios/`; the portfolio side of save for later (button + offline copies).

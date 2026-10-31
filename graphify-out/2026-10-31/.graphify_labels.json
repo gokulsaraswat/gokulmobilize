@@ -17,5 +17,7 @@
   "15": "scripts",
   "16": "devDependencies",
   "17": "tsconfig.json",
-  "18": "vercel.json"
+  "18": "vercel.json",
+  "19": "Base.astro",
+  "20": "build-sw.mjs"
 }

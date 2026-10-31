@@ -43,6 +43,42 @@
       "source_location": "L9"
     },
     {
+      "id": "src_pages_slug_getstaticpaths",
+      "label": "getStaticPaths()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 19,
+      "community_name": "Base.astro",
+      "file_type": "code",
+      "norm_label": "getstaticpaths()",
+      "source_file": "src/pages/[slug].astro",
+      "source_location": "L5"
+    },
+    {
+      "id": "scripts_build_sw_cleanhtmlurls",
+      "label": "cleanHtmlUrls()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 20,
+      "community_name": "build-sw.mjs",
+      "file_type": "code",
+      "norm_label": "cleanhtmlurls()",
+      "source_file": "scripts/build-sw.mjs",
+      "source_location": "L8"
+    },
+    {
+      "id": "scripts_build_sw_tocleanurl",
+      "label": "toCleanUrl()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 20,
+      "community_name": "build-sw.mjs",
+      "file_type": "code",
+      "norm_label": "tocleanurl()",
+      "source_file": "scripts/build-sw.mjs",
+      "source_location": "L5"
+    },
+    {
       "id": "src_lib_hub_config_configstore_load",
       "label": ".load()",
       "_callable": true,
@@ -151,18 +187,6 @@
       "source_location": "L5"
     },
     {
-      "id": "src_pages_slug_getstaticpaths",
-      "label": "getStaticPaths()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 9,
-      "community_name": "render-tiles.ts",
-      "file_type": "code",
-      "norm_label": "getstaticpaths()",
-      "source_file": "src/pages/[slug].astro",
-      "source_location": "L5"
-    },
-    {
       "id": "readme_decided_stack_2026_10_31",
       "label": "Decided stack (2026-10-31)",
       "_origin": "ast",
@@ -184,7 +208,7 @@
       "node_kind": "heading",
       "norm_label": "deploy (vercel)",
       "source_file": "README.md",
-      "source_location": "L31"
+      "source_location": "L32"
     },
     {
       "id": "readme_docs",
@@ -196,7 +220,7 @@
       "node_kind": "heading",
       "norm_label": "docs",
       "source_file": "README.md",
-      "source_location": "L37"
+      "source_location": "L38"
     },
     {
       "id": "readme_environment_variables",
@@ -208,7 +232,7 @@
       "node_kind": "heading",
       "norm_label": "environment variables",
       "source_file": "README.md",
-      "source_location": "L28"
+      "source_location": "L29"
     },
     {
       "id": "readme_gokulmobilize",
@@ -232,7 +256,7 @@
       "node_kind": "heading",
       "norm_label": "license",
       "source_file": "README.md",
-      "source_location": "L43"
+      "source_location": "L44"
     },
     {
       "id": "readme_path_layout_one_domain",
@@ -364,7 +388,7 @@
       "node_kind": "heading",
       "norm_label": "blockers / requests to other repos",
       "source_file": "WORKLOG.md",
-      "source_location": "L25"
+      "source_location": "L27"
     },
     {
       "id": "worklog_current_state_2026_10_31",
@@ -400,7 +424,7 @@
       "node_kind": "heading",
       "norm_label": "in progress / next",
       "source_file": "WORKLOG.md",
-      "source_location": "L21"
+      "source_location": "L23"
     },
     {
       "id": "worklog_reminders",
@@ -412,7 +436,7 @@
       "node_kind": "heading",
       "norm_label": "reminders",
       "source_file": "WORKLOG.md",
-      "source_location": "L36"
+      "source_location": "L38"
     },
     {
       "id": "worklog_worklog_gokulmobilize",
@@ -519,7 +543,7 @@
       "file_type": "code",
       "norm_label": "dependencies",
       "source_file": "package.json",
-      "source_location": "L17"
+      "source_location": "L18"
     },
     {
       "id": "package_dependencies_astro",
@@ -530,7 +554,7 @@
       "file_type": "code",
       "norm_label": "astro",
       "source_file": "package.json",
-      "source_location": "L21"
+      "source_location": "L22"
     },
     {
       "id": "package_dependencies_astrojs_react",
@@ -541,7 +565,7 @@
       "file_type": "code",
       "norm_label": "@astrojs/react",
       "source_file": "package.json",
-      "source_location": "L18"
+      "source_location": "L19"
     },
     {
       "id": "package_dependencies_gokulsaraswat_config",
@@ -552,7 +576,7 @@
       "file_type": "code",
       "norm_label": "@gokulsaraswat/config",
       "source_file": "package.json",
-      "source_location": "L19"
+      "source_location": "L20"
     },
     {
       "id": "package_dependencies_gokulsaraswat_ui",
@@ -563,7 +587,7 @@
       "file_type": "code",
       "norm_label": "@gokulsaraswat/ui",
       "source_file": "package.json",
-      "source_location": "L20"
+      "source_location": "L21"
     },
     {
       "id": "package_dependencies_idb_keyval",
@@ -574,7 +598,7 @@
       "file_type": "code",
       "norm_label": "idb-keyval",
       "source_file": "package.json",
-      "source_location": "L22"
+      "source_location": "L23"
     },
     {
       "id": "package_dependencies_react",
@@ -585,7 +609,7 @@
       "file_type": "code",
       "norm_label": "react",
       "source_file": "package.json",
-      "source_location": "L23"
+      "source_location": "L24"
     },
     {
       "id": "package_dependencies_react_dom",
@@ -596,7 +620,7 @@
       "file_type": "code",
       "norm_label": "react-dom",
       "source_file": "package.json",
-      "source_location": "L24"
+      "source_location": "L25"
     },
     {
       "id": "package_scripts",
@@ -643,6 +667,17 @@
       "source_location": "L10"
     },
     {
+      "id": "package_scripts_generate_pwa_assets",
+      "label": "generate-pwa-assets",
+      "_origin": "ast",
+      "community": 15,
+      "community_name": "scripts",
+      "file_type": "code",
+      "norm_label": "generate-pwa-assets",
+      "source_file": "package.json",
+      "source_location": "L16"
+    },
+    {
       "id": "package_scripts_lint",
       "label": "lint",
       "_origin": "ast",
@@ -684,7 +719,7 @@
       "file_type": "code",
       "norm_label": "devdependencies",
       "source_file": "package.json",
-      "source_location": "L26"
+      "source_location": "L27"
     },
     {
       "id": "package_devdependencies_astrojs_check",
@@ -695,7 +730,7 @@
       "file_type": "code",
       "norm_label": "@astrojs/check",
       "source_file": "package.json",
-      "source_location": "L27"
+      "source_location": "L28"
     },
     {
       "id": "package_devdependencies_types_node",
@@ -706,7 +741,7 @@
       "file_type": "code",
       "norm_label": "@types/node",
       "source_file": "package.json",
-      "source_location": "L28"
+      "source_location": "L29"
     },
     {
       "id": "package_devdependencies_types_react",
@@ -717,7 +752,7 @@
       "file_type": "code",
       "norm_label": "@types/react",
       "source_file": "package.json",
-      "source_location": "L29"
+      "source_location": "L30"
     },
     {
       "id": "package_devdependencies_types_react_dom",
@@ -728,7 +763,7 @@
       "file_type": "code",
       "norm_label": "@types/react-dom",
       "source_file": "package.json",
-      "source_location": "L30"
+      "source_location": "L31"
     },
     {
       "id": "package_devdependencies_typescript",
@@ -739,7 +774,29 @@
       "file_type": "code",
       "norm_label": "typescript",
       "source_file": "package.json",
-      "source_location": "L31"
+      "source_location": "L33"
+    },
+    {
+      "id": "package_devdependencies_vite_pwa_assets_generator",
+      "label": "@vite-pwa/assets-generator",
+      "_origin": "ast",
+      "community": 16,
+      "community_name": "devDependencies",
+      "file_type": "code",
+      "norm_label": "@vite-pwa/assets-generator",
+      "source_file": "package.json",
+      "source_location": "L32"
+    },
+    {
+      "id": "package_devdependencies_workbox_build",
+      "label": "workbox-build",
+      "_origin": "ast",
+      "community": 16,
+      "community_name": "devDependencies",
+      "file_type": "code",
+      "norm_label": "workbox-build",
+      "source_file": "package.json",
+      "source_location": "L34"
     },
     {
       "id": "tsconfig",
@@ -808,6 +865,39 @@
       "source_location": "L1"
     },
     {
+      "id": "vercel_cleanurls",
+      "label": "cleanUrls",
+      "_origin": "ast",
+      "community": 18,
+      "community_name": "vercel.json",
+      "file_type": "code",
+      "norm_label": "cleanurls",
+      "source_file": "vercel.json",
+      "source_location": "L2"
+    },
+    {
+      "id": "vercel_headers",
+      "label": "headers",
+      "_origin": "ast",
+      "community": 18,
+      "community_name": "vercel.json",
+      "file_type": "code",
+      "norm_label": "headers",
+      "source_file": "vercel.json",
+      "source_location": "L5"
+    },
+    {
+      "id": "vercel_redirects",
+      "label": "redirects",
+      "_origin": "ast",
+      "community": 18,
+      "community_name": "vercel.json",
+      "file_type": "code",
+      "norm_label": "redirects",
+      "source_file": "vercel.json",
+      "source_location": "L3"
+    },
+    {
       "id": "vercel_rewrites",
       "label": "rewrites",
       "_origin": "ast",
@@ -816,7 +906,95 @@
       "file_type": "code",
       "norm_label": "rewrites",
       "source_file": "vercel.json",
-      "source_location": "L2"
+      "source_location": "L4"
+    },
+    {
+      "id": "styles_css",
+      "label": "@gokulsaraswat/ui/styles.css",
+      "_origin": "ast",
+      "community": 19,
+      "community_name": "Base.astro",
+      "confidence": "EXTRACTED",
+      "file_type": "code",
+      "norm_label": "@gokulsaraswat/ui/styles.css",
+      "source_file": "@gokulsaraswat/ui/styles.css"
+    },
+    {
+      "id": "tokens_css",
+      "label": "@gokulsaraswat/ui/tokens.css",
+      "_origin": "ast",
+      "community": 19,
+      "community_name": "Base.astro",
+      "confidence": "EXTRACTED",
+      "file_type": "code",
+      "norm_label": "@gokulsaraswat/ui/tokens.css",
+      "source_file": "@gokulsaraswat/ui/tokens.css"
+    },
+    {
+      "id": "ui",
+      "label": "@gokulsaraswat/ui",
+      "_origin": "ast",
+      "community": 19,
+      "community_name": "Base.astro",
+      "confidence": "EXTRACTED",
+      "file_type": "code",
+      "norm_label": "@gokulsaraswat/ui",
+      "source_file": "@gokulsaraswat/ui"
+    },
+    {
+      "id": "src_layouts_base",
+      "label": "Base.astro",
+      "_origin": "ast",
+      "community": 19,
+      "community_name": "Base.astro",
+      "file_type": "code",
+      "norm_label": "base.astro",
+      "source_file": "src/layouts/Base.astro",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_layouts_base_base",
+      "label": "base",
+      "_origin": "ast",
+      "community": 19,
+      "community_name": "Base.astro",
+      "file_type": "code",
+      "norm_label": "base",
+      "source_file": "src/layouts/Base.astro",
+      "source_location": "L12"
+    },
+    {
+      "id": "src_pages_slug",
+      "label": "[slug].astro",
+      "_origin": "ast",
+      "community": 19,
+      "community_name": "Base.astro",
+      "file_type": "code",
+      "norm_label": "[slug].astro",
+      "source_file": "src/pages/[slug].astro",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_pages_slug_slug",
+      "label": "{ slug }",
+      "_origin": "ast",
+      "community": 19,
+      "community_name": "Base.astro",
+      "file_type": "code",
+      "norm_label": "{ slug }",
+      "source_file": "src/pages/[slug].astro",
+      "source_location": "L9"
+    },
+    {
+      "id": "ref_gokulsaraswat_ui",
+      "label": "@gokulsaraswat/ui",
+      "_origin": "ast",
+      "community": 19,
+      "community_name": "Base.astro",
+      "file_type": "concept",
+      "norm_label": "@gokulsaraswat/ui",
+      "source_file": "package.json",
+      "source_location": "L21"
     },
     {
       "id": "project_architecture",
@@ -864,7 +1042,7 @@
       "node_kind": "heading",
       "norm_label": "3. low-level design (lld) & solid class schemas",
       "source_file": ".project-architecture.md",
-      "source_location": "L32"
+      "source_location": "L33"
     },
     {
       "id": "project_architecture_codebase_blueprint_structural_graph",
@@ -877,6 +1055,28 @@
       "norm_label": "codebase blueprint & structural graph",
       "source_file": ".project-architecture.md",
       "source_location": "L1"
+    },
+    {
+      "id": "scripts_build_sw",
+      "label": "build-sw.mjs",
+      "_origin": "ast",
+      "community": 20,
+      "community_name": "build-sw.mjs",
+      "file_type": "code",
+      "norm_label": "build-sw.mjs",
+      "source_file": "scripts/build-sw.mjs",
+      "source_location": "L1"
+    },
+    {
+      "id": "ref_workbox_build",
+      "label": "workbox-build",
+      "_origin": "ast",
+      "community": 20,
+      "community_name": "build-sw.mjs",
+      "file_type": "concept",
+      "norm_label": "workbox-build",
+      "source_file": "package.json",
+      "source_location": "L34"
     },
     {
       "id": "sync_architecture",
@@ -1017,7 +1217,7 @@
       "file_type": "concept",
       "norm_label": "idb-keyval",
       "source_file": "package.json",
-      "source_location": "L22"
+      "source_location": "L23"
     },
     {
       "id": "docs_research_options",
@@ -1114,6 +1314,18 @@
       "norm_label": "2026-10-31: remaining picks accepted (gokul: \"use your picks\")",
       "source_file": "docs/RESEARCH-OPTIONS.md",
       "source_location": "L246"
+    },
+    {
+      "id": "docs_research_options_2026_10_31_service_worker_tooling_changed_during_build_claude_step_5",
+      "label": "2026-10-31: service worker tooling changed during build (Claude, step 5)",
+      "_origin": "ast",
+      "community": 5,
+      "community_name": "RESEARCH-OPTIONS: gokulmobilize hub",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "2026-10-31: service worker tooling changed during build (claude, step 5)",
+      "source_file": "docs/RESEARCH-OPTIONS.md",
+      "source_location": "L263"
     },
     {
       "id": "docs_research_options_2_1_service_worker",
@@ -1449,7 +1661,7 @@
       "node_kind": "heading",
       "norm_label": "lld",
       "source_file": "docs/ARCHITECTURE.md",
-      "source_location": "L17"
+      "source_location": "L18"
     },
     {
       "id": "docs_architecture_size_production_build_gzip",
@@ -1461,7 +1673,7 @@
       "node_kind": "heading",
       "norm_label": "size (production build, gzip)",
       "source_file": "docs/ARCHITECTURE.md",
-      "source_location": "L26"
+      "source_location": "L29"
     },
     {
       "id": "docs_contracts",
@@ -1521,7 +1733,7 @@
       "node_kind": "heading",
       "norm_label": "path layout (decided 2026-10-31)",
       "source_file": "docs/CONTRACTS.md",
-      "source_location": "L23"
+      "source_location": "L24"
     },
     {
       "id": "readme",
@@ -1708,6 +1920,17 @@
       "source_location": "L5"
     },
     {
+      "id": "pwa_assets_config",
+      "label": "pwa-assets.config.js",
+      "_origin": "ast",
+      "community": 8,
+      "community_name": "package.json",
+      "file_type": "code",
+      "norm_label": "pwa-assets.config.js",
+      "source_file": "pwa-assets.config.js",
+      "source_location": "L1"
+    },
+    {
       "id": "ref_astro",
       "label": "astro",
       "_origin": "ast",
@@ -1716,7 +1939,7 @@
       "file_type": "concept",
       "norm_label": "astro",
       "source_file": "package.json",
-      "source_location": "L21"
+      "source_location": "L22"
     },
     {
       "id": "ref_astrojs_check",
@@ -1727,7 +1950,7 @@
       "file_type": "concept",
       "norm_label": "@astrojs/check",
       "source_file": "package.json",
-      "source_location": "L27"
+      "source_location": "L28"
     },
     {
       "id": "ref_astrojs_react",
@@ -1738,7 +1961,7 @@
       "file_type": "concept",
       "norm_label": "@astrojs/react",
       "source_file": "package.json",
-      "source_location": "L18"
+      "source_location": "L19"
     },
     {
       "id": "ref_react",
@@ -1749,7 +1972,7 @@
       "file_type": "concept",
       "norm_label": "react",
       "source_file": "package.json",
-      "source_location": "L23"
+      "source_location": "L24"
     },
     {
       "id": "ref_react_dom",
@@ -1760,7 +1983,7 @@
       "file_type": "concept",
       "norm_label": "react-dom",
       "source_file": "package.json",
-      "source_location": "L24"
+      "source_location": "L25"
     },
     {
       "id": "ref_types_node",
@@ -1771,7 +1994,7 @@
       "file_type": "concept",
       "norm_label": "@types/node",
       "source_file": "package.json",
-      "source_location": "L28"
+      "source_location": "L29"
     },
     {
       "id": "ref_types_react",
@@ -1782,7 +2005,7 @@
       "file_type": "concept",
       "norm_label": "@types/react",
       "source_file": "package.json",
-      "source_location": "L29"
+      "source_location": "L30"
     },
     {
       "id": "ref_types_react_dom",
@@ -1793,7 +2016,7 @@
       "file_type": "concept",
       "norm_label": "@types/react-dom",
       "source_file": "package.json",
-      "source_location": "L30"
+      "source_location": "L31"
     },
     {
       "id": "ref_typescript",
@@ -1804,7 +2027,18 @@
       "file_type": "concept",
       "norm_label": "typescript",
       "source_file": "package.json",
-      "source_location": "L31"
+      "source_location": "L33"
+    },
+    {
+      "id": "ref_vite_pwa_assets_generator",
+      "label": "@vite-pwa/assets-generator",
+      "_origin": "ast",
+      "community": 8,
+      "community_name": "package.json",
+      "file_type": "concept",
+      "norm_label": "@vite-pwa/assets-generator",
+      "source_file": "package.json",
+      "source_location": "L32"
     },
     {
       "id": "src_components_tilegrid",
@@ -1816,28 +2050,6 @@
       "norm_label": "tilegrid.astro",
       "source_file": "src/components/TileGrid.astro",
       "source_location": "L1"
-    },
-    {
-      "id": "src_layouts_base",
-      "label": "Base.astro",
-      "_origin": "ast",
-      "community": 9,
-      "community_name": "render-tiles.ts",
-      "file_type": "code",
-      "norm_label": "base.astro",
-      "source_file": "src/layouts/Base.astro",
-      "source_location": "L1"
-    },
-    {
-      "id": "src_layouts_base_base",
-      "label": "base",
-      "_origin": "ast",
-      "community": 9,
-      "community_name": "render-tiles.ts",
-      "file_type": "code",
-      "norm_label": "base",
-      "source_file": "src/layouts/Base.astro",
-      "source_location": "L12"
     },
     {
       "id": "src_lib_render_tiles",
@@ -1873,28 +2085,6 @@
       "source_location": "L1"
     },
     {
-      "id": "src_pages_slug",
-      "label": "[slug].astro",
-      "_origin": "ast",
-      "community": 9,
-      "community_name": "render-tiles.ts",
-      "file_type": "code",
-      "norm_label": "[slug].astro",
-      "source_file": "src/pages/[slug].astro",
-      "source_location": "L1"
-    },
-    {
-      "id": "src_pages_slug_slug",
-      "label": "{ slug }",
-      "_origin": "ast",
-      "community": 9,
-      "community_name": "render-tiles.ts",
-      "file_type": "code",
-      "norm_label": "{ slug }",
-      "source_file": "src/pages/[slug].astro",
-      "source_location": "L9"
-    },
-    {
       "id": "ref_gokulsaraswat_config",
       "label": "@gokulsaraswat/config",
       "_origin": "ast",
@@ -1902,17 +2092,6 @@
       "community_name": "render-tiles.ts",
       "file_type": "concept",
       "norm_label": "@gokulsaraswat/config",
-      "source_file": "package.json",
-      "source_location": "L19"
-    },
-    {
-      "id": "ref_gokulsaraswat_ui",
-      "label": "@gokulsaraswat/ui",
-      "_origin": "ast",
-      "community": 9,
-      "community_name": "render-tiles.ts",
-      "file_type": "concept",
-      "norm_label": "@gokulsaraswat/ui",
       "source_file": "package.json",
       "source_location": "L20"
     },
@@ -1942,6 +2121,18 @@
     }
   ],
   "links": [
+    {
+      "source": "scripts_build_sw_cleanhtmlurls",
+      "target": "scripts_build_sw_tocleanurl",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "scripts/build-sw.mjs",
+      "source_location": "L9",
+      "weight": 1.0
+    },
     {
       "source": "src_lib_hub_config_createconfigstore",
       "target": "src_lib_hub_config_keyvaluestorage_get",
@@ -2047,7 +2238,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "package.json",
-      "source_location": "L18",
+      "source_location": "L19",
       "weight": 1.0
     },
     {
@@ -2059,7 +2250,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "package.json",
-      "source_location": "L19",
+      "source_location": "L20",
       "weight": 1.0
     },
     {
@@ -2071,7 +2262,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "package.json",
-      "source_location": "L20",
+      "source_location": "L21",
       "weight": 1.0
     },
     {
@@ -2083,7 +2274,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "package.json",
-      "source_location": "L21",
+      "source_location": "L22",
       "weight": 1.0
     },
     {
@@ -2095,7 +2286,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "package.json",
-      "source_location": "L22",
+      "source_location": "L23",
       "weight": 1.0
     },
     {
@@ -2107,7 +2298,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "package.json",
-      "source_location": "L23",
+      "source_location": "L24",
       "weight": 1.0
     },
     {
@@ -2119,7 +2310,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "package.json",
-      "source_location": "L24",
+      "source_location": "L25",
       "weight": 1.0
     },
     {
@@ -2131,7 +2322,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "package.json",
-      "source_location": "L27",
+      "source_location": "L28",
       "weight": 1.0
     },
     {
@@ -2143,7 +2334,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "package.json",
-      "source_location": "L28",
+      "source_location": "L29",
       "weight": 1.0
     },
     {
@@ -2155,7 +2346,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "package.json",
-      "source_location": "L29",
+      "source_location": "L30",
       "weight": 1.0
     },
     {
@@ -2167,7 +2358,19 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "package.json",
-      "source_location": "L30",
+      "source_location": "L31",
+      "weight": 1.0
+    },
+    {
+      "source": "package",
+      "target": "ref_vite_pwa_assets_generator",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "package.json",
+      "source_location": "L32",
       "weight": 1.0
     },
     {
@@ -2179,7 +2382,19 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "package.json",
-      "source_location": "L31",
+      "source_location": "L33",
+      "weight": 1.0
+    },
+    {
+      "source": "package",
+      "target": "ref_workbox_build",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "package.json",
+      "source_location": "L34",
       "weight": 1.0
     },
     {
@@ -2240,6 +2455,30 @@
       "context": "import",
       "source_file": "astro.config.mjs",
       "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "pwa_assets_config",
+      "target": "ref_vite_pwa_assets_generator",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "pwa-assets.config.js",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "scripts_build_sw",
+      "target": "ref_workbox_build",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "scripts/build-sw.mjs",
+      "source_location": "L1",
       "weight": 1.0
     },
     {
@@ -2505,7 +2744,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "docs/ARCHITECTURE.md",
-      "source_location": "L17",
+      "source_location": "L18",
       "weight": 1.0
     },
     {
@@ -2516,7 +2755,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "docs/ARCHITECTURE.md",
-      "source_location": "L26",
+      "source_location": "L29",
       "weight": 1.0
     },
     {
@@ -2560,7 +2799,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "docs/CONTRACTS.md",
-      "source_location": "L23",
+      "source_location": "L24",
       "weight": 1.0
     },
     {
@@ -2784,6 +3023,17 @@
       "weight": 1.0
     },
     {
+      "source": "docs_research_options_6_decisions_log",
+      "target": "docs_research_options_2026_10_31_service_worker_tooling_changed_during_build_claude_step_5",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/RESEARCH-OPTIONS.md",
+      "source_location": "L263",
+      "weight": 1.0
+    },
+    {
       "source": "docs_research_options_research_options_gokulmobilize_hub",
       "target": "docs_research_options_1_native_wrapper_capacitor_and_alternatives",
       "relation": "contains",
@@ -2879,7 +3129,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "package.json",
-      "source_location": "L17",
+      "source_location": "L18",
       "weight": 1.0
     },
     {
@@ -2901,7 +3151,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "package.json",
-      "source_location": "L26",
+      "source_location": "L27",
       "weight": 1.0
     },
     {
@@ -2967,7 +3217,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "package.json",
-      "source_location": "L18",
+      "source_location": "L19",
       "weight": 1.0
     },
     {
@@ -2978,7 +3228,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "package.json",
-      "source_location": "L19",
+      "source_location": "L20",
       "weight": 1.0
     },
     {
@@ -2989,7 +3239,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "package.json",
-      "source_location": "L20",
+      "source_location": "L21",
       "weight": 1.0
     },
     {
@@ -3000,7 +3250,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "package.json",
-      "source_location": "L21",
+      "source_location": "L22",
       "weight": 1.0
     },
     {
@@ -3011,7 +3261,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "package.json",
-      "source_location": "L22",
+      "source_location": "L23",
       "weight": 1.0
     },
     {
@@ -3022,7 +3272,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "package.json",
-      "source_location": "L23",
+      "source_location": "L24",
       "weight": 1.0
     },
     {
@@ -3033,7 +3283,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "package.json",
-      "source_location": "L24",
+      "source_location": "L25",
       "weight": 1.0
     },
     {
@@ -3044,7 +3294,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "package.json",
-      "source_location": "L27",
+      "source_location": "L28",
       "weight": 1.0
     },
     {
@@ -3055,7 +3305,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "package.json",
-      "source_location": "L28",
+      "source_location": "L29",
       "weight": 1.0
     },
     {
@@ -3066,7 +3316,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "package.json",
-      "source_location": "L29",
+      "source_location": "L30",
       "weight": 1.0
     },
     {
@@ -3077,7 +3327,18 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "package.json",
-      "source_location": "L30",
+      "source_location": "L31",
+      "weight": 1.0
+    },
+    {
+      "source": "package_devdependencies",
+      "target": "package_devdependencies_vite_pwa_assets_generator",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "package.json",
+      "source_location": "L32",
       "weight": 1.0
     },
     {
@@ -3088,7 +3349,18 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "package.json",
-      "source_location": "L31",
+      "source_location": "L33",
+      "weight": 1.0
+    },
+    {
+      "source": "package_devdependencies",
+      "target": "package_devdependencies_workbox_build",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "package.json",
+      "source_location": "L34",
       "weight": 1.0
     },
     {
@@ -3169,6 +3441,17 @@
       "weight": 1.0
     },
     {
+      "source": "package_scripts",
+      "target": "package_scripts_generate_pwa_assets",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "package.json",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
       "source": "project_architecture",
       "target": "project_architecture_codebase_blueprint_structural_graph",
       "relation": "contains",
@@ -3198,7 +3481,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".project-architecture.md",
-      "source_location": "L32",
+      "source_location": "L33",
       "weight": 1.0
     },
     {
@@ -3330,7 +3613,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "README.md",
-      "source_location": "L28",
+      "source_location": "L29",
       "weight": 1.0
     },
     {
@@ -3341,7 +3624,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "README.md",
-      "source_location": "L31",
+      "source_location": "L32",
       "weight": 1.0
     },
     {
@@ -3352,7 +3635,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "README.md",
-      "source_location": "L37",
+      "source_location": "L38",
       "weight": 1.0
     },
     {
@@ -3363,7 +3646,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "README.md",
-      "source_location": "L43",
+      "source_location": "L44",
       "weight": 1.0
     },
     {
@@ -3375,6 +3658,17 @@
       "confidence_score": 1.0,
       "source_file": "README.md",
       "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "scripts_build_sw",
+      "target": "scripts_build_sw_tocleanurl",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/build-sw.mjs",
+      "source_location": "L5",
       "weight": 1.0
     },
     {
@@ -3555,13 +3849,46 @@
     },
     {
       "source": "vercel",
-      "target": "vercel_rewrites",
+      "target": "vercel_cleanurls",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "vercel.json",
       "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "vercel",
+      "target": "vercel_redirects",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "vercel.json",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "vercel",
+      "target": "vercel_rewrites",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "vercel.json",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "vercel",
+      "target": "vercel_headers",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "vercel.json",
+      "source_location": "L5",
       "weight": 1.0
     },
     {
@@ -3583,7 +3910,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "WORKLOG.md",
-      "source_location": "L21",
+      "source_location": "L23",
       "weight": 1.0
     },
     {
@@ -3594,7 +3921,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "WORKLOG.md",
-      "source_location": "L25",
+      "source_location": "L27",
       "weight": 1.0
     },
     {
@@ -3605,7 +3932,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "WORKLOG.md",
-      "source_location": "L36",
+      "source_location": "L38",
       "weight": 1.0
     },
     {
@@ -3682,6 +4009,33 @@
       "source_file": "src/components/TileGrid.astro"
     },
     {
+      "source": "src_layouts_base",
+      "target": "styles_css",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/layouts/Base.astro"
+    },
+    {
+      "source": "src_layouts_base",
+      "target": "tokens_css",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/layouts/Base.astro"
+    },
+    {
+      "source": "src_layouts_base",
+      "target": "ui",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/layouts/Base.astro"
+    },
+    {
       "source": "src_pages_index",
       "target": "src_layouts_base",
       "relation": "imports_from",
@@ -3689,6 +4043,15 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/pages/index.astro"
+    },
+    {
+      "source": "src_pages_slug",
+      "target": "ui",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/pages/[slug].astro"
     },
     {
       "source": "src_lib_hub_config_configstore",
@@ -3764,7 +4127,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "README.md",
-      "source_location": "L39",
+      "source_location": "L40",
       "weight": 1.0
     },
     {
@@ -3775,7 +4138,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "README.md",
-      "source_location": "L39",
+      "source_location": "L40",
       "weight": 1.0
     },
     {
@@ -3786,7 +4149,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "README.md",
-      "source_location": "L40",
+      "source_location": "L41",
       "weight": 1.0
     },
     {
@@ -3797,7 +4160,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "README.md",
-      "source_location": "L40",
+      "source_location": "L41",
       "weight": 1.0
     },
     {
@@ -3808,7 +4171,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "README.md",
-      "source_location": "L40",
+      "source_location": "L41",
       "weight": 1.0
     },
     {
@@ -3835,6 +4198,18 @@
       "weight": 1.0
     },
     {
+      "source": "scripts_build_sw",
+      "target": "scripts_build_sw_cleanhtmlurls",
+      "relation": "indirect_call",
+      "_origin": "ast",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "context": "collection",
+      "source_file": "scripts/build-sw.mjs",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
       "source": "docs_architecture_lld",
       "target": "src_lib_hub_config_keyvaluestorage",
       "relation": "references",
@@ -3843,7 +4218,7 @@
       "confidence_score": 0.95,
       "context": "KeyValueStorage",
       "source_file": "docs/ARCHITECTURE.md",
-      "source_location": "L20",
+      "source_location": "L21",
       "weight": 1.0
     }
   ],

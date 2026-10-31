@@ -23,7 +23,7 @@
     "active_component": ""
   },
   "sprint": {
-    "goal": "Offline PWA, then Capacitor Android APK",
+    "goal": "Capacitor Android APK",
     "bugs": [],
     "done": [
       {
@@ -67,6 +67,12 @@
         "phase": "offline",
         "item": "PWA: manifest + icons, Workbox generateSW post-build (scope /apps/), prod-only registration, /apps -> /apps/ redirect. Verified offline in browser (server stopped: hub tiles from IDB + footer pages from precache). @vite-pwa/astro skipped (no Astro 7 support).",
         "date": "2026-10-31"
+      },
+      {
+        "step": "5b",
+        "phase": "save-for-later",
+        "item": "Hub 'Saved for later' list over shared IndexedDB gk-saved/items (contract B); portfolio button requested",
+        "date": "2026-10-31"
       }
     ],
     "todo_next": [
@@ -76,13 +82,6 @@
         "item": "Gokul: GitHub description/topics/branch protection; NODE_AUTH_TOKEN in shell + repo secret (or package Actions access)",
         "effort": "",
         "model": ""
-      },
-      {
-        "step": "5b",
-        "phase": "offline",
-        "item": "Save for later (design questions pending with Gokul)",
-        "effort": "high",
-        "model": "Opus 5.5"
       },
       {
         "step": 6,

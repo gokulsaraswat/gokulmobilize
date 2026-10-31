@@ -266,3 +266,6 @@ Replacement: `workbox-build` 7.4.1 `generateSW`, run over `dist/` after `astro b
 - No `--legacy-peer-deps`.
 - `npm audit` shows 9 low/moderate findings, all in workbox-build's build-time dependencies (dev only, run on our own files). This is accepted.
 - Revisit when `@vite-pwa/astro` supports Astro 7, or switch to Serwist.
+
+### 2026-10-31: save for later = option B (Gokul)
+A "Save for later" button on portfolio blog/course pages writes to shared IndexedDB, and the hub shows a "Saved for later" list. Contract: docs/CONTRACTS.md. Offline reading of saved pages = the portfolio's own service worker. In the APK, sharing across origins is deferred to the Android step.

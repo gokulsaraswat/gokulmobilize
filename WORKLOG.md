@@ -20,8 +20,10 @@ Master status of all repos: platform/docs/WORKLOG.md. Update this file after eve
 
 - 2026-10-31: Step 5 (offline): installable PWA (manifest + generated icons from the placeholder Astro favicon), Workbox `generateSW` after build (precache shell + 10 pages, scope /apps/), `/apps` -> `/apps/` redirect. Verified offline with the server stopped. `@vite-pwa/astro` does not support Astro 7 yet, so plain workbox-build is used (see RESEARCH-OPTIONS section 6). Vercel redirect/cleanUrls behaviour is UNVERIFIED until the first deploy.
 
+- 2026-10-31: Save for later, hub side (option B): "Saved for later" list reading IndexedDB `gk-saved`/`items` (contract in docs/CONTRACTS.md), remove button, validation (skips malformed/off-site items), 2 tests. Verified in browser by writing items as the portfolio would; the bad item was skipped and Remove worked; test data deleted.
+
 ## In progress / next
-- Next: save for later (needs Gokul's design answers), then step 6, Capacitor Android.
+- Next: step 6, Capacitor Android (propose first, wait for OK).
 - Open: Xcode installed?, GitHub repo description/topics/branch protection (owner, web UI).
 
 ## Blockers / requests to other repos
@@ -33,7 +35,8 @@ Requests for the planning chat to sync into platform/docs/WORKLOG.md (this chat 
 - REQUEST checkers-gym-management (its own chat, later): serve under `/gym`; CRA is deprecated, consider moving to Vite; decide the Supabase project (the same one = shared login).
 - REQUEST Progress (GSpace): build with base `/gspace` and publish the `dist` as a zip on each GitHub Release; the hub CI downloads a pinned version.
 - REQUEST Markdown-studio: same, with base `/studio` (relative or `/studio`-prefixed asset paths).
-- No platform request: config.json stays v1.
+- REQUEST bestportofolio: "Save for later" button on `/blog/[slug]` and `/courses/[slug]` writing `SavedItem` v1 to IndexedDB `gk-saved`/`items` (key = url), per gokulmobilize docs/CONTRACTS.md. For offline reading, add a portfolio service worker (scope `/`) that caches saved pages and their assets.
+- REQUEST platform (optional, later): move the `SavedItem` type and validator into `@gokulsaraswat/config`, so the hub and portfolio share one definition. config.json stays v1.
 
 ## Reminders
 - Stack DECIDED 2026-10-31: Capacitor 8 (pinned) + Astro 7 static + vanilla-TS tiles + @vite-pwa/astro + plain-TS SWR store on idb-keyval.

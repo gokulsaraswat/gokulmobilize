@@ -1,0 +1,114 @@
+<section class="saved" aria-labelledby="saved-heading" hidden>
+  <h2 id="saved-heading">Saved for later</h2>
+  <ul class="list"></ul>
+  <template id="saved-template">
+    <li>
+      <a class="item">
+        <span class="kind"></span>
+        <span class="title"></span>
+      </a>
+      <button type="button" class="remove">Remove</button>
+    </li>
+  </template>
+</section>
+
+<script>
+  import { listSaved, removeSaved, type SavedItem } from '../lib/saved-items';
+
+  const section = document.querySelector<HTMLElement>('.saved')!;
+  const list = section.querySelector<HTMLUListElement>('.list')!;
+  const template = section.querySelector<HTMLTemplateElement>('#saved-template')!;
+
+  const toRow = (saved: SavedItem) => {
+    const row = template.content.firstElementChild!.cloneNode(true) as HTMLLIElement;
+    const link = row.querySelector('a')!;
+    const remove = row.querySelector('button')!;
+    link.href = saved.url;
+    row.querySelector('.kind')!.textContent = saved.kind === 'course' ? 'Course' : 'Blog';
+    row.querySelector('.title')!.textContent = saved.title;
+    remove.setAttribute('aria-label', `Remove ${saved.title}`);
+    remove.addEventListener('click', async () => {
+      remove.disabled = true;
+      await removeSaved(saved.url);
+      await render();
+    });
+    return row;
+  };
+
+  async function render() {
+    try {
+      const items = await listSaved();
+      list.replaceChildren(...items.map(toRow));
+      section.hidden = items.length === 0;
+    } catch (error) {
+      console.warn('saved items unreadable', error);
+    }
+  }
+
+  render();
+  document.addEventListener('visibilitychange', () => document.visibilityState === 'visible' && render());
+</script>
+
+<style>
+  .saved {
+    margin-top: 2rem;
+  }
+  h2 {
+    font-size: var(--text-xl);
+    margin: 0 0 0.75rem;
+  }
+  .list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 0.5rem;
+  }
+  .list :global(li) {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 0.75rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    background: var(--card);
+  }
+  .list :global(.item) {
+    flex: 1;
+    display: grid;
+    min-height: 2.75rem;
+    align-content: center;
+    color: var(--card-foreground);
+    text-decoration: none;
+  }
+  .list :global(.kind) {
+    color: var(--muted-foreground);
+    font-size: var(--text-xs);
+  }
+  .list :global(.item:focus-visible),
+  .list :global(.remove:focus-visible) {
+    outline: 2px solid var(--ring);
+    outline-offset: 2px;
+  }
+  .list :global(.remove) {
+    min-height: 2.75rem;
+    min-width: 2.75rem;
+    padding: 0 0.75rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    background: var(--secondary);
+    color: var(--secondary-foreground);
+    cursor: pointer;
+    transition: opacity var(--motion-duration-micro) var(--motion-ease-enter);
+  }
+  .list :global(.remove:hover) {
+    opacity: 0.8;
+  }
+  .list :global(.remove:active) {
+    opacity: 0.6;
+  }
+  .list :global(.remove:disabled) {
+    opacity: 0.5;
+    cursor: progress;
+  }
+</style>

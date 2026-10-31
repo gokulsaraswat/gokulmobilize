@@ -21,6 +21,19 @@ Status (2026-10-31): web hub implemented against the mock config. Native app and
 | Env | `PUBLIC_HUB_CONFIG_URL` (see .env.example) |
 | Native app | Android APK (Capacitor 8); start screen = hub served from `localhost`; `/gspace`, `/studio` bundled |
 
+## Saved for later (shared with the portfolio; decided 2026-10-31, option B)
+The portfolio writes, and the hub reads and deletes. This works because both are on the same origin on the web (`/` and `/apps/`).
+| Item | Value |
+|---|---|
+| Storage | IndexedDB database `gk-saved`, object store `items` (no keyPath; out-of-line key = `url`). Same as idb-keyval `createStore('gk-saved', 'items')` |
+| Value `SavedItem` v1 | `{ url: string; title: string; kind: 'blog' \| 'course'; savedAt: string }` |
+| `url` | Same-origin path starting with `/`, e.g. `/blog/<slug>`, `/courses/<slug>` |
+| `savedAt` | ISO 8601 timestamp |
+| Hub rule | Malformed items are skipped. Newest first. Remove = delete by key `url` |
+| Offline reading | The portfolio's job: its own service worker (scope `/`) caches saved pages and their assets. The hub only links to them |
+Breaking change = renaming the database/store, or changing the key or the field names/types.
+Inside the APK the portfolio is a different origin, so nothing is shared yet. That is solved in the Android step.
+
 ## Path layout (decided 2026-10-31)
 | Path | App | Mode in hub |
 |---|---|---|
