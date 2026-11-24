@@ -1,6 +1,6 @@
 # WORKLOG: gokulmobilize
 
-Master status of all repos: platform/docs/WORKLOG.md (github.com/gokulsaraswat/platform). Update this file after every step. Last updated: 2026-10-31.
+Master status of all repos: platform/docs/WORKLOG.md (github.com/gokulsaraswat/platform). Update this file after every step. Last updated: 2026-11-25.
 
 ## How to resume (new chat or new person)
 1. Read in order: CLAUDE.md, this file, `.claude-session.json` (`sprint.todo_next`), docs/CONTRACTS.md, docs/ARCHITECTURE.md, docs/RESEARCH-OPTIONS.md (section 6 = every decision and why).
@@ -12,7 +12,7 @@ Master status of all repos: platform/docs/WORKLOG.md (github.com/gokulsaraswat/p
 | Area | State |
 |---|---|
 | Web hub | Done. Astro 7.4 static at `/apps/`; card tiles from `public/config.mock.json` (stale-while-revalidate via IndexedDB); 9 footer pages from `@gokulsaraswat/ui`; installable offline PWA (Workbox service worker); "Saved for later" list. Verified in a browser, including offline. |
-| Android app | Done. Capacitor 8.5. Signed release **v0.1.0** on [GitHub Releases](https://github.com/gokulsaraswat/gokulmobilize/releases/tag/v0.1.0) (3.4 MB, signature verified). Tested on an emulator: tiles, bundled placeholder, back button, FAQ, in-app browser. |
+| Android app | Done. Capacitor 8.6. Signed release **v0.1.0** on [GitHub Releases](https://github.com/gokulsaraswat/gokulmobilize/releases/tag/v0.1.0) (3.4 MB, signature verified). Tested on an emulator: tiles, bundled placeholder, back button, FAQ, in-app browser. |
 | CI | Green. Jobs: `verify` (kit check, npm ci, build, lint, test), `android` (debug APK artifact on every push), `android-release` (signed APK on `v*` tags). |
 | Vercel | First deploy failed: 401 on `npm install` of `@gokulsaraswat/*`, because the Vercel project has no valid `NODE_AUTH_TOKEN`. Fix = Gokul adds the env var (README > Deploy). The hub's own URL `/` redirects to `/apps/`. |
 | Placeholders | `config.mock.json` (no real config.json from admin yet); GSpace/Studio pages in the app say "not bundled yet"; app icon = Astro rocket; legal page text = placeholder from `@gokulsaraswat/ui`. |
@@ -25,11 +25,21 @@ Master status of all repos: platform/docs/WORKLOG.md (github.com/gokulsaraswat/p
 - `config.json` stays v1 (`@gokulsaraswat/config`); icon/description/accent come from a local map in `src/lib/tile-meta.ts`.
 - Service worker: `workbox-build` generateSW after the build. `@vite-pwa/astro` doesn't support Astro 7 yet.
 - Save for later = option B: the portfolio writes to IndexedDB `gk-saved`/`items`; the hub lists and removes.
-- Native: Capacitor 8.5 pinned. Remote and external tiles open in `@capacitor/browser` (Custom Tabs). `allowNavigation` is not used: the Capacitor docs mark it not for production.
+- Native: Capacitor pinned with `~` (8.6.x since f687489). Remote and external tiles open in `@capacitor/browser` (Custom Tabs). `allowNavigation` is not used: the Capacitor docs mark it not for production.
 - App build links must name files (`/faq.html`, `/gspace/index.html`): Capacitor's Android server serves extension-less paths as the root index.html.
 - Bundled apps: gspace + studio, delivered as release zips from their repos (pinned version).
 - App id `com.gokulsaraswat.gokulmobilize`. Release cert SHA-256 `59e7d15360520491b365b4ef89ca02212b30d858434c045e75e9f3a8a805ca12`. Every future APK must be signed with this key.
 - iOS: PWA "Add to Home Screen" only for now. A native build needs Xcode plus a free Apple ID sideload (7-day expiry).
+
+## Upgrade run 2026-11-25 (unattended, phases A-E; plan at workspace root)
+- Phase A (inventory) done: docs/FEATURES.md (do-not-break list + baseline numbers). Baseline: build 9.6 s, dist 564 KB, precache 23 files / 338.2 KB, lint 0/0/0 (19 files), tests 8/8, `android:sync` exit 0 via Git Bash shell (fails under cmd: MOB-B-001), CI green. Offline verified (SW precache + IndexedDB tiles + navigate fallback).
+- Island audit: no `client:*` anywhere; React is build-time only. Findings filed: MOB-B-001, MOB-B-002, MOB-I-002..005, MOB-D-001, MOB-X-001.
+- Next: phase B (fixes: MOB-B-001 Windows scripts, safe-area/theme-color, precache trim), phase C (cleanup), phase D on branch redesign/gokulmobilize (Atelier flavor, @gokulsaraswat/ui ^0.2.0 there only).
+
+### Assumptions (upgrade run)
+- docs/CONTEXT.md is a synced copy from platform: its "docs/master/WORKLOG.md if present" line is left as is (conditional; change it in platform).
+- docs/RESEARCH-OPTIONS.md and .claude-session.json keep their historical mentions of docs/master (records, not instructions).
+- Android `cap sync` rewrites android/*.gradle with LF/CRLF only; those line-ending changes are reverted, never committed.
 
 ## Done (2026-10-31, newest last; commits on main)
 - 2026-11-25: UI/motion upgrade queued as TODO only (no source changes). Prompt added to docs/KICKOFF-PROMPT.md; backlog item added; animation libs installed but unused (see backlog). MOB-I-001.

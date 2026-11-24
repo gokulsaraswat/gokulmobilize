@@ -1,6 +1,6 @@
 # ARCHITECTURE: gokulmobilize
 
-Only what exists. Updated: 2026-10-31.
+Only what exists. Updated: 2026-11-25. Feature list + baseline: docs/FEATURES.md.
 
 ## HLD
 ```text
@@ -30,11 +30,11 @@ config URL = `PUBLIC_HUB_CONFIG_URL`, or `/apps/config.mock.json` when unset.
 
 ## Size (production build, gzip)
 - Tile script 24 KB. Most of it is zod, pulled in via `parseHubConfig`.
-- React's client runtime is emitted but not loaded, because no component hydrates. The SW still precaches it (~200 KB raw of the 334 KB precache).
+- React's client runtime is emitted but not loaded, because no component hydrates. The SW still precaches it (220.7 KB raw of the 338.2 KB precache, 2026-11-25).
 
 Astro `build.format: 'file'` (page.html) so the SW and Vercel `cleanUrls` serve `/apps/page`.
 
-## Native app (Android, Capacitor 8.5)
+## Native app (Android, Capacitor 8.6)
 ```text
 npm run build:native (PUBLIC_HUB_NATIVE=true): base '/', outDir dist-native, no SW, footer links via FileLink (/faq.html)
   + scripts/bundle-apps.mjs: dist-native/gspace|studio <- bundled/<id>/ or a placeholder page

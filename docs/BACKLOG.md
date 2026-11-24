@@ -7,11 +7,17 @@ Status: open, doing, blocked, done, dropped. Cross-repo: `needs:` waits on, `blo
 ## Bugs
 | ID | Title | Pri | Status | Needs/Blocks | Notes (where, repro, evidence) |
 |---|---|---|---|---|---|
+| MOB-B-001 | `build:native` / `android:sync` fail on Windows | P1 | open | | `package.json` uses a POSIX env prefix (`PUBLIC_HUB_NATIVE=true astro build`); npm on Windows runs scripts in cmd: "'PUBLIC_HUB_NATIVE' is not recognized". Workaround: `npm_config_script_shell` = Git Bash (then exit 0, 11.7 s). CI (ubuntu) unaffected. Found 2026-11-25 (phase A). |
+| MOB-B-002 | Skeleton cards look like empty white cards | P3 | open | | `TileGrid.astro`: `.grid :global(.tile)` (higher specificity) overrides `.skeleton { background: var(--muted) }`; only the opacity pulse remains. |
 
 ## Improvements
 | ID | Title | Pri | Status | Needs/Blocks | Notes |
 |---|---|---|---|---|---|
-| MOB-I-001 | UI/motion upgrade of hub (TileGrid, SavedList, Base) | P2 | open | pilot repo; master: PLT-I-001 | Prompt: docs/KICKOFF-PROMPT.md "UI UPGRADE ADD-ON". Installed 2026-11-25: motion, @formkit/auto-animate (unused so far). Verify: lint, test, build. |
+| MOB-I-001 | UI/motion upgrade of hub (TileGrid, SavedList, Base) | P2 | open | pilot repo; master: PLT-I-001 | Prompt: docs/KICKOFF-PROMPT.md "UI UPGRADE ADD-ON". Note 2026-11-25 (phase A): motion and @formkit/auto-animate are NOT in package.json/lockfile (the earlier note was wrong). Verify: lint, test, build. |
+| MOB-I-002 | Stop precaching the unused React client runtime | P2 | open | | `dist/_astro/client.*.js` 220.7 KB raw / 68.2 KB gz is emitted and precached (338.2 KB total) though no island hydrates. |
+| MOB-I-003 | Footer links are 24 px tall on touch (44 px preferred) | P2 | open | needs: platform `Footer` (ui) or a local override | Measured at 390 px mobile emulation: footer links 22-121 x 24 px. Tiles 138 px, Remove 44 px. |
+| MOB-I-004 | Safe-area insets and theme colour | P2 | open | | No `viewport-fit=cover`, no `env(safe-area-inset-*)`, no `theme-color` meta; matters for standalone PWA and Android edge-to-edge. |
+| MOB-I-005 | Dark theme / system theme | P2 | open | | `tokens.css` dark values sit under `.dark`, which nothing applies; the hub is light-only. Redesign (Atelier, theme system) covers it. |
 
 ## Features
 | ID | Title | Pri | Status | Needs/Blocks | Notes |
@@ -20,10 +26,12 @@ Status: open, doing, blocked, done, dropped. Cross-repo: `needs:` waits on, `blo
 ## Ideas (unscoped, not committed to)
 | ID | Idea | Pri | Status | Needs/Blocks | Notes |
 |---|---|---|---|---|---|
+| MOB-X-001 | Precache the hub config for a first-ever offline visit | P3 | open | | `.json` is outside the SW glob; today the first offline visit (nothing in IndexedDB) shows the offline status line. Works as designed after one online load. |
 
 ## Tech debt
 | ID | Title | Pri | Status | Needs/Blocks | Notes |
 |---|---|---|---|---|---|
+| MOB-D-001 | No Lighthouse / performance budget | P3 | open | | Lighthouse is not installed locally; baseline in docs/FEATURES.md uses CDP paint timings only. |
 
 ## Done (recent)
 | ID | Title | Commit | Date |
