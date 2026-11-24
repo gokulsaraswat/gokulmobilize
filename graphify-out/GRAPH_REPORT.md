@@ -1,17 +1,17 @@
 # Graph Report - gokulmobilize  (2026-11-24)
 
 ## Corpus Check
-- 53 files · ~30,980 words
+- 53 files · ~31,164 words
 - Verdict: corpus is large enough that graph structure adds value.
 - Unclassified: 24 file(s) not represented in the graph (top: .xml 10, (none) 6, .properties 2)
 
 ## Summary
-- 293 nodes · 320 edges · 32 communities (21 shown, 11 thin omitted)
+- 295 nodes · 322 edges · 32 communities (21 shown, 11 thin omitted)
 - Extraction: 97% EXTRACTED · 3% INFERRED · 0% AMBIGUOUS · INFERRED: 11 edges (avg confidence: 0.92)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `005d2906`
+- Built from commit: `640048e6`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -45,11 +45,11 @@
 
 ## God Nodes (most connected - your core abstractions)
 1. `WORKLOG` - 20 edges
-2. `scripts` - 10 edges
-3. `🤖 System Architecture & Co-Worker Protocol` - 9 edges
-4. `WORKLOG: gokulmobilize` - 9 edges
-5. `gokulmobilize` - 9 edges
-6. `CONTEXT: read this first in every new session` - 8 edges
+2. `🤖 System Architecture & Co-Worker Protocol` - 10 edges
+3. `scripts` - 10 edges
+4. `CONTEXT: read this first in every new session` - 9 edges
+5. `WORKLOG: gokulmobilize` - 9 edges
+6. `gokulmobilize` - 9 edges
 7. `Prompt Playbook — CLAUDE.md Workflow` - 7 edges
 8. `RESEARCH-OPTIONS: gokulmobilize hub` - 7 edges
 9. `2. PWA tooling, storage, data layer` - 6 edges
@@ -98,7 +98,7 @@ Nodes (17): 1.1 Comparison, 1.2 Capacitor facts that shape the design, 1.3 Capac
 
 ### Community 6 - "🤖 System Architecture & Co-Worker Protocol"
 Cohesion: 0.07
-Nodes (24): AGENTS.md: gokulmobilize, 🔄 Auto-Sync: System Architecture & Graphify, ⏱️ Communication Constraints (Zero Waste Mode), Context, 📐 Engineering Guardrails, 🎨 Frontend Architecture, UI/UX & Motion Standard, 🛠️ Project Execution Modes (Personal vs. Organization), 🤖 System Architecture & Co-Worker Protocol (+16 more)
+Nodes (25): AGENTS.md: gokulmobilize, 🔄 Auto-Sync: System Architecture & Graphify, ⏱️ Communication Constraints (Zero Waste Mode), Context, 📐 Engineering Guardrails, 🎨 Frontend Architecture, UI/UX & Motion Standard, 🛠️ Project Execution Modes (Personal vs. Organization), STANDING RULES (from Gokul, apply in every session) (+17 more)
 
 ### Community 7 - "saved-items.ts"
 Cohesion: 0.17
@@ -153,28 +153,28 @@ Cohesion: 0.08
 Nodes (23): Agreed order, Architecture (agreed 2026-10-31), Cleanup scan: `/cleanscan` (Claude slash command), Commit + push everything: `/gitmd` (Claude slash command), Current focus, Decisions, Dropped, Far later (+15 more)
 
 ### Community 31 - "CONTEXT: read this first in every new session"
-Cohesion: 0.22
-Nodes (8): CONTEXT: read this first in every new session, Future changes (expect these; do not block them), How repos interact (the contracts), Repo map, This repo: gokulmobilize, Vision, Work modes (ask Gokul which one if unclear), Working rules
+Cohesion: 0.20
+Nodes (9): CONTEXT: read this first in every new session, Future changes (expect these; do not block them), How repos interact (the contracts), Repo map, STANDING RULES (from Gokul, apply in every session), This repo: gokulmobilize, Vision, Work modes (ask Gokul which one if unclear) (+1 more)
 
 ## Knowledge Gaps
-- **157 isolated node(s):** `📐 Engineering Guardrails`, `🎨 Frontend Architecture, UI/UX & Motion Standard`, `📉 Token-Optimized Communication Mode`, `🛠️ Project Execution Modes (Personal vs. Organization)`, `⏱️ Communication Constraints (Zero Waste Mode)` (+152 more)
-  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 185 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
+- **159 isolated node(s):** `📐 Engineering Guardrails`, `🎨 Frontend Architecture, UI/UX & Motion Standard`, `📉 Token-Optimized Communication Mode`, `🛠️ Project Execution Modes (Personal vs. Organization)`, `⏱️ Communication Constraints (Zero Waste Mode)` (+154 more)
+  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 187 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
 - **11 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `SavedItem` connect `WORKLOG: gokulmobilize` to `saved-items.ts`?**
-  _High betweenness centrality (0.196) - this node is a cross-community bridge._
+  _High betweenness centrality (0.195) - this node is a cross-community bridge._
 - **Why does `idb-keyval` connect `hub-config.test.ts` to `package.json`, `saved-items.ts`?**
-  _High betweenness centrality (0.163) - this node is a cross-community bridge._
+  _High betweenness centrality (0.161) - this node is a cross-community bridge._
 - **Why does `LLD` connect `saved-items.ts` to `render-tiles.ts`, `hub-config.test.ts`?**
   _High betweenness centrality (0.153) - this node is a cross-community bridge._
 - **What connects `📐 Engineering Guardrails`, `🎨 Frontend Architecture, UI/UX & Motion Standard`, `📉 Token-Optimized Communication Mode` to the rest of the system?**
-  _157 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _159 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `RESEARCH-OPTIONS: gokulmobilize hub` be split into smaller, more focused modules?**
   _Cohesion score 0.1111111111111111 - nodes in this community are weakly interconnected._
 - **Should `🤖 System Architecture & Co-Worker Protocol` be split into smaller, more focused modules?**
-  _Cohesion score 0.06896551724137931 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.06666666666666667 - nodes in this community are weakly interconnected._
 - **Should `package.json` be split into smaller, more focused modules?**
   _Cohesion score 0.07977207977207977 - nodes in this community are weakly interconnected._

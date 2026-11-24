@@ -2183,6 +2183,18 @@
       "source_location": "L8"
     },
     {
+      "id": "docs_context_standing_rules_from_gokul_apply_in_every_session",
+      "label": "STANDING RULES (from Gokul, apply in every session)",
+      "_origin": "ast",
+      "community": 31,
+      "community_name": "CONTEXT: read this first in every new session",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "standing rules (from gokul, apply in every session)",
+      "source_file": "docs/CONTEXT.md",
+      "source_location": "L46"
+    },
+    {
       "id": "docs_context_this_repo_gokulmobilize",
       "label": "This repo: gokulmobilize",
       "_origin": "ast",
@@ -2619,6 +2631,18 @@
       "norm_label": "\ud83d\udee0\ufe0f project execution modes (personal vs. organization)",
       "source_file": "CLAUDE.md",
       "source_location": "L75"
+    },
+    {
+      "id": "claude_standing_rules_from_gokul_apply_in_every_session",
+      "label": "STANDING RULES (from Gokul, apply in every session)",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "\ud83e\udd16 System Architecture & Co-Worker Protocol",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "standing rules (from gokul, apply in every session)",
+      "source_file": "CLAUDE.md",
+      "source_location": "L111"
     },
     {
       "id": "claude_system_architecture_co_worker_protocol",
@@ -4628,6 +4652,17 @@
     },
     {
       "source": "claude_system_architecture_co_worker_protocol",
+      "target": "claude_standing_rules_from_gokul_apply_in_every_session",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CLAUDE.md",
+      "source_location": "L111",
+      "weight": 1.0
+    },
+    {
+      "source": "claude_system_architecture_co_worker_protocol",
       "target": "claude_frontend_architecture_ui_ux_motion_standard",
       "relation": "contains",
       "_origin": "ast",
@@ -4833,6 +4868,17 @@
       "confidence_score": 1.0,
       "source_file": "docs/CONTEXT.md",
       "source_location": "L41",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_context_context_read_this_first_in_every_new_session",
+      "target": "docs_context_standing_rules_from_gokul_apply_in_every_session",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/CONTEXT.md",
+      "source_location": "L46",
       "weight": 1.0
     },
     {
@@ -7084,5 +7130,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "005d29068731a848787fed706f4575f93797f4d6"
+  "built_at_commit": "640048e6cd28556294e4b49bf277f96d234cab49"
 }

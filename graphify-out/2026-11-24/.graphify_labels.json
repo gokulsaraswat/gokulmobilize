@@ -5,7 +5,7 @@
   "3": "sync-architecture.sh",
   "4": "hub-config.test.ts",
   "5": "RESEARCH-OPTIONS: gokulmobilize hub",
-  "6": "gokulmobilize",
+  "6": "🤖 System Architecture & Co-Worker Protocol",
   "7": "saved-items.ts",
   "8": "package.json",
   "9": "6. Decisions log",
@@ -29,5 +29,6 @@
   "27": "settings.gradle",
   "28": "variables.gradle",
   "29": "WORKLOG",
-  "30": "PLANNING-CHAT-PROMPT.md"
+  "30": "PLANNING-CHAT-PROMPT.md",
+  "31": "CONTEXT: read this first in every new session"
 }

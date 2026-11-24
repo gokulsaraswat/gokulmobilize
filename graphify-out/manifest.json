@@ -12,8 +12,8 @@
     "semantic_hash": ""
   },
   ".project-architecture.md": {
-    "mtime": 1795525209.9355989,
-    "seen": 1795525210.7236118,
+    "mtime": 1795525533.2513537,
+    "seen": 1795525533.9640262,
     "ast_hash": "8227fc4b160e4d96dda604ea14c62015",
     "semantic_hash": ""
   },
@@ -24,9 +24,9 @@
     "semantic_hash": ""
   },
   "CLAUDE.md": {
-    "mtime": 1795525179.967204,
-    "seen": 1795525210.723615,
-    "ast_hash": "7237f7bea58530682b3a88a58ffe4dc7",
+    "mtime": 1795525526.9511275,
+    "seen": 1795525533.9640288,
+    "ast_hash": "7df2227b6f3902ae5d253a3da4fe7702",
     "semantic_hash": ""
   },
   "README.md": {
@@ -510,9 +510,9 @@
     "semantic_hash": ""
   },
   "docs/CONTEXT.md": {
-    "mtime": 1795525179.9663532,
-    "seen": 1795525210.723619,
-    "ast_hash": "842ef4402536c5bd9ecd791406e24f18",
+    "mtime": 1795525526.955692,
+    "seen": 1795525533.9640331,
+    "ast_hash": "450ba8e123ffbf45f941c2560084e27a",
     "semantic_hash": ""
   }
 }
