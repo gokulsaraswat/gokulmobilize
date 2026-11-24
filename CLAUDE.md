@@ -114,7 +114,7 @@ Read `docs/CONTEXT.md` first in every session (vision, repo map, cross-repo cont
 
 
 ## Standing rule: keep tracking files current
-At the end of every task or session, update WORKLOG.md and WORKLOG-PROJECT.md in this repo, then commit and push. PRIVATE-STATUS.md and PRIVATE-TODO.md live only at the workspace root (outside every repo): update them there, never copy them into a repo and never commit them (gitignored; RULES.md section 7).
+At the end of every task or session, update WORKLOG.md in this repo (cross-repo master status: platform/docs/WORKLOG.md, see docs/PLATFORM-DOCS.md), then commit and push. PRIVATE-STATUS.md and PRIVATE-TODO.md live only at the workspace root (outside every repo): update them there, never copy them into a repo and never commit them (gitignored; RULES.md section 7).
 
 ## Global rules
 Read `RULES.md` (synced from `platform/docs/RULES.md`) at the start of every session. It wins over anything above on commit/push, backlog, docs sync and privacy. Backlog: `docs/BACKLOG.md`.

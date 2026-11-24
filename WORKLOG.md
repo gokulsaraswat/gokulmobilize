@@ -33,6 +33,7 @@ Master status of all repos: platform/docs/WORKLOG.md (github.com/gokulsaraswat/p
 
 ## Upgrade run 2026-11-25 (unattended, phases A-E; plan at workspace root)
 - Phase A (inventory) done: docs/FEATURES.md (do-not-break list + baseline numbers). Baseline: build 9.6 s, dist 564 KB, precache 23 files / 338.2 KB, lint 0/0/0 (19 files), tests 8/8, `android:sync` exit 0 via Git Bash shell (fails under cmd: MOB-B-001), CI green. Offline verified (SW precache + IndexedDB tiles + navigate fallback).
+- Kit fixes: CLAUDE.md tracking-files rule (28d510e); docs/master, docs/project and WORKLOG-PROJECT.md replaced by docs/PLATFORM-DOCS.md (copies identical to platform's or stale snapshots of it).
 - Island audit: no `client:*` anywhere; React is build-time only. Findings filed: MOB-B-001, MOB-B-002, MOB-I-002..005, MOB-D-001, MOB-X-001.
 - Next: phase B (fixes: MOB-B-001 Windows scripts, safe-area/theme-color, precache trim), phase C (cleanup), phase D on branch redesign/gokulmobilize (Atelier flavor, @gokulsaraswat/ui ^0.2.0 there only).
 
