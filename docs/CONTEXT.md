@@ -42,3 +42,7 @@ Separate repos/apps behind ONE shared backend, login, admin and UI kit, later jo
 Web hub (Astro static at `/apps/`, PWA, offline, mock config) and signed Android v0.1.0 done. Pending: Vercel env var + domain, real `config.json` URL, bundle real GSpace/Studio, icon, iOS later.
 
 (Status as of 2026-11-24; `WORKLOG.md` is more current.)
+
+## STANDING RULES (from Gokul, apply in every session)
+1. **Push after every change.** After any change in this repo, commit and push to GitHub (`git add`, commit, `git push origin HEAD`; pull --rebase first if behind; never force-push, never skip hooks, never commit secrets). Do not leave uncommitted or unpushed work at the end of a turn.
+2. **Ask detailed questions when needed.** Whenever requirements, scope, trade-offs or cross-repo impact are unclear, ask Gokul questions with full detail and clear options (what each choice means, pros/cons) before acting, rather than guessing.
