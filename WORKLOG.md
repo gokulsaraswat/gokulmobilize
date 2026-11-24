@@ -32,6 +32,7 @@ Master status of all repos: platform/docs/WORKLOG.md (github.com/gokulsaraswat/p
 - iOS: PWA "Add to Home Screen" only for now. A native build needs Xcode plus a free Apple ID sideload (7-day expiry).
 
 ## Done (2026-10-31, newest last; commits on main)
+- 2026-11-25: UI/motion upgrade queued as TODO only (no source changes). Prompt added to docs/KICKOFF-PROMPT.md; backlog item added; animation libs installed but unused (see backlog). MOB-I-001.
 - `06496bb`: repo kit, research, decisions.
 - `ce6e11a`, `27246c1`: Astro hub scaffold, config store + tests, CI with tests.
 - `0e72a75`: offline PWA (manifest, icons, service worker, `/apps` -> `/apps/`).
