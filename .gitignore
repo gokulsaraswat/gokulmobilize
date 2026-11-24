@@ -17,3 +17,7 @@ android/.gradle/
 ios/App/build/
 *.keystore
 *.jks
+
+# graphify churn
+graphify-out/cache/
+graphify-out/manifest.json
