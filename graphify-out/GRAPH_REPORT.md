@@ -1,7 +1,7 @@
 # Graph Report - gokulmobilize  (2026-10-31)
 
 ## Corpus Check
-- 50 files · ~24,656 words
+- 50 files · ~24,763 words
 - Verdict: corpus is large enough that graph structure adds value.
 - Unclassified: 24 file(s) not represented in the graph (top: .xml 10, (none) 6, .properties 2)
 
@@ -11,7 +11,7 @@
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `24e5bb3a`
+- Built from commit: `abfdcb46`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -48,10 +48,10 @@
 4. `🤖 System Architecture & Co-Worker Protocol` - 8 edges
 5. `Prompt Playbook — CLAUDE.md Workflow` - 7 edges
 6. `RESEARCH-OPTIONS: gokulmobilize hub` - 7 edges
-7. `ARCHITECTURE: gokulmobilize` - 6 edges
-8. `2. PWA tooling, storage, data layer` - 6 edges
+7. `2. PWA tooling, storage, data layer` - 6 edges
+8. `ARCHITECTURE: gokulmobilize` - 6 edges
 9. `6. Decisions log` - 6 edges
-10. `LLD` - 5 edges
+10. `KeyValueStorage` - 5 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `LLD` --references--> `KeyValueStorage`  [INFERRED]
@@ -60,10 +60,10 @@
   docs/ARCHITECTURE.md → src/lib/tile-target.ts
 - `Blockers / requests to other repos (planning chat syncs these into platform/docs/WORKLOG.md; this repo never edits others)` --references--> `SavedItem`  [INFERRED]
   WORKLOG.md → src/lib/saved-items.ts
-- `LLD` --references--> `listSaved()`  [INFERRED]
-  docs/ARCHITECTURE.md → src/lib/saved-items.ts
-- `LLD` --references--> `toSavedList()`  [INFERRED]
-  docs/ARCHITECTURE.md → src/lib/saved-items.ts
+- `Saved for later (shared with the portfolio; decided 2026-10-31, option B)` --references--> `SavedItem`  [INFERRED]
+  docs/CONTRACTS.md → src/lib/saved-items.ts
+- `2026-10-31: native app findings (Claude, step 6)` --references--> `MainActivity`  [INFERRED]
+  docs/RESEARCH-OPTIONS.md → android/app/src/main/java/com/gokulsaraswat/gokulmobilize/MainActivity.java
 
 ## Import Cycles
 - None detected.
@@ -151,7 +151,7 @@ Cohesion: 0.22
 Nodes (9): Android APK, Decided stack (2026-10-31), Deploy (Vercel), Docs, Environment variables, gokulmobilize, License, Path layout (one domain) (+1 more)
 
 ## Knowledge Gaps
-- **124 isolated node(s):** `AGENTS.md: gokulmobilize`, `Decided stack (2026-10-31)`, `Path layout (one domain)`, `Run / build`, `Environment variables` (+119 more)
+- **124 isolated node(s):** `Decided stack (2026-10-31)`, `Path layout (one domain)`, `Run / build`, `Environment variables`, `Android APK` (+119 more)
   These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 149 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
 - **10 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -164,7 +164,7 @@ _Questions this graph is uniquely positioned to answer:_
   _High betweenness centrality (0.194) - this node is a cross-community bridge._
 - **Why does `RESEARCH-OPTIONS: gokulmobilize hub` connect `RESEARCH-OPTIONS: gokulmobilize hub` to `6. Decisions log`?**
   _High betweenness centrality (0.162) - this node is a cross-community bridge._
-- **What connects `AGENTS.md: gokulmobilize`, `Decided stack (2026-10-31)`, `Path layout (one domain)` to the rest of the system?**
+- **What connects `Decided stack (2026-10-31)`, `Path layout (one domain)`, `Run / build` to the rest of the system?**
   _124 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `RESEARCH-OPTIONS: gokulmobilize hub` be split into smaller, more focused modules?**
   _Cohesion score 0.1111111111111111 - nodes in this community are weakly interconnected._

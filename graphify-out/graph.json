@@ -691,7 +691,7 @@
       "node_kind": "heading",
       "norm_label": "blockers / requests to other repos (planning chat syncs these into platform/docs/worklog.md; this repo never edits others)",
       "source_file": "WORKLOG.md",
-      "source_location": "L56"
+      "source_location": "L57"
     },
     {
       "id": "worklog_current_state",
@@ -727,7 +727,7 @@
       "node_kind": "heading",
       "norm_label": "done (2026-10-31, newest last; commits on main)",
       "source_file": "WORKLOG.md",
-      "source_location": "L33"
+      "source_location": "L34"
     },
     {
       "id": "worklog_gotchas_learned_the_hard_way",
@@ -739,7 +739,7 @@
       "node_kind": "heading",
       "norm_label": "gotchas (learned the hard way)",
       "source_file": "WORKLOG.md",
-      "source_location": "L72"
+      "source_location": "L73"
     },
     {
       "id": "worklog_how_to_resume_new_chat_or_new_person",
@@ -763,7 +763,7 @@
       "node_kind": "heading",
       "norm_label": "next (propose each, wait for ok)",
       "source_file": "WORKLOG.md",
-      "source_location": "L42"
+      "source_location": "L43"
     },
     {
       "id": "worklog_owner_to_dos_gokul",
@@ -775,7 +775,7 @@
       "node_kind": "heading",
       "norm_label": "owner to-dos (gokul)",
       "source_file": "WORKLOG.md",
-      "source_location": "L50"
+      "source_location": "L51"
     },
     {
       "id": "worklog_worklog_gokulmobilize",
@@ -1289,7 +1289,7 @@
       "file_type": "code",
       "norm_label": "headers",
       "source_file": "vercel.json",
-      "source_location": "L5"
+      "source_location": "L21"
     },
     {
       "id": "vercel_redirects",
@@ -1311,7 +1311,7 @@
       "file_type": "code",
       "norm_label": "rewrites",
       "source_file": "vercel.json",
-      "source_location": "L4"
+      "source_location": "L15"
     },
     {
       "id": "src_components_filelink",
@@ -5632,6 +5632,17 @@
     },
     {
       "source": "vercel",
+      "target": "vercel_rewrites",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "vercel.json",
+      "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "vercel",
       "target": "vercel_cleanurls",
       "relation": "contains",
       "_origin": "ast",
@@ -5643,6 +5654,17 @@
     },
     {
       "source": "vercel",
+      "target": "vercel_headers",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "vercel.json",
+      "source_location": "L21",
+      "weight": 1.0
+    },
+    {
+      "source": "vercel",
       "target": "vercel_redirects",
       "relation": "contains",
       "_origin": "ast",
@@ -5650,28 +5672,6 @@
       "confidence_score": 1.0,
       "source_file": "vercel.json",
       "source_location": "L3",
-      "weight": 1.0
-    },
-    {
-      "source": "vercel",
-      "target": "vercel_rewrites",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "vercel.json",
-      "source_location": "L4",
-      "weight": 1.0
-    },
-    {
-      "source": "vercel",
-      "target": "vercel_headers",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "vercel.json",
-      "source_location": "L5",
       "weight": 1.0
     },
     {
@@ -5715,7 +5715,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "WORKLOG.md",
-      "source_location": "L33",
+      "source_location": "L34",
       "weight": 1.0
     },
     {
@@ -5726,7 +5726,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "WORKLOG.md",
-      "source_location": "L42",
+      "source_location": "L43",
       "weight": 1.0
     },
     {
@@ -5748,7 +5748,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "WORKLOG.md",
-      "source_location": "L50",
+      "source_location": "L51",
       "weight": 1.0
     },
     {
@@ -5759,7 +5759,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "WORKLOG.md",
-      "source_location": "L56",
+      "source_location": "L57",
       "weight": 1.0
     },
     {
@@ -5770,7 +5770,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "WORKLOG.md",
-      "source_location": "L72",
+      "source_location": "L73",
       "weight": 1.0
     },
     {
@@ -6121,7 +6121,7 @@
       "confidence_score": 0.95,
       "context": "SavedItem",
       "source_file": "WORKLOG.md",
-      "source_location": "L61",
+      "source_location": "L62",
       "weight": 1.0
     },
     {
@@ -6162,5 +6162,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "24e5bb3a7171b344164946c0ee5fc5cc9bacee5d"
+  "built_at_commit": "abfdcb4622d238c5e92a1a47d28abf7994a3b412"
 }
