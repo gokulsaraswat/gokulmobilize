@@ -64,7 +64,7 @@ Island audit: no `client:*` directive anywhere in `src/`. React renders only at 
 | Command | Does | Verify |
 |---|---|---|
 | `npm run dev` | Astro dev server (`/apps/`) | opens on `localhost:4321/apps/` |
-| `npm run build` | `astro build` + `scripts/build-sw.mjs` | prints `sw.js: precached 23 files, 338.2 KB` |
+| `npm run build` | `astro build` + `scripts/build-sw.mjs` | prints `sw.js: precached 22 files, 122.8 KB` (23 / 338.2 KB at baseline; React runtime skipped while no page has an `<astro-island>`, MOB-I-002) |
 | `npm run preview` | Serves `dist/` | routes table above |
 | `npm run lint` | `astro check` | 0 errors |
 | `npm test` | `node --test src/lib/*.test.ts` | 9 pass (8 at baseline) |

@@ -30,7 +30,7 @@ config URL = `PUBLIC_HUB_CONFIG_URL`, or `/apps/config.mock.json` when unset.
 
 ## Size (production build, gzip)
 - Tile script 24 KB. Most of it is zod, pulled in via `parseHubConfig`.
-- React's client runtime is emitted but not loaded, because no component hydrates. The SW still precaches it (220.7 KB raw of the 338.2 KB precache, 2026-11-25).
+- React's client runtime is emitted but not loaded, because no component hydrates. `build-sw.mjs` leaves it out of the precache unless a page contains an `<astro-island>` (precache 122.8 KB, was 338.2 KB).
 
 Astro `build.format: 'file'` (page.html) so the SW and Vercel `cleanUrls` serve `/apps/page`.
 

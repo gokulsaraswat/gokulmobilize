@@ -42,6 +42,7 @@ Master status of all repos: platform/docs/WORKLOG.md (github.com/gokulsaraswat/p
   - MOB-B-002 fixed: skeleton rule raised to `.grid .skeleton`; Chrome computed background now `--muted` (oklch 0.97) instead of `--card` white; loaded tiles unchanged.
   - MOB-B-003 found + fixed: with no cached config and the fetch failing, skeletons kept pulsing and the grid stayed `aria-busy="true"` next to "could not be loaded"; now the grid is emptied and marked not busy (Chrome, config blocked: 5 skeletons/busy true -> 0/false).
   - MOB-B-004 found + fixed: every tab return re-rendered identical tiles, so keyboard focus fell to `<body>` after opening an external tile; the store now skips emitting an unchanged config (new test; Chrome: focus stays on the tile). Logged MOB-B-005 (same in SavedList, P3).
+  - MOB-I-002 done: SW precache 23 files / 338.3 KB -> 22 / 122.8 KB (React runtime skipped unless a page has `<astro-island>`; guard proven with a fake island page). Offline re-verified: hub 3 tiles, `/apps/faq`, unknown path -> hub.
 
 ### Assumptions (upgrade run)
 - docs/CONTEXT.md is a synced copy from platform: its "docs/master/WORKLOG.md if present" line is left as is (conditional; change it in platform).

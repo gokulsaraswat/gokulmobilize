@@ -13,7 +13,6 @@ Status: open, doing, blocked, done, dropped. Cross-repo: `needs:` waits on, `blo
 | ID | Title | Pri | Status | Needs/Blocks | Notes |
 |---|---|---|---|---|---|
 | MOB-I-001 | UI/motion upgrade of hub (TileGrid, SavedList, Base) | P2 | open | pilot repo; master: PLT-I-001 | Prompt: docs/KICKOFF-PROMPT.md "UI UPGRADE ADD-ON". Note 2026-11-25 (phase A): motion and @formkit/auto-animate are NOT in package.json/lockfile (the earlier note was wrong). Verify: lint, test, build. |
-| MOB-I-002 | Stop precaching the unused React client runtime | P2 | open | | `dist/_astro/client.*.js` 220.7 KB raw / 68.2 KB gz is emitted and precached (338.2 KB total) though no island hydrates. |
 | MOB-I-003 | Footer links are 24 px tall on touch (44 px preferred) | P2 | open | needs: platform `Footer` (ui) or a local override | Measured at 390 px mobile emulation: footer links 22-121 x 24 px. Tiles 138 px, Remove 44 px. |
 | MOB-I-004 | Safe-area insets and theme colour | P2 | open | | No `viewport-fit=cover`, no `env(safe-area-inset-*)`, no `theme-color` meta; matters for standalone PWA and Android edge-to-edge. |
 | MOB-I-005 | Dark theme / system theme | P2 | open | | `tokens.css` dark values sit under `.dark`, which nothing applies; the hub is light-only. Redesign (Atelier, theme system) covers it. |
@@ -39,3 +38,4 @@ Status: open, doing, blocked, done, dropped. Cross-repo: `needs:` waits on, `blo
 | MOB-B-002 | Skeleton cards look like empty white cards | this commit (fix(hub)) | 2026-11-25 |
 | MOB-B-003 | Failed first load keeps 5 pulsing skeletons and `aria-busy="true"` beside the error line | this commit (fix(hub)) | 2026-11-25 |
 | MOB-B-004 | Returning to the tab re-rendered identical tiles and dropped keyboard focus to `<body>` | this commit (fix(hub)) | 2026-11-25 |
+| MOB-I-002 | Stop precaching the unused React client runtime (precache 23 files / 338.3 KB -> 22 / 122.8 KB) | this commit (perf(sw)) | 2026-11-25 |
