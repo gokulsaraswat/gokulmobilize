@@ -36,7 +36,7 @@ Island audit: no `client:*` directive anywhere in `src/`. React renders only at 
 |---|---|
 | Config store: IndexedDB `hub-config` cache first, then `fetch` (no-cache, ETag), `parseHubConfig` (zod), save | `npm test` (`hub-config.test.ts`) |
 | Invalid or unreachable config never replaces a valid cached copy | `hub-config.test.ts`; offline reload still shows tiles |
-| Refresh on `visibilitychange` (visible) and `online` | read `TileGrid.astro`; switch tabs and watch the network panel |
+| Refresh on `visibilitychange` (visible) and `online`; an unchanged config is not re-rendered (keeps focus) | `hub-config.test.ts`; switch tabs and watch the network panel |
 | Skeleton cards (5) with `aria-busy`, pulse disabled under `prefers-reduced-motion` | load with a throttled network |
 | Status line (`role="status"`): "could not be loaded" online, "You are offline..." offline, when no config was ever cached | first visit with the network off |
 | Tile rendering: enabled + reachable tiles only, `textContent` only, monogram + name + description + accent from `tile-meta.ts` | `npm test` (`tile-target.test.ts`); preview shows 3 tiles |
@@ -67,7 +67,7 @@ Island audit: no `client:*` directive anywhere in `src/`. React renders only at 
 | `npm run build` | `astro build` + `scripts/build-sw.mjs` | prints `sw.js: precached 23 files, 338.2 KB` |
 | `npm run preview` | Serves `dist/` | routes table above |
 | `npm run lint` | `astro check` | 0 errors |
-| `npm test` | `node --test src/lib/*.test.ts` | 8 pass |
+| `npm test` | `node --test src/lib/*.test.ts` | 9 pass (8 at baseline) |
 | `npm run generate-pwa-assets` | Icons from `public/favicon.svg` (`pwa-assets.config.js`) | writes `public/pwa-*.png` |
 | `npm run build:native` | Native web build (`scripts/build-native.mjs` sets `PUBLIC_HUB_NATIVE=true` in-process, works under cmd) + bundle-apps | `dist-native/` exists |
 | `npm run android:sync` | `build:native` + `cap sync android` | exit 0 (any npm script shell, incl. cmd on Windows, since MOB-B-001) |

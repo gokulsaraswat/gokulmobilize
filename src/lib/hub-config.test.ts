@@ -38,6 +38,15 @@ test('invalid fresh config keeps the cached copy', async () => {
   assert.deepEqual(storage.saved, cachedConfig);
 });
 
+test('an unchanged fresh config is not emitted again', async () => {
+  const seen: string[] = [];
+  const store = createConfigStore('/config.json', memoryStorage(cachedConfig), respond(cachedConfig));
+  store.subscribe((c) => seen.push(c.apps[0].id));
+  await store.load();
+  await store.refresh();
+  assert.deepEqual(seen, ['gspace']);
+});
+
 test('network failure without cache emits nothing and does not throw', async () => {
   const seen: unknown[] = [];
   const failing = (async () => {

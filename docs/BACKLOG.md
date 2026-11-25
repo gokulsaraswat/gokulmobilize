@@ -7,6 +7,7 @@ Status: open, doing, blocked, done, dropped. Cross-repo: `needs:` waits on, `blo
 ## Bugs
 | ID | Title | Pri | Status | Needs/Blocks | Notes (where, repro, evidence) |
 |---|---|---|---|---|---|
+| MOB-B-005 | "Saved for later" re-renders on every `visibilitychange`, dropping focus | P3 | open | | Same pattern as MOB-B-004 in `SavedList.astro` (`render()` replaces all rows). Low impact today: the portfolio does not write `gk-saved` yet. Fix: skip re-render when the list is unchanged. Found 2026-11-25 (phase B). |
 
 ## Improvements
 | ID | Title | Pri | Status | Needs/Blocks | Notes |
@@ -37,3 +38,4 @@ Status: open, doing, blocked, done, dropped. Cross-repo: `needs:` waits on, `blo
 | MOB-B-001 | `build:native` / `android:sync` fail on Windows | this commit (fix(scripts)) | 2026-11-25 |
 | MOB-B-002 | Skeleton cards look like empty white cards | this commit (fix(hub)) | 2026-11-25 |
 | MOB-B-003 | Failed first load keeps 5 pulsing skeletons and `aria-busy="true"` beside the error line | this commit (fix(hub)) | 2026-11-25 |
+| MOB-B-004 | Returning to the tab re-rendered identical tiles and dropped keyboard focus to `<body>` | this commit (fix(hub)) | 2026-11-25 |

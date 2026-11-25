@@ -41,6 +41,7 @@ Master status of all repos: platform/docs/WORKLOG.md (github.com/gokulsaraswat/p
   - MOB-B-001 fixed: `build:native` runs `scripts/build-native.mjs` (sets `PUBLIC_HUB_NATIVE` in-process, Astro `build()` API); `npm run android:sync` exit 0 under cmd; `dist-native/` byte-identical to the old Git Bash build.
   - MOB-B-002 fixed: skeleton rule raised to `.grid .skeleton`; Chrome computed background now `--muted` (oklch 0.97) instead of `--card` white; loaded tiles unchanged.
   - MOB-B-003 found + fixed: with no cached config and the fetch failing, skeletons kept pulsing and the grid stayed `aria-busy="true"` next to "could not be loaded"; now the grid is emptied and marked not busy (Chrome, config blocked: 5 skeletons/busy true -> 0/false).
+  - MOB-B-004 found + fixed: every tab return re-rendered identical tiles, so keyboard focus fell to `<body>` after opening an external tile; the store now skips emitting an unchanged config (new test; Chrome: focus stays on the tile). Logged MOB-B-005 (same in SavedList, P3).
 
 ### Assumptions (upgrade run)
 - docs/CONTEXT.md is a synced copy from platform: its "docs/master/WORKLOG.md if present" line is left as is (conditional; change it in platform).

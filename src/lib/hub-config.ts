@@ -34,7 +34,7 @@ export function createConfigStore(
       const res = await fetcher(url, { cache: 'no-cache' });
       if (!res.ok) return;
       const fresh = parseHubConfig(await res.json());
-      emit(fresh);
+      if (JSON.stringify(fresh) !== JSON.stringify(current)) emit(fresh);
       await storage.set(CACHE_KEY, fresh);
     } catch (error) {
       console.warn('hub config refresh failed', error);
