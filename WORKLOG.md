@@ -55,6 +55,7 @@ Master status of all repos: platform/docs/WORKLOG.md (github.com/gokulsaraswat/p
 - Phase B: `.project-architecture.md` changes written by the pre-commit hook that were line-ending-only or stale were reset, not committed.
 
 ## Done (2026-10-31, newest last; commits on main)
+- 2026-11-25: optional sign-in on the web hub (shared platform contract, app id `hub`; `@gokulsaraswat/auth`/`config` 0.2.0 + supabase-js). Guests unchanged; header "Sign in" → Google/GitHub; signed in → status (request_access filed), Connected accounts (link/unlink, last kept), sign out. Shown only when `PUBLIC_SUPABASE_URL` + `PUBLIC_SUPABASE_ANON_KEY` are set (public anon key, RLS) and never in the native build. Tests 13/13 (4 new in `src/lib/account.test.ts`), astro check 0/0/0, build + `android:sync` green, browser-checked at 390/1280 light+dark. Needs: the two env vars on Vercel, redirect URLs `http://localhost:4321/apps/**` and the deployed `/apps/**` in Supabase. Android sign-in (system browser + deep link) not done: MOB-F-003.
 - 2026-11-25: UI/motion upgrade queued as TODO only (no source changes). Prompt added to docs/KICKOFF-PROMPT.md; backlog item added; animation libs installed but unused (see backlog). MOB-I-001.
 - `06496bb`: repo kit, research, decisions.
 - `ce6e11a`, `27246c1`: Astro hub scaffold, config store + tests, CI with tests.

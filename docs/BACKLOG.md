@@ -23,6 +23,7 @@ Status: open, doing, blocked, done, dropped. Cross-repo: `needs:` waits on, `blo
 ## Features
 | ID | Title | Pri | Status | Needs/Blocks | Notes |
 |---|---|---|---|---|---|
+| MOB-F-003 | Sign-in inside the Android app | P3 | open | | Web hub has it (MOB-F-002). Native needs OAuth in the system browser (`@capacitor/browser`; Google blocks embedded WebViews), a deep link back (e.g. `com.gokulsaraswat.gokulmobilize://auth/callback`, proposed in platform CONTRACTS), and PKCE exchange in the app. Until then the account menu is not built into the native app. |
 
 ## Ideas (unscoped, not committed to)
 | ID | Idea | Pri | Status | Needs/Blocks | Notes |
@@ -38,6 +39,7 @@ Status: open, doing, blocked, done, dropped. Cross-repo: `needs:` waits on, `blo
 ## Done (recent)
 | ID | Title | Commit | Date |
 |---|---|---|---|
+| MOB-F-002 | Optional Google/GitHub sign-in on the web hub (shared contract, app `hub`): AccountMenu island, Connected accounts, access request | (this commit) | 2026-11-25 |
 | MOB-B-001 | `build:native` / `android:sync` fail on Windows | 63b61bd | 2026-11-25 |
 | MOB-B-002 | Skeleton cards look like empty white cards | e0e4020 | 2026-11-25 |
 | MOB-B-003 | Failed first load keeps 5 pulsing skeletons and `aria-busy="true"` beside the error line | 55bf636 | 2026-11-25 |

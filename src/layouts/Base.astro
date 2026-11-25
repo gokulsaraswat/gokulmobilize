@@ -3,6 +3,8 @@ import '@gokulsaraswat/ui/tokens.css';
 import '@gokulsaraswat/ui/styles.css';
 import { Footer } from '@gokulsaraswat/ui';
 import { FileLink } from '../components/FileLink';
+import AccountMenu from '../components/auth/AccountMenu';
+import { readAuthConfig } from '../lib/account';
 
 interface Props {
   title: string;
@@ -12,6 +14,7 @@ interface Props {
 const { title, description = 'All of Gokul Saraswat’s apps in one place.' } = Astro.props;
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const native = import.meta.env.PUBLIC_HUB_NATIVE === 'true';
+const authConfig = native ? null : readAuthConfig(import.meta.env);
 ---
 
 <html lang="en">
@@ -25,6 +28,11 @@ const native = import.meta.env.PUBLIC_HUB_NATIVE === 'true';
     <title>{title}</title>
   </head>
   <body>
+    {authConfig && (
+      <header class="hub-bar">
+        <AccountMenu client:idle config={authConfig} />
+      </header>
+    )}
     <main><slot /></main>
     <Footer siteName="Gokul’s apps" basePath={base} linkComponent={native ? FileLink : undefined} />
   </body>
@@ -46,6 +54,15 @@ const native = import.meta.env.PUBLIC_HUB_NATIVE === 'true';
     background: var(--background);
     color: var(--foreground);
     font-family: var(--font-sans);
+  }
+  .hub-bar {
+    max-width: 64rem;
+    min-height: 2.5rem;
+    margin-inline: auto;
+    padding: 1rem 1rem 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
   }
   main {
     max-width: 64rem;
