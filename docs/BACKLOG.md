@@ -36,3 +36,4 @@ Status: open, doing, blocked, done, dropped. Cross-repo: `needs:` waits on, `blo
 |---|---|---|---|
 | MOB-B-001 | `build:native` / `android:sync` fail on Windows | this commit (fix(scripts)) | 2026-11-25 |
 | MOB-B-002 | Skeleton cards look like empty white cards | this commit (fix(hub)) | 2026-11-25 |
+| MOB-B-003 | Failed first load keeps 5 pulsing skeletons and `aria-busy="true"` beside the error line | this commit (fix(hub)) | 2026-11-25 |
