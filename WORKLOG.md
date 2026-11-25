@@ -35,7 +35,6 @@ Master status of all repos: platform/docs/WORKLOG.md (github.com/gokulsaraswat/p
 - Phase A (inventory) done: docs/FEATURES.md (do-not-break list + baseline numbers). Baseline: build 9.6 s, dist 564 KB, precache 23 files / 338.2 KB, lint 0/0/0 (19 files), tests 8/8, `android:sync` exit 0 via Git Bash shell (fails under cmd: MOB-B-001), CI green. Offline verified (SW precache + IndexedDB tiles + navigate fallback).
 - Kit fixes: CLAUDE.md tracking-files rule (28d510e); docs/master, docs/project and WORKLOG-PROJECT.md replaced by docs/PLATFORM-DOCS.md (copies identical to platform's or stale snapshots of it).
 - Island audit: no `client:*` anywhere; React is build-time only. Findings filed: MOB-B-001, MOB-B-002, MOB-I-002..005, MOB-D-001, MOB-X-001.
-- Next: phase B (fixes: MOB-B-001 Windows scripts, safe-area/theme-color, precache trim), phase C (cleanup), phase D on branch redesign/gokulmobilize (Atelier flavor, @gokulsaraswat/ui ^0.2.0 there only).
 
 - Phase B (bugs), 2026-11-25:
   - MOB-B-001 fixed: `build:native` runs `scripts/build-native.mjs` (sets `PUBLIC_HUB_NATIVE` in-process, Astro `build()` API); `npm run android:sync` exit 0 under cmd; `dist-native/` byte-identical to the old Git Bash build.
@@ -43,11 +42,17 @@ Master status of all repos: platform/docs/WORKLOG.md (github.com/gokulsaraswat/p
   - MOB-B-003 found + fixed: with no cached config and the fetch failing, skeletons kept pulsing and the grid stayed `aria-busy="true"` next to "could not be loaded"; now the grid is emptied and marked not busy (Chrome, config blocked: 5 skeletons/busy true -> 0/false).
   - MOB-B-004 found + fixed: every tab return re-rendered identical tiles, so keyboard focus fell to `<body>` after opening an external tile; the store now skips emitting an unchanged config (new test; Chrome: focus stays on the tile). Logged MOB-B-005 (same in SavedList, P3).
   - MOB-I-002 done: SW precache 23 files / 338.3 KB -> 22 / 122.8 KB (React runtime skipped unless a page has `<astro-island>`; guard proven with a fake island page). Offline re-verified: hub 3 tiles, `/apps/faq`, unknown path -> hub.
+  - Checked, no defect: `parseHubConfig` fallbacks (invalid/unreachable never replaces cache; tests), manifest (Chrome `getAppManifest`: 0 errors, 0 installability errors), SW cache versioning (Workbox per-file revisions, `skipWaiting`/`clientsClaim`, no lazy chunks on web), native links (all `dist-native` hrefs name files), Capacitor 8 insets (WebView padded natively, see MOB-I-004), touch targets (tiles 104 px+, Remove 44 px, footer 24 px = WCAG 2.5.8 AA minimum, MOB-I-003).
+  - Logged, not fixed: MOB-B-005, MOB-B-006, MOB-B-007, MOB-I-006, MOB-D-002 (docs/BACKLOG.md).
+  - Final: build 22 files / 122.8 KB precache, tests 9/9, astro check 0/0/0 (20 files), `npm run android:sync` exit 0 under cmd. Commits 63b61bd, e0e4020, 55bf636, 06ced1c, f79db8a.
+- Next: phase C (cleanup), then phase D on branch redesign/gokulmobilize (Atelier; covers MOB-I-003/004/005).
 
 ### Assumptions (upgrade run)
 - docs/CONTEXT.md is a synced copy from platform: its "docs/master/WORKLOG.md if present" line is left as is (conditional; change it in platform).
 - docs/RESEARCH-OPTIONS.md and .claude-session.json keep their historical mentions of docs/master (records, not instructions).
 - Android `cap sync` rewrites android/*.gradle with LF/CRLF only; those line-ending changes are reverted, never committed.
+- Phase B: MOB-I-002 (precache trim) was done in phase B because this log's phase-A plan listed it there. MOB-I-004 (safe-area/theme-color) was left for the redesign: no overlap exists today, and theme colour belongs to the theme system.
+- Phase B: `.project-architecture.md` changes written by the pre-commit hook that were line-ending-only or stale were reset, not committed.
 
 ## Done (2026-10-31, newest last; commits on main)
 - 2026-11-25: UI/motion upgrade queued as TODO only (no source changes). Prompt added to docs/KICKOFF-PROMPT.md; backlog item added; animation libs installed but unused (see backlog). MOB-I-001.
@@ -64,7 +69,7 @@ Master status of all repos: platform/docs/WORKLOG.md (github.com/gokulsaraswat/p
 2. **Real config.json** from admin: set `PUBLIC_HUB_CONFIG_URL` (web + app build) once admin publishes it; check CORS from `https://localhost`.
 3. **Bundle real GSpace/Studio** once their repos publish release zips: download pinned versions into `bundled/<id>/` in CI before `android:sync`.
 4. **Own app icon:** replace `public/favicon.svg`, run `npm run generate-pwa-assets`, and also set the Android launcher icons.
-5. **Size:** the service worker precaches the unused React client file (~200 KB raw); the tile script is 24 KB gzip (zod). Optional trims.
+5. **Size:** the tile script is 24 KB gzip (zod). Optional trim (the unused React runtime is no longer precached since f79db8a).
 6. **Later:** iOS (Capacitor iOS + Xcode sideload), OTA live update (`@capawesome/capacitor-live-update`), TWA "lite" APK, Android 13+ themed icon, splash screen.
 
 ## Owner to-dos (Gokul)
