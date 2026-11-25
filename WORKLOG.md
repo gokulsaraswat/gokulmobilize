@@ -39,6 +39,7 @@ Master status of all repos: platform/docs/WORKLOG.md (github.com/gokulsaraswat/p
 
 - Phase B (bugs), 2026-11-25:
   - MOB-B-001 fixed: `build:native` runs `scripts/build-native.mjs` (sets `PUBLIC_HUB_NATIVE` in-process, Astro `build()` API); `npm run android:sync` exit 0 under cmd; `dist-native/` byte-identical to the old Git Bash build.
+  - MOB-B-002 fixed: skeleton rule raised to `.grid .skeleton`; Chrome computed background now `--muted` (oklch 0.97) instead of `--card` white; loaded tiles unchanged.
 
 ### Assumptions (upgrade run)
 - docs/CONTEXT.md is a synced copy from platform: its "docs/master/WORKLOG.md if present" line is left as is (conditional; change it in platform).

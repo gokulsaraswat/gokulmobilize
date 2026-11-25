@@ -7,7 +7,6 @@ Status: open, doing, blocked, done, dropped. Cross-repo: `needs:` waits on, `blo
 ## Bugs
 | ID | Title | Pri | Status | Needs/Blocks | Notes (where, repro, evidence) |
 |---|---|---|---|---|---|
-| MOB-B-002 | Skeleton cards look like empty white cards | P3 | open | | `TileGrid.astro`: `.grid :global(.tile)` (higher specificity) overrides `.skeleton { background: var(--muted) }`; only the opacity pulse remains. |
 
 ## Improvements
 | ID | Title | Pri | Status | Needs/Blocks | Notes |
@@ -36,3 +35,4 @@ Status: open, doing, blocked, done, dropped. Cross-repo: `needs:` waits on, `blo
 | ID | Title | Commit | Date |
 |---|---|---|---|
 | MOB-B-001 | `build:native` / `android:sync` fail on Windows | this commit (fix(scripts)) | 2026-11-25 |
+| MOB-B-002 | Skeleton cards look like empty white cards | this commit (fix(hub)) | 2026-11-25 |
