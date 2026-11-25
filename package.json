@@ -14,7 +14,7 @@
     "test": "node --test --disable-warning=ExperimentalWarning src/lib/*.test.ts",
     "astro": "astro",
     "generate-pwa-assets": "pwa-assets-generator",
-    "build:native": "PUBLIC_HUB_NATIVE=true astro build && node scripts/bundle-apps.mjs",
+    "build:native": "node scripts/build-native.mjs && node scripts/bundle-apps.mjs",
     "android:sync": "npm run build:native && cap sync android"
   },
   "dependencies": {

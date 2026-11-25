@@ -7,7 +7,6 @@ Status: open, doing, blocked, done, dropped. Cross-repo: `needs:` waits on, `blo
 ## Bugs
 | ID | Title | Pri | Status | Needs/Blocks | Notes (where, repro, evidence) |
 |---|---|---|---|---|---|
-| MOB-B-001 | `build:native` / `android:sync` fail on Windows | P1 | open | | `package.json` uses a POSIX env prefix (`PUBLIC_HUB_NATIVE=true astro build`); npm on Windows runs scripts in cmd: "'PUBLIC_HUB_NATIVE' is not recognized". Workaround: `npm_config_script_shell` = Git Bash (then exit 0, 11.7 s). CI (ubuntu) unaffected. Found 2026-11-25 (phase A). |
 | MOB-B-002 | Skeleton cards look like empty white cards | P3 | open | | `TileGrid.astro`: `.grid :global(.tile)` (higher specificity) overrides `.skeleton { background: var(--muted) }`; only the opacity pulse remains. |
 
 ## Improvements
@@ -36,3 +35,4 @@ Status: open, doing, blocked, done, dropped. Cross-repo: `needs:` waits on, `blo
 ## Done (recent)
 | ID | Title | Commit | Date |
 |---|---|---|---|
+| MOB-B-001 | `build:native` / `android:sync` fail on Windows | this commit (fix(scripts)) | 2026-11-25 |

@@ -37,6 +37,9 @@ Master status of all repos: platform/docs/WORKLOG.md (github.com/gokulsaraswat/p
 - Island audit: no `client:*` anywhere; React is build-time only. Findings filed: MOB-B-001, MOB-B-002, MOB-I-002..005, MOB-D-001, MOB-X-001.
 - Next: phase B (fixes: MOB-B-001 Windows scripts, safe-area/theme-color, precache trim), phase C (cleanup), phase D on branch redesign/gokulmobilize (Atelier flavor, @gokulsaraswat/ui ^0.2.0 there only).
 
+- Phase B (bugs), 2026-11-25:
+  - MOB-B-001 fixed: `build:native` runs `scripts/build-native.mjs` (sets `PUBLIC_HUB_NATIVE` in-process, Astro `build()` API); `npm run android:sync` exit 0 under cmd; `dist-native/` byte-identical to the old Git Bash build.
+
 ### Assumptions (upgrade run)
 - docs/CONTEXT.md is a synced copy from platform: its "docs/master/WORKLOG.md if present" line is left as is (conditional; change it in platform).
 - docs/RESEARCH-OPTIONS.md and .claude-session.json keep their historical mentions of docs/master (records, not instructions).

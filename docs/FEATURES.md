@@ -69,8 +69,8 @@ Island audit: no `client:*` directive anywhere in `src/`. React renders only at 
 | `npm run lint` | `astro check` | 0 errors |
 | `npm test` | `node --test src/lib/*.test.ts` | 8 pass |
 | `npm run generate-pwa-assets` | Icons from `public/favicon.svg` (`pwa-assets.config.js`) | writes `public/pwa-*.png` |
-| `npm run build:native` | Native web build + bundle-apps | `dist-native/` exists |
-| `npm run android:sync` | `build:native` + `cap sync android` | exit 0 (on Windows: set `npm_config_script_shell` to Git Bash until MOB-B-001 is fixed) |
+| `npm run build:native` | Native web build (`scripts/build-native.mjs` sets `PUBLIC_HUB_NATIVE=true` in-process, works under cmd) + bundle-apps | `dist-native/` exists |
+| `npm run android:sync` | `build:native` + `cap sync android` | exit 0 (any npm script shell, incl. cmd on Windows, since MOB-B-001) |
 | `./gradlew assembleDebug` (in `android/`) | Debug APK | CI `android` job (no local JDK/SDK on this machine) |
 | `./sync-architecture.sh` | Regenerates `.project-architecture.md` (pre-commit hook) | file updates on commit |
 

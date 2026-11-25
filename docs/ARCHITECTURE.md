@@ -36,7 +36,7 @@ Astro `build.format: 'file'` (page.html) so the SW and Vercel `cleanUrls` serve 
 
 ## Native app (Android, Capacitor 8.6)
 ```text
-npm run build:native (PUBLIC_HUB_NATIVE=true): base '/', outDir dist-native, no SW, footer links via FileLink (/faq.html)
+npm run build:native (scripts/build-native.mjs sets PUBLIC_HUB_NATIVE=true, then astro build): base '/', outDir dist-native, no SW, footer links via FileLink (/faq.html)
   + scripts/bundle-apps.mjs: dist-native/gspace|studio <- bundled/<id>/ or a placeholder page
 cap sync android -> android/app/src/main/assets/public (gitignored) -> gradlew assembleDebug
 WebView https://localhost/ : hub; bundled tiles -> /<id>/index.html; remote/external tiles -> Browser.open (Custom Tabs)
