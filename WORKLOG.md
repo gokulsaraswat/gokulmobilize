@@ -105,3 +105,5 @@ Master status of all repos: platform/docs/WORKLOG.md (github.com/gokulsaraswat/p
 - **Emulator:** AVD `medium_phone`. The first paint takes about 3 s on the emulator.
 - **Repo secrets:** Claude may not write them; Gokul sets them (website or `gh secret set`). During setup, some secrets ended up empty or wrong (cause unknown). Check update times with `gh secret list`, and read the `android-release` log when it fails.
 - **Known audit warnings:** 9 low/moderate `npm audit` findings, all in `workbox-build`'s build-time dependencies (dev only).
+
+- 2026-11-26 Upgrade program: status of all 7 repos and how to resume is in platform/docs/UPGRADE-PROGRAM.md (read it first).
