@@ -8,7 +8,7 @@ Web build base `/apps` (`dist/`); native build base `/` (`dist-native/`, `PUBLIC
 |---|---|
 | `npm ci` (clean, warm npm cache) | 16 s, 0 vulnerabilities, `node_modules` 318 MB |
 | `npm run build` (astro build + build-sw) | 9.6 s wall (Astro: 10 pages in 1.0 s); `dist/` 564 KB, 28 files |
-| Service worker precache | 23 files, 338.2 KB (globs html/js/css/svg/png/ico/webmanifest; `.map` and `.json` excluded) |
+| Service worker precache | 23 files, 134.9 KB since MOB-C-001 (was 24 files, 357.2 KB with the sign-in island; 23 / 338.2 KB at baseline). The sign-in island chunks (`client`, `AccountMenu`) are cached at runtime instead; (globs html/js/css/svg/png/ico/webmanifest; `.map` and `.json` excluded) |
 | JS (raw / gzip) | TileGrid script 83.3 / 24.1 KB (mostly zod via `parseHubConfig`); React client runtime 220.7 / 68.2 KB (emitted + precached, never loaded: no island hydrates); SavedList 1.1 / 0.7 KB |
 | CSS (raw / gzip) | `Base.*.css` 7.2 / 2.0 KB |
 | `npm run lint` (`astro check`) | 10.9 s, 19 files, 0 errors, 0 warnings, 0 hints |

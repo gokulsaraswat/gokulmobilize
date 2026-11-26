@@ -43,5 +43,6 @@ Status: open, doing, blocked, done, dropped. Cross-repo: `needs:` waits on, `blo
 | MOB-B-001 | `build:native` / `android:sync` fail on Windows | 63b61bd | 2026-11-25 |
 | MOB-B-002 | Skeleton cards look like empty white cards | e0e4020 | 2026-11-25 |
 | MOB-B-003 | Failed first load keeps 5 pulsing skeletons and `aria-busy="true"` beside the error line | 55bf636 | 2026-11-25 |
+| MOB-C-001 | Sign-in island (AccountMenu + Supabase client, 222 KB) was precached: install download 134.9 KB -> 357.2 KB | `perf(sw)` see WORKLOG | 2026-11-26 |
 | MOB-B-004 | Returning to the tab re-rendered identical tiles and dropped keyboard focus to `<body>` | 06ced1c | 2026-11-25 |
 | MOB-I-002 | Stop precaching the unused React client runtime (precache 23 files / 338.3 KB -> 22 / 122.8 KB) | f79db8a | 2026-11-25 |
